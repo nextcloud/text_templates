@@ -1,11 +1,11 @@
 <template>
-	<div class="gif-picker-content">
+	<div class="template-picker-content">
 		<h2>
-			{{ t('integration_giphy', 'Giphy GIF picker') }}
+			{{ t('text_templates', 'Text template picker') }}
 		</h2>
 		<div class="input-wrapper">
 			<NcTextField
-				ref="giphy-search-input"
+				ref="template-search-input"
 				:value.sync="searchQuery"
 				:show-trailing-button="searchQuery !== ''"
 				:label="inputPlaceholder"
@@ -17,53 +17,6 @@
 				<MagnifyIcon :size="16" />
 			</NcTextField>
 		</div>
-		<div v-if="gifs.length === 0"
-			class="empty-content-wrapper">
-			<NcEmptyContent v-if="searching"
-				:title="t('integration_giphy', 'Searching...')">
-				<template #icon>
-					<NcLoadingIcon />
-				</template>
-			</NcEmptyContent>
-			<NcEmptyContent v-else
-				:title="t('integration_giphy', 'No results')">
-				<template #icon>
-					<img class="empty-content-img"
-						:src="sadGifUrl">
-				</template>
-			</NcEmptyContent>
-		</div>
-		<div v-else
-			ref="results"
-			class="results">
-			<PickerResult v-for="(gif, i) in gifs"
-				:key="i + '-' + gif.resourceUrl"
-				:gif="gif"
-				:tabindex="0"
-				@click="onSubmit(gif)" />
-			<InfiniteLoading v-if="gifs.length >= LIMIT"
-				@infinite="infiniteHandler">
-				<template #no-results>
-					<div class="infinite-end">
-						<img :src="sadGifUrl">
-						{{ t('integration_giphy', 'No results') }}
-					</div>
-				</template>
-				<template #no-more>
-					<div class="infinite-end">
-						<img :src="sadGifUrl">
-						{{ t('integration_giphy', 'No more GIFs') }}
-					</div>
-				</template>
-			</InfiniteLoading>
-		</div>
-		<a class="attribution"
-			target="_blank"
-			:title="poweredByTitle"
-			href="https://giphy.com">
-			<img :src="poweredByImgSrc"
-				:alt="poweredByTitle">
-		</a>
 	</div>
 </template>
 
@@ -71,32 +24,20 @@
 import MagnifyIcon from 'vue-material-design-icons/Magnify.vue'
 import CloseIcon from 'vue-material-design-icons/Close.vue'
 
-import NcLoadingIcon from '@nextcloud/vue/dist/Components/NcLoadingIcon.js'
-import NcEmptyContent from '@nextcloud/vue/dist/Components/NcEmptyContent.js'
+// import NcLoadingIcon from '@nextcloud/vue/dist/Components/NcLoadingIcon.js'
+// import NcEmptyContent from '@nextcloud/vue/dist/Components/NcEmptyContent.js'
 import NcTextField from '@nextcloud/vue/dist/Components/NcTextField.js'
 
-import PickerResult from '../components/PickerResult.vue'
-
-import axios from '@nextcloud/axios'
-import { generateOcsUrl, imagePath } from '@nextcloud/router'
-import { delay } from '../utils.js'
-
-import InfiniteLoading from 'vue-infinite-loading'
-import Tooltip from '@nextcloud/vue/dist/Directives/Tooltip.js'
-import Vue from 'vue'
-Vue.directive('tooltip', Tooltip)
-
-const searchProviderId = 'giphy-search-gifs'
-const LIMIT = 20
+// import axios from '@nextcloud/axios'
+// import { generateOcsUrl, imagePath } from '@nextcloud/router'
+// import { delay } from '../utils.js'
 
 export default {
-	name: 'GifCustomPickerElement',
+	name: 'TemplateCustomPickerElement',
 
 	components: {
-		PickerResult,
-		NcLoadingIcon,
-		InfiniteLoading,
-		NcEmptyContent,
+		// NcLoadingIcon,
+		// NcEmptyContent,
 		NcTextField,
 		MagnifyIcon,
 		CloseIcon,
@@ -117,14 +58,7 @@ export default {
 		return {
 			searchQuery: '',
 			searching: false,
-			gifs: [],
-			inputPlaceholder: t('integration_giphy', 'Search GIFs'),
-			cursor: 0,
-			abortController: null,
-			poweredByImgSrc: imagePath('integration_giphy', 'powered-by-giphy.gif'),
-			poweredByTitle: t('integration_giphy', 'Powered by Giphy'),
-			LIMIT,
-			sadGifUrl: imagePath('integration_giphy', 'sad.gif'),
+			inputPlaceholder: t('text_templates', 'Search templates'),
 		}
 	},
 
@@ -135,104 +69,30 @@ export default {
 	},
 
 	mounted() {
-		this.search()
 		this.focusOnInput()
 	},
 
 	beforeDestroy() {
-		this.cancelSearchRequests()
 	},
 
 	methods: {
 		focusOnInput() {
 			setTimeout(() => {
-				// this.$refs['giphy-search-input']?.focus()
-				this.$refs['giphy-search-input'].$el.getElementsByTagName('input')[0]?.focus()
+				this.$refs['template-search-input'].$el.getElementsByTagName('input')[0]?.focus()
 			}, 300)
 		},
-		onSubmit(gif) {
-			this.cancelSearchRequests()
-			this.$emit('submit', gif.resourceUrl)
-		},
-		onInput() {
-			delay(() => {
-				this.updateSearch()
-			}, 500)()
+		onSubmit(template) {
+			this.$emit('submit', template.content)
 		},
 		onClear() {
 			this.searchQuery = ''
-			this.updateSearch()
-		},
-		updateSearch() {
-			if (this.$refs.results?.scrollTop) {
-				this.$refs.results.scrollTop = 0
-			}
-			this.cancelSearchRequests()
-			this.gifs = []
-			this.cursor = 0
-			this.search()
-		},
-		cancelSearchRequests() {
-			if (this.abortController) {
-				this.abortController.abort()
-			}
-		},
-		infiniteHandler($state) {
-			this.search($state)
-		},
-		search(state = null, limit = LIMIT) {
-			this.abortController = new AbortController()
-			this.searching = true
-			const url = this.searchQuery === ''
-				? this.cursor === null
-					? generateOcsUrl(
-						'apps/integration_giphy/api/v1/gifs/trending?limit={limit}',
-						{ limit }
-					)
-					: generateOcsUrl(
-						'apps/integration_giphy/api/v1/gifs/trending?cursor={cursor}&limit={limit}',
-						{ cursor: this.cursor, limit }
-					)
-				: this.cursor === null
-					? generateOcsUrl(
-						'search/providers/{searchProviderId}/search?term={term}&limit={limit}',
-						{ searchProviderId, term: this.searchQuery, limit }
-					)
-					: generateOcsUrl(
-						'search/providers/{searchProviderId}/search?term={term}&cursor={cursor}&limit={limit}',
-						{ searchProviderId, term: this.searchQuery, cursor: this.cursor, limit }
-					)
-			return axios.get(url, {
-				signal: this.abortController.signal,
-			})
-				.then((response) => {
-					this.cursor = response.data.ocs.data.cursor
-					this.gifs.push(...response.data.ocs.data.entries)
-					if (state !== null) {
-						if (response.data.ocs.data.entries.length > 0) {
-							state.loaded()
-						}
-						if (response.data.ocs.data.entries.length < limit) {
-							state.complete()
-						}
-					}
-				})
-				.catch((error) => {
-					console.debug('giphy search request error', error)
-					if (state !== null) {
-						state.complete()
-					}
-				})
-				.then(() => {
-					this.searching = false
-				})
 		},
 	},
 }
 </script>
 
 <style scoped lang="scss">
-.gif-picker-content {
+.template-picker-content {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -245,18 +105,6 @@ export default {
 	h2 {
 		display: flex;
 		align-items: center;
-	}
-
-	.attribution {
-		position: absolute;
-		bottom: 16px;
-		left: 16px;
-		height: 30px;
-		border-radius: var(--border-radius);
-		border: 2px solid var(--color-background-darker);
-		img {
-			height: 100%;
-		}
 	}
 
 	.input-wrapper {
@@ -300,22 +148,6 @@ export default {
 			&:hover {
 				border: 4px solid var(--color-primary);
 				border-radius: var(--border-radius);
-			}
-		}
-
-		::v-deep .infinite-status-prompt {
-			height: 100%;
-
-			.infinite-end {
-				height: 100%;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-
-				img {
-					width: 50px;
-				}
 			}
 		}
 	}

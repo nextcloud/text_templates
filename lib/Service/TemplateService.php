@@ -42,10 +42,4 @@ class TemplateService {
 		$this->urlGenerator = $urlGenerator;
 		$this->l10nFactory = $l10nFactory;
 	}
-
-	/**
-	 * @return array
-	 */
-	public function getTemplates(?string $userId = null): array {
-	}
 }

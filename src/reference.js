@@ -19,7 +19,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { registerWidget } from '@nextcloud/vue-richtext'
+import { registerCustomPickerElement, CustomPickerRenderResult } from '@nextcloud/vue-richtext'
 
 __webpack_nonce__ = btoa(OC.requestToken) // eslint-disable-line
 __webpack_public_path__ = OC.linkTo('text_templates', 'js/') // eslint-disable-line
