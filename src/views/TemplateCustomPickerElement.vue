@@ -9,13 +9,18 @@
 				:value.sync="searchQuery"
 				:show-trailing-button="searchQuery !== ''"
 				:label="inputPlaceholder"
-				@trailing-button-click="onClear"
-				@update:value="onInput">
+				@trailing-button-click="onClear">
 				<template #trailing-button-icon>
 					<CloseIcon :size="16" />
 				</template>
 				<MagnifyIcon :size="16" />
 			</NcTextField>
+		</div>
+		<div class="templates">
+			<TemplateEntry v-for="t in filteredTemplates"
+				:key="t.id"
+				:template="t"
+				@click.native="onSubmit(t)" />
 		</div>
 	</div>
 </template>
@@ -24,13 +29,15 @@
 import MagnifyIcon from 'vue-material-design-icons/Magnify.vue'
 import CloseIcon from 'vue-material-design-icons/Close.vue'
 
+import TemplateEntry from '../components/TemplateEntry.vue'
+
 // import NcLoadingIcon from '@nextcloud/vue/dist/Components/NcLoadingIcon.js'
 // import NcEmptyContent from '@nextcloud/vue/dist/Components/NcEmptyContent.js'
 import NcTextField from '@nextcloud/vue/dist/Components/NcTextField.js'
 
-// import axios from '@nextcloud/axios'
-// import { generateOcsUrl, imagePath } from '@nextcloud/router'
-// import { delay } from '../utils.js'
+import axios from '@nextcloud/axios'
+import { generateOcsUrl } from '@nextcloud/router'
+import { showError } from '@nextcloud/dialogs'
 
 export default {
 	name: 'TemplateCustomPickerElement',
@@ -41,6 +48,7 @@ export default {
 		NcTextField,
 		MagnifyIcon,
 		CloseIcon,
+		TemplateEntry,
 	},
 
 	props: {
@@ -59,10 +67,16 @@ export default {
 			searchQuery: '',
 			searching: false,
 			inputPlaceholder: t('text_templates', 'Search templates'),
+			templates: [],
 		}
 	},
 
 	computed: {
+		filteredTemplates() {
+			return this.templates.filter(t => {
+				return t.name.match(this.searchQuery)
+			})
+		},
 	},
 
 	watch: {
@@ -70,12 +84,25 @@ export default {
 
 	mounted() {
 		this.focusOnInput()
+		this.getTemplates()
 	},
 
 	beforeDestroy() {
 	},
 
 	methods: {
+		getTemplates() {
+			const url = generateOcsUrl('apps/text_templates/api/v1/templates')
+			axios.get(url).then((response) => {
+				this.templates = response.data.ocs.data
+			}).catch((error) => {
+				showError(
+					t('text_templates', 'Failed to get templates')
+					+ ': ' + (error.response?.data?.error ?? '')
+				)
+				console.error(error)
+			})
+		},
 		focusOnInput() {
 			setTimeout(() => {
 				this.$refs['template-search-input'].$el.getElementsByTagName('input')[0]?.focus()

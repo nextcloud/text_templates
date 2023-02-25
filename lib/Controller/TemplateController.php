@@ -17,23 +17,18 @@ use OCP\AppFramework\Http;
 use OCP\AppFramework\Http\DataResponse;
 use OCP\AppFramework\OCSController;
 use OCP\IRequest;
-
-use OCA\TextTemplates\Service\TemplateService;
 use Throwable;
 
 class TemplateController extends OCSController {
 
-	private TemplateService $templateService;
 	private ?string $userId;
 	private TemplateMapper $templateMapper;
 
 	public function __construct(string          $appName,
 								IRequest        $request,
-								TemplateService   $templateService,
 								TemplateMapper $templateMapper,
 								?string         $userId) {
 		parent::__construct($appName, $request);
-		$this->templateService = $templateService;
 		$this->userId = $userId;
 		$this->templateMapper = $templateMapper;
 	}
@@ -45,8 +40,9 @@ class TemplateController extends OCSController {
 	 */
 	public function getUserTemplates(): DataResponse {
 		try {
-			$templates = $this->templateService->getTemplates($this->userId);
-			return new DataResponse($templates);
+			$userTemplates = $this->templateMapper->getTemplatesOfUser($this->userId);
+			$adminTemplates = $this->templateMapper->getTemplatesOfUser(null);
+			return new DataResponse(array_merge($userTemplates, $adminTemplates));
 		} catch (Exception | Throwable $e) {
 			return new DataResponse('', Http::STATUS_BAD_REQUEST);
 		}
@@ -105,7 +101,7 @@ class TemplateController extends OCSController {
 	 */
 	public function getAdminTemplates() {
 		try {
-			$templates = $this->templateService->getTemplates();
+			$templates = $this->templateMapper->getTemplatesOfUser(null);
 			return new DataResponse($templates);
 		} catch (Exception | Throwable $e) {
 			return new DataResponse('', Http::STATUS_BAD_REQUEST);
@@ -122,7 +118,7 @@ class TemplateController extends OCSController {
 			$template = $this->templateMapper->createTemplate(null, $name, $content);
 			return new DataResponse($template);
 		} catch (Exception | Throwable $e) {
-			return new DataResponse($e->getMessage(), Http::STATUS_BAD_REQUEST);
+			return new DataResponse('', Http::STATUS_BAD_REQUEST);
 		}
 	}
 
