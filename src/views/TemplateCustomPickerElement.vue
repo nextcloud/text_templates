@@ -156,7 +156,7 @@ export default {
 		}
 	}
 
-	.results {
+	.templates {
 		width: 98%;
 		// ugly but...makes it take all available space
 		height: 5000px;
@@ -170,13 +170,6 @@ export default {
 		scrollbar-color: var(--color-primary);
 		margin-top: 12px;
 		padding-right: 16px;
-
-		.result {
-			&:hover {
-				border: 4px solid var(--color-primary);
-				border-radius: var(--border-radius);
-			}
-		}
 	}
 }
 </style>

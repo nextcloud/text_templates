@@ -36,12 +36,15 @@ class TemplateController extends OCSController {
 	/**
 	 * @NoAdminRequired
 	 *
+	 * @param bool $includeAdmin
 	 * @return DataResponse
 	 */
-	public function getUserTemplates(): DataResponse {
+	public function getUserTemplates(bool $includeAdmin = true): DataResponse {
 		try {
 			$userTemplates = $this->templateMapper->getTemplatesOfUser($this->userId);
-			$adminTemplates = $this->templateMapper->getTemplatesOfUser(null);
+			$adminTemplates = $includeAdmin
+				? $this->templateMapper->getTemplatesOfUser(null)
+				: [];
 			return new DataResponse(array_merge($userTemplates, $adminTemplates));
 		} catch (Exception | Throwable $e) {
 			return new DataResponse('', Http::STATUS_BAD_REQUEST);

@@ -3,22 +3,38 @@
 		<TextTemplate v-for="t in state.templates"
 			:key="t.id"
 			:template="t"
+			:disabled="!admin && t.user_id === null"
 			:loading="loadingTemplateId === t.id"
+			class="template"
 			@delete="onDeleteTemplate(t)"
 			@submit="onEditTemplate" />
-		<NcButton @click="onAddTemplate">
-			{{ t('text_templates', 'Add a template') }}
-		</NcButton>
+		<div class="add-wrapper">
+			<NcButton @click="onAddTemplate">
+				<template #icon>
+					<PlusIcon />
+				</template>
+				{{ t('text_templates', 'Add a template') }}
+			</NcButton>
+		</div>
 		<TextTemplate v-if="newTemplate"
+			ref="new-template"
 			:template="newTemplate"
 			:submit-button-label="t('text_templates', 'Create template')"
 			:loading="creating"
+			class="template"
 			@cancel="newTemplate = null"
-			@submit="onValidateNewTemplate" />
+			@submit="onValidateNewTemplate">
+			<template #submit-icon>
+				<StickerPlusOutlineIcon />
+			</template>
+		</TextTemplate>
 	</div>
 </template>
 
 <script>
+import StickerPlusOutlineIcon from 'vue-material-design-icons/StickerPlusOutline.vue'
+import PlusIcon from 'vue-material-design-icons/Plus.vue'
+
 import TextTemplate from './TextTemplate.vue'
 
 import NcButton from '@nextcloud/vue/dist/Components/NcButton.js'
@@ -34,6 +50,8 @@ export default {
 	components: {
 		TextTemplate,
 		NcButton,
+		StickerPlusOutlineIcon,
+		PlusIcon,
 	},
 
 	props: {
@@ -73,6 +91,9 @@ export default {
 				name: '',
 				content: '',
 			}
+			this.$nextTick(() => {
+				this.$refs['new-template']?.focus()
+			})
 		},
 		onValidateNewTemplate(template) {
 			this.creating = true
@@ -150,5 +171,16 @@ export default {
 <style scoped lang="scss">
 #text-templates-content {
 	margin-left: 40px;
+	display: flex;
+	flex-wrap: wrap;
+
+	.add-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	.template {
+		margin: 12px;
+	}
 }
 </style>

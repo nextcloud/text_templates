@@ -35,9 +35,10 @@ class Personal implements ISettings {
 	 */
 	public function getForm(): TemplateResponse {
 		$templates = $this->templateMapper->getTemplatesOfUser($this->userId);
+		$adminTemplates = $this->templateMapper->getTemplatesOfUser(null);
 
 		$userConfig = [
-			'templates' => $templates,
+			'templates' => array_merge($templates, $adminTemplates),
 		];
 		$this->initialStateService->provideInitialState('user-config', $userConfig);
 		return new TemplateResponse(Application::APP_ID, 'personalSettings');
