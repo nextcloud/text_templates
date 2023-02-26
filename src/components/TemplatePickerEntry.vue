@@ -1,18 +1,20 @@
 <template>
-	<div class="template">
+	<div class="template"
+		@keydown.enter="$emit('click')">
 		<label>
 			{{ template.name }}
 		</label>
 		<textarea
 			:value="template.content"
 			:readonly="true"
+			tabindex="-1"
 			class="content" />
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'TemplateEntry',
+	name: 'TemplatePickerEntry',
 	components: {
 	},
 	props: {
@@ -47,6 +49,13 @@ export default {
 
 	&:hover {
 		border: solid 2px var(--color-primary);
+	}
+
+	&:focus,
+	&:focus-visible {
+		border: solid 4px var(--color-primary);
+		outline: none;
+		box-shadow: none;
 	}
 
 	label {

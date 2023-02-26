@@ -16,10 +16,18 @@
 				<MagnifyIcon :size="16" />
 			</NcTextField>
 		</div>
+		<NcEmptyContent v-if="filteredTemplates.length === 0"
+			:description="t('text_templates', 'No template found')">
+			<template #icon>
+				<TextTemplatesIcon />
+			</template>
+		</NcEmptyContent>
 		<div class="templates">
-			<TemplateEntry v-for="t in filteredTemplates"
+			<TemplatePickerEntry v-for="t in filteredTemplates"
 				:key="t.id"
 				:template="t"
+				:tabindex="0"
+				@click="onSubmit(t)"
 				@click.native="onSubmit(t)" />
 		</div>
 	</div>
@@ -29,10 +37,11 @@
 import MagnifyIcon from 'vue-material-design-icons/Magnify.vue'
 import CloseIcon from 'vue-material-design-icons/Close.vue'
 
-import TemplateEntry from '../components/TemplateEntry.vue'
+import TextTemplatesIcon from '../components/icons/TextTemplatesIcon.vue'
 
-// import NcLoadingIcon from '@nextcloud/vue/dist/Components/NcLoadingIcon.js'
-// import NcEmptyContent from '@nextcloud/vue/dist/Components/NcEmptyContent.js'
+import TemplatePickerEntry from '../components/TemplatePickerEntry.vue'
+
+import NcEmptyContent from '@nextcloud/vue/dist/Components/NcEmptyContent.js'
 import NcTextField from '@nextcloud/vue/dist/Components/NcTextField.js'
 
 import axios from '@nextcloud/axios'
@@ -43,12 +52,12 @@ export default {
 	name: 'TemplateCustomPickerElement',
 
 	components: {
-		// NcLoadingIcon,
-		// NcEmptyContent,
+		TemplatePickerEntry,
+		NcEmptyContent,
 		NcTextField,
 		MagnifyIcon,
 		CloseIcon,
-		TemplateEntry,
+		TextTemplatesIcon,
 	},
 
 	props: {
@@ -74,7 +83,7 @@ export default {
 	computed: {
 		filteredTemplates() {
 			return this.templates.filter(t => {
-				return t.name.match(this.searchQuery)
+				return t.name.match(this.searchQuery) || t.content.match(this.searchQuery)
 			})
 		},
 	},
@@ -109,7 +118,7 @@ export default {
 			}, 300)
 		},
 		onSubmit(template) {
-			this.$emit('submit', template.content)
+			this.$emit('submit', template.content.trim())
 		},
 		onClear() {
 			this.searchQuery = ''
