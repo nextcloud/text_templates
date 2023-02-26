@@ -1,6 +1,7 @@
 <template>
+	<!-- stop enter pressed event otherwise we get new lines in the picker result... -->
 	<div class="template"
-		@keydown.enter="$emit('click')">
+		@keydown.enter.prevent.stop="$emit('click')">
 		<label>
 			{{ template.name }}
 		</label>
