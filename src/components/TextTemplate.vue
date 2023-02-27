@@ -130,14 +130,16 @@ export default {
 
 <style scoped lang="scss">
 .template {
-	//border: solid 2px var(--color-border-maxcontrast);
+	display: flex;
+	flex-direction: column;
 	box-shadow: 0 0 10px var(--color-box-shadow);
 	border-radius: var(--border-radius-large);
 	padding: 12px 20px;
 
 	.content {
 		width: 300px;
-		height: 100px;
+		min-height: 100px;
+		flex-grow: 1;
 		margin: 4px 0 0 0;
 	}
 
