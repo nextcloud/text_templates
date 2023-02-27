@@ -36,7 +36,7 @@ use OCP\AppFramework\Db\DoesNotExistException;
 
 class TemplateMapper extends QBMapper {
 	public function __construct(IDBConnection $db) {
-		parent::__construct($db, 'text_templates', Template::class);
+		parent::__construct($db, 'text_templates_t', Template::class);
 	}
 
 	/**
