@@ -17,9 +17,20 @@
 			</NcTextField>
 		</div>
 		<NcEmptyContent v-if="filteredTemplates.length === 0"
-			:description="t('text_templates', 'No template found')">
+			:title="t('text_templates', 'No template found')">
 			<template #icon>
 				<TextTemplatesIcon />
+			</template>
+			<template #action>
+				<a :href="settingsUrl"
+					target="_blank">
+					<NcButton>
+						{{ t('text_templates', 'Add templates') }}
+						<template #icon>
+							<CogIcon />
+						</template>
+					</NcButton>
+				</a>
 			</template>
 		</NcEmptyContent>
 		<div class="templates">
@@ -34,6 +45,7 @@
 </template>
 
 <script>
+import CogIcon from 'vue-material-design-icons/Cog.vue'
 import MagnifyIcon from 'vue-material-design-icons/Magnify.vue'
 import CloseIcon from 'vue-material-design-icons/Close.vue'
 
@@ -43,9 +55,10 @@ import TemplatePickerEntry from '../components/TemplatePickerEntry.vue'
 
 import NcEmptyContent from '@nextcloud/vue/dist/Components/NcEmptyContent.js'
 import NcTextField from '@nextcloud/vue/dist/Components/NcTextField.js'
+import NcButton from '@nextcloud/vue/dist/Components/NcButton.js'
 
 import axios from '@nextcloud/axios'
-import { generateOcsUrl } from '@nextcloud/router'
+import { generateOcsUrl, generateUrl } from '@nextcloud/router'
 import { showError } from '@nextcloud/dialogs'
 
 export default {
@@ -55,8 +68,10 @@ export default {
 		TemplatePickerEntry,
 		NcEmptyContent,
 		NcTextField,
+		NcButton,
 		MagnifyIcon,
 		CloseIcon,
+		CogIcon,
 		TextTemplatesIcon,
 	},
 
@@ -73,6 +88,7 @@ export default {
 
 	data() {
 		return {
+			settingsUrl: generateUrl('/settings/user/theming#text-templates_prefs'),
 			searchQuery: '',
 			searching: false,
 			inputPlaceholder: t('text_templates', 'Search templates'),

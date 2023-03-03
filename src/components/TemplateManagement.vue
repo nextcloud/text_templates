@@ -12,6 +12,7 @@
 				ref="new-template"
 				:template="newTemplate"
 				:submit-button-label="t('text_templates', 'Create')"
+				:cancel-button-label="t('text_templates', 'Cancel')"
 				:loading="creating"
 				class="template"
 				@cancel="newTemplate = null"

@@ -26,7 +26,7 @@
 			<div class="spacer" />
 			<NcButton v-if="showCancelButton"
 				type="tertiary"
-				:title="t('text_templates', 'Undo changes')"
+				:title="cancelButtonLabel"
 				@click="onCancel">
 				<template #icon>
 					<UndoIcon />
@@ -76,6 +76,10 @@ export default {
 		submitButtonLabel: {
 			type: String,
 			default: t('text_templates', 'Save'),
+		},
+		cancelButtonLabel: {
+			type: String,
+			default: t('text_templates', 'Undo changes'),
 		},
 		loading: {
 			type: Boolean,
