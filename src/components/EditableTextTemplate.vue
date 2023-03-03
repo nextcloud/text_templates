@@ -59,7 +59,7 @@ import NcTextField from '@nextcloud/vue/dist/Components/NcTextField.js'
 import NcLoadingIcon from '@nextcloud/vue/dist/Components/NcLoadingIcon.js'
 
 export default {
-	name: 'TextTemplate',
+	name: 'EditableTextTemplate',
 	components: {
 		NcButton,
 		NcTextField,
@@ -133,7 +133,7 @@ export default {
 	height: 285px;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 0 0 10px var(--color-box-shadow);
+	border: 2px solid var(--color-border);
 	border-radius: var(--border-radius-large);
 	padding: 20px;
 

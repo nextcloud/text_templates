@@ -1,7 +1,7 @@
 <template>
 	<div class="template-picker-content">
 		<h2>
-			{{ t('text_templates', 'Text template picker') }}
+			{{ t('text_templates', 'Text templates') }}
 		</h2>
 		<div class="input-wrapper">
 			<NcTextField
@@ -172,7 +172,7 @@ export default {
 		//flex-grow: 1;
 		display: grid;
 		grid-auto-rows: 160px;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		grid-gap: 8px;
 		overflow-y: scroll;
 		scrollbar-width: auto;

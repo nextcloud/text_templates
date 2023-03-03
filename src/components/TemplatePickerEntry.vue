@@ -2,14 +2,10 @@
 	<!-- stop enter pressed event otherwise we get new lines in the picker result... -->
 	<div class="template"
 		@keydown.enter.prevent.stop="$emit('click')">
-		<label>
+		<label class="name">
 			{{ template.name }}
 		</label>
-		<textarea
-			:value="template.content"
-			:readonly="true"
-			tabindex="-1"
-			class="content" />
+		<pre class="content" :title="template.content">{{ template.content }}</pre>
 	</div>
 </template>
 
@@ -43,10 +39,14 @@ export default {
 .template {
 	display: flex;
 	flex-direction: column;
-	border: solid 2px var(--color-border-maxcontrast);
+	border: solid 2px var(--color-border);
 	border-radius: var(--border-radius-large);
 	padding: 12px 20px;
 	cursor: pointer;
+
+	> * {
+		cursor: pointer;
+	}
 
 	&:hover {
 		border: solid 2px var(--color-primary);
@@ -59,16 +59,13 @@ export default {
 		box-shadow: none;
 	}
 
-	label {
+	.name {
 		font-weight: bold;
 	}
 
-	textarea {
-		flex-grow: 1;
-		width: 100%;
-		resize: none;
-		border: 0;
-		padding: 0;
+	.content {
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 }
 </style>

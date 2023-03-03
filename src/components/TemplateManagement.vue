@@ -8,7 +8,7 @@
 			{{ t('text_templates', 'Add a template') }}
 		</NcButton>
 		<div class="template-list">
-			<TextTemplate v-if="newTemplate"
+			<EditableTextTemplate v-if="newTemplate"
 				ref="new-template"
 				:template="newTemplate"
 				:submit-button-label="t('text_templates', 'Create')"
@@ -19,8 +19,8 @@
 				<template #submit-icon>
 					<StickerPlusOutlineIcon />
 				</template>
-			</TextTemplate>
-			<TextTemplate v-for="t in editableTemplates"
+			</EditableTextTemplate>
+			<EditableTextTemplate v-for="t in editableTemplates"
 				:key="t.id"
 				:template="t"
 				:loading="loadingTemplateId === t.id"
@@ -33,10 +33,9 @@
 				{{ t('text_templates', 'Admin-defined templates') }}
 			</h3>
 			<div class="template-list">
-				<TextTemplate v-for="t in adminTemplates"
+				<DisplayTextTemplate v-for="t in adminTemplates"
 					:key="t.id"
 					:template="t"
-					:disabled="true"
 					class="template" />
 			</div>
 		</div>
@@ -47,7 +46,8 @@
 import StickerPlusOutlineIcon from 'vue-material-design-icons/StickerPlusOutline.vue'
 import PlusIcon from 'vue-material-design-icons/Plus.vue'
 
-import TextTemplate from './TextTemplate.vue'
+import EditableTextTemplate from './EditableTextTemplate.vue'
+import DisplayTextTemplate from './DisplayTextTemplate.vue'
 
 import NcButton from '@nextcloud/vue/dist/Components/NcButton.js'
 
@@ -60,7 +60,8 @@ export default {
 	name: 'TemplateManagement',
 
 	components: {
-		TextTemplate,
+		EditableTextTemplate,
+		DisplayTextTemplate,
 		NcButton,
 		StickerPlusOutlineIcon,
 		PlusIcon,
