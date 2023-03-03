@@ -27,7 +27,7 @@
 					<NcButton>
 						{{ t('text_templates', 'Add templates') }}
 						<template #icon>
-							<CogIcon />
+							<PlusIcon />
 						</template>
 					</NcButton>
 				</a>
@@ -40,12 +40,23 @@
 				:tabindex="0"
 				@click="onSubmit(t)"
 				@click.native="onSubmit(t)" />
+			<a v-if="searchQuery === ''"
+				class="add-result"
+				:href="settingsUrl"
+				target="_blank">
+				<NcButton>
+					{{ t('text_templates', 'Add templates') }}
+					<template #icon>
+						<PlusIcon />
+					</template>
+				</NcButton>
+			</a>
 		</div>
 	</div>
 </template>
 
 <script>
-import CogIcon from 'vue-material-design-icons/Cog.vue'
+import PlusIcon from 'vue-material-design-icons/Plus.vue'
 import MagnifyIcon from 'vue-material-design-icons/Magnify.vue'
 import CloseIcon from 'vue-material-design-icons/Close.vue'
 
@@ -71,7 +82,7 @@ export default {
 		NcButton,
 		MagnifyIcon,
 		CloseIcon,
-		CogIcon,
+		PlusIcon,
 		TextTemplatesIcon,
 	},
 
@@ -195,6 +206,12 @@ export default {
 		scrollbar-color: var(--color-primary);
 		margin-top: 12px;
 		padding-right: 16px;
+
+		.add-result {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 }
 </style>
