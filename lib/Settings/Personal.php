@@ -45,10 +45,10 @@ class Personal implements ISettings {
 	}
 
 	public function getSection(): string {
-		return 'connected-accounts';
+		return 'theming';
 	}
 
 	public function getPriority(): int {
-		return 10;
+		return 90;
 	}
 }

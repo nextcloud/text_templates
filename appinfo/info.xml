@@ -23,8 +23,6 @@ or any place where the link picker is integrated.]]></description>
     </dependencies>
     <settings>
         <admin>OCA\TextTemplates\Settings\Admin</admin>
-        <admin-section>OCA\TextTemplates\Settings\AdminSection</admin-section>
         <personal>OCA\TextTemplates\Settings\Personal</personal>
-        <personal-section>OCA\TextTemplates\Settings\PersonalSection</personal-section>
     </settings>
 </info>

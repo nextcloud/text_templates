@@ -44,10 +44,10 @@ class Admin implements ISettings {
 	}
 
 	public function getSection(): string {
-		return 'connected-accounts';
+		return 'server';
 	}
 
 	public function getPriority(): int {
-		return 10;
+		return 90;
 	}
 }

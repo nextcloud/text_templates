@@ -1,33 +1,45 @@
 <template>
 	<div id="text-templates-content">
-		<TextTemplate v-for="t in state.templates"
-			:key="t.id"
-			:template="t"
-			:disabled="!admin && t.user_id === null"
-			:loading="loadingTemplateId === t.id"
-			class="template"
-			@delete="onDeleteTemplate(t)"
-			@submit="onEditTemplate" />
-		<div class="add-wrapper">
-			<NcButton @click="onAddTemplate">
-				<template #icon>
-					<PlusIcon />
-				</template>
-				{{ t('text_templates', 'Add a template') }}
-			</NcButton>
-		</div>
-		<TextTemplate v-if="newTemplate"
-			ref="new-template"
-			:template="newTemplate"
-			:submit-button-label="t('text_templates', 'Create template')"
-			:loading="creating"
-			class="template"
-			@cancel="newTemplate = null"
-			@submit="onValidateNewTemplate">
-			<template #submit-icon>
-				<StickerPlusOutlineIcon />
+		<NcButton type="primary"
+			@click="onAddTemplate">
+			<template #icon>
+				<PlusIcon />
 			</template>
-		</TextTemplate>
+			{{ t('text_templates', 'Add a template') }}
+		</NcButton>
+		<div class="template-list">
+			<TextTemplate v-if="newTemplate"
+				ref="new-template"
+				:template="newTemplate"
+				:submit-button-label="t('text_templates', 'Create')"
+				:loading="creating"
+				class="template"
+				@cancel="newTemplate = null"
+				@submit="onValidateNewTemplate">
+				<template #submit-icon>
+					<StickerPlusOutlineIcon />
+				</template>
+			</TextTemplate>
+			<TextTemplate v-for="t in editableTemplates"
+				:key="t.id"
+				:template="t"
+				:loading="loadingTemplateId === t.id"
+				class="template"
+				@delete="onDeleteTemplate(t)"
+				@submit="onEditTemplate" />
+		</div>
+		<div v-if="!admin">
+			<h3>
+				{{ t('text_templates', 'Admin-defined templates') }}
+			</h3>
+			<div class="template-list">
+				<TextTemplate v-for="t in adminTemplates"
+					:key="t.id"
+					:template="t"
+					:disabled="true"
+					class="template" />
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -63,7 +75,7 @@ export default {
 
 	data() {
 		return {
-			state: [],
+			state: { templates: [] },
 			loadingTemplateId: null,
 			creating: false,
 			newTemplate: null,
@@ -71,6 +83,16 @@ export default {
 	},
 
 	computed: {
+		editableTemplates() {
+			return this.admin
+				? this.state.templates
+				: this.state.templates.filter(t => t.user_id !== null)
+		},
+		adminTemplates() {
+			return this.admin
+				? []
+				: this.state.templates.filter(t => t.user_id === null)
+		},
 	},
 
 	watch: {
@@ -106,7 +128,7 @@ export default {
 				: generateOcsUrl('apps/text_templates/api/v1/templates')
 			axios.post(url, req).then((response) => {
 				showSuccess(t('text_templates', 'Template {name} created', { name: template.name }))
-				this.state.templates.push(response.data.ocs.data)
+				this.state.templates.unshift(response.data.ocs.data)
 				this.newTemplate = null
 			}).catch((error) => {
 				showError(
@@ -172,11 +194,11 @@ export default {
 #text-templates-content {
 	margin-left: 40px;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 
-	.add-wrapper {
+	.template-list {
 		display: flex;
-		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	.template {

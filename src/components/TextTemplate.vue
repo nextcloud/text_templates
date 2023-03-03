@@ -1,16 +1,13 @@
 <template>
-	<div class="template">
+	<div class="template" :class="{ disabled }">
 		<NcTextField ref="name"
-			class="name"
+			input-class="name-input"
 			:value.sync="name"
 			:disabled="disabled"
 			:label="namePlaceholder"
 			:show-trailing-button="!!name && !disabled"
 			@keydown.enter="onSubmit"
-			@trailing-button-click="name = ''">
-			<NcLoadingIcon v-if="loading" :size="16" />
-			<TextTemplatesIcon v-else :size="16" />
-		</NcTextField>
+			@trailing-button-click="name = ''" />
 		<textarea
 			v-model="content"
 			:disabled="disabled"
@@ -18,15 +15,18 @@
 			:placeholder="contentPlaceholder" />
 		<div class="footer">
 			<NcButton v-if="!disabled && template.id !== -1"
+				type="tertiary"
 				:title="t('text_templates', 'Delete')"
 				@click="$emit('delete')">
 				<template #icon>
-					<DeleteIcon />
+					<NcLoadingIcon v-if="loading" />
+					<DeleteIcon v-else />
 				</template>
 			</NcButton>
 			<div class="spacer" />
 			<NcButton v-if="showCancelButton"
-				:title="t('text_templates', 'Cancel')"
+				type="tertiary"
+				:title="t('text_templates', 'Undo changes')"
 				@click="onCancel">
 				<template #icon>
 					<UndoIcon />
@@ -37,9 +37,11 @@
 				:title="submitButtonLabel"
 				:disabled="!(name && content)"
 				@click="onSubmit">
+				{{ submitButtonLabel }}
 				<template #icon>
 					<slot name="submit-icon">
-						<ContentSaveIcon />
+						<NcLoadingIcon v-if="loading" />
+						<ArrowRightIcon v-else />
 					</slot>
 				</template>
 			</NcButton>
@@ -50,9 +52,7 @@
 <script>
 import DeleteIcon from 'vue-material-design-icons/Delete.vue'
 import UndoIcon from 'vue-material-design-icons/Undo.vue'
-import ContentSaveIcon from 'vue-material-design-icons/ContentSave.vue'
-
-import TextTemplatesIcon from './icons/TextTemplatesIcon.vue'
+import ArrowRightIcon from 'vue-material-design-icons/ArrowRight.vue'
 
 import NcButton from '@nextcloud/vue/dist/Components/NcButton.js'
 import NcTextField from '@nextcloud/vue/dist/Components/NcTextField.js'
@@ -61,13 +61,12 @@ import NcLoadingIcon from '@nextcloud/vue/dist/Components/NcLoadingIcon.js'
 export default {
 	name: 'TextTemplate',
 	components: {
-		TextTemplatesIcon,
 		NcButton,
 		NcTextField,
 		NcLoadingIcon,
 		DeleteIcon,
 		UndoIcon,
-		ContentSaveIcon,
+		ArrowRightIcon,
 	},
 	props: {
 		template: {
@@ -130,17 +129,30 @@ export default {
 
 <style scoped lang="scss">
 .template {
+	width: 340px;
+	height: 285px;
 	display: flex;
 	flex-direction: column;
 	box-shadow: 0 0 10px var(--color-box-shadow);
 	border-radius: var(--border-radius-large);
-	padding: 12px 20px;
+	padding: 20px;
+
+	&.disabled {
+		.content,
+		::v-deep .name-input {
+			border: 0;
+		}
+	}
+
+	::v-deep .name-input {
+		font-weight: bold !important;
+	}
 
 	.content {
-		width: 300px;
-		min-height: 100px;
+		width: 100%;
 		flex-grow: 1;
 		margin: 4px 0 0 0;
+		resize: none;
 	}
 
 	.spacer {
@@ -149,6 +161,7 @@ export default {
 
 	.footer {
 		display: flex;
+		margin-top: 8px;
 	}
 }
 </style>
