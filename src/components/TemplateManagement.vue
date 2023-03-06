@@ -155,7 +155,8 @@ export default {
 				showSuccess(t('text_templates', 'Template {name} saved', { name: template.name }))
 				const i = this.state.templates.findIndex(t => t.id === template.id)
 				if (i !== -1) {
-					this.state.templates[i] = template
+					this.state.templates[i].name = template.name
+					this.state.templates[i].content = template.content
 				}
 			}).catch((error) => {
 				showError(
