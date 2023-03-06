@@ -3,8 +3,8 @@
     <id>text_templates</id>
     <name>Text templates</name>
     <summary>Quickly get text templates in Nextcloud</summary>
-    <description><![CDATA[This app adds a smart picker provider to get text templates when using Text, Collectives, Talk, Mail
-or any place where the link picker is integrated.]]></description>
+    <description><![CDATA[This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail
+or any place where the smart picker is integrated.]]></description>
     <version>1.0.0</version>
     <licence>agpl</licence>
     <author>Julien Veyssier</author>
