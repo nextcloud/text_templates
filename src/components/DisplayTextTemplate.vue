@@ -49,6 +49,7 @@ export default {
 	}
 
 	.content {
+		white-space: break-spaces;
 		margin: 4px 0 0 0;
 		overflow-y: scroll;
 		scrollbar-width: auto;
