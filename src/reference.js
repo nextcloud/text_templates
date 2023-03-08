@@ -19,7 +19,9 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { registerCustomPickerElement, CustomPickerRenderResult } from '@nextcloud/vue-richtext'
+// TODO remove that after nc/vue issue is solved https://github.com/nextcloud/nextcloud-vue/issues/3864
+import {} from '@nextcloud/vue-richtext'
+import { registerCustomPickerElement, NcCustomPickerRenderResult } from '@nextcloud/vue/dist/Components/NcRichText.js'
 
 __webpack_nonce__ = btoa(OC.requestToken) // eslint-disable-line
 __webpack_public_path__ = OC.linkTo('text_templates', 'js/') // eslint-disable-line
@@ -35,7 +37,7 @@ registerCustomPickerElement('text_templates-templates', async (el, { providerId,
 			accessible,
 		},
 	}).$mount(el)
-	return new CustomPickerRenderResult(vueElement.$el, vueElement)
+	return new NcCustomPickerRenderResult(vueElement.$el, vueElement)
 }, (el, renderResult) => {
 	renderResult.object.$destroy()
 })
