@@ -39,6 +39,24 @@
 					:template="t"
 					class="template" />
 			</div>
+			<NcEmptyContent v-if="adminTemplates.length === 0"
+				:title="t('text_templates', 'No admin text templates')">
+				<template #icon>
+					<TextTemplatesIcon />
+				</template>
+				<template #action>
+					<a v-if="isAdminUser"
+						:href="adminSettingsUrl"
+						target="_blank">
+						<NcButton>
+							{{ t('text_templates', 'Add admin templates') }}
+							<template #icon>
+								<PlusIcon />
+							</template>
+						</NcButton>
+					</a>
+				</template>
+			</NcEmptyContent>
 		</div>
 	</div>
 </template>
@@ -49,13 +67,16 @@ import PlusIcon from 'vue-material-design-icons/Plus.vue'
 
 import EditableTextTemplate from './EditableTextTemplate.vue'
 import DisplayTextTemplate from './DisplayTextTemplate.vue'
+import TextTemplatesIcon from './icons/TextTemplatesIcon.vue'
 
 import NcButton from '@nextcloud/vue/dist/Components/NcButton.js'
+import NcEmptyContent from '@nextcloud/vue/dist/Components/NcEmptyContent.js'
 
 import { loadState } from '@nextcloud/initial-state'
-import { generateOcsUrl } from '@nextcloud/router'
+import { generateOcsUrl, generateUrl } from '@nextcloud/router'
 import axios from '@nextcloud/axios'
 import { showSuccess, showError } from '@nextcloud/dialogs'
+import { getCurrentUser } from '@nextcloud/auth'
 
 export default {
 	name: 'TemplateManagement',
@@ -64,8 +85,10 @@ export default {
 		EditableTextTemplate,
 		DisplayTextTemplate,
 		NcButton,
+		NcEmptyContent,
 		StickerPlusOutlineIcon,
 		PlusIcon,
+		TextTemplatesIcon,
 	},
 
 	props: {
@@ -77,6 +100,7 @@ export default {
 
 	data() {
 		return {
+			adminSettingsUrl: generateUrl('/settings/admin#text-templates_prefs'),
 			state: { templates: [] },
 			loadingTemplateId: null,
 			creating: false,
@@ -85,6 +109,10 @@ export default {
 	},
 
 	computed: {
+		isAdminUser() {
+			const user = getCurrentUser()
+			return user && user.isAdmin
+		},
 		editableTemplates() {
 			return this.admin
 				? this.state.templates
