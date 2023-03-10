@@ -109,8 +109,9 @@ export default {
 
 	computed: {
 		filteredTemplates() {
+			const re = new RegExp(this.searchQuery, 'i')
 			return this.templates.filter(t => {
-				return t.name.match(this.searchQuery) || t.content.match(this.searchQuery)
+				return t.name.match(re) || t.content.match(re)
 			})
 		},
 	},
