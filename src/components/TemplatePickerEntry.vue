@@ -64,8 +64,8 @@ export default {
 	}
 
 	.content {
+		white-space: break-spaces;
 		overflow: hidden;
-		text-overflow: ellipsis;
 	}
 }
 </style>
