@@ -2,36 +2,23 @@
 namespace OCA\TextTemplates\Settings;
 
 use OCA\TextTemplates\Db\TemplateMapper;
-use OCA\TextTemplates\Service\TemplateService;
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\AppFramework\Services\IInitialState;
-use OCP\IConfig;
+use OCP\DB\Exception;
 use OCP\Settings\ISettings;
 
 use OCA\TextTemplates\AppInfo\Application;
 
 class Personal implements ISettings {
 
-	private IConfig $config;
-	private IInitialState $initialStateService;
-	private ?string $userId;
-	private TemplateService $templateService;
-	private TemplateMapper $templateMapper;
-
-	public function __construct(IConfig       $config,
-								TemplateService $templateService,
-								TemplateMapper $templateMapper,
-								IInitialState $initialStateService,
-								?string       $userId) {
-		$this->config = $config;
-		$this->initialStateService = $initialStateService;
-		$this->userId = $userId;
-		$this->templateService = $templateService;
-		$this->templateMapper = $templateMapper;
+	public function __construct(private TemplateMapper $templateMapper,
+								private IInitialState $initialStateService,
+								private ?string       $userId) {
 	}
 
 	/**
 	 * @return TemplateResponse
+	 * @throws Exception
 	 */
 	public function getForm(): TemplateResponse {
 		$templates = $this->templateMapper->getTemplatesOfUser($this->userId);

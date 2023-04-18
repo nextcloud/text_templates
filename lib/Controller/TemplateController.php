@@ -5,7 +5,7 @@
  * This file is licensed under the Affero General Public License version 3 or
  * later. See the COPYING file.
  *
- * @author Julien Veyssier <eneiluj@posteo.net>
+ * @author Julien Veyssier <julien-nc@posteo.net>
  * @copyright Julien Veyssier 2023
  */
 
@@ -21,16 +21,11 @@ use Throwable;
 
 class TemplateController extends OCSController {
 
-	private ?string $userId;
-	private TemplateMapper $templateMapper;
-
 	public function __construct(string          $appName,
 								IRequest        $request,
-								TemplateMapper $templateMapper,
-								?string         $userId) {
+								private TemplateMapper $templateMapper,
+								private ?string         $userId) {
 		parent::__construct($appName, $request);
-		$this->userId = $userId;
-		$this->templateMapper = $templateMapper;
 	}
 
 	/**

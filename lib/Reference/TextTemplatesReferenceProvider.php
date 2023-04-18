@@ -1,8 +1,8 @@
 <?php
 /**
- * @copyright Copyright (c) 2023 Julien Veyssier <eneiluj@posteo.net>
+ * @copyright Copyright (c) 2023 Julien Veyssier <julien-nc@posteo.net>
  *
- * @author Julien Veyssier <eneiluj@posteo.net>
+ * @author Julien Veyssier <julien-nc@posteo.net>
  *
  * @license GNU AGPL version 3 or any later version
  *
@@ -32,19 +32,10 @@ use OCP\IURLGenerator;
 
 class TextTemplatesReferenceProvider extends ADiscoverableReferenceProvider {
 
-	private ?string $userId;
-	private ReferenceManager $referenceManager;
-	private IL10N $l10n;
-	private IURLGenerator $urlGenerator;
-
-	public function __construct(IL10N $l10n,
-								IURLGenerator $urlGenerator,
-								ReferenceManager $referenceManager,
-								?string $userId) {
-		$this->userId = $userId;
-		$this->referenceManager = $referenceManager;
-		$this->l10n = $l10n;
-		$this->urlGenerator = $urlGenerator;
+	public function __construct(private IL10N $l10n,
+								private IURLGenerator $urlGenerator,
+								private ReferenceManager $referenceManager,
+								private ?string $userId) {
 	}
 
 	/**
@@ -92,8 +83,6 @@ class TextTemplatesReferenceProvider extends ADiscoverableReferenceProvider {
 	}
 
 	/**
-	 * We use the userId here because when connecting/disconnecting from the GitHub account,
-	 * we want to invalidate all the user cache and this is only possible with the cache prefix
 	 * @inheritDoc
 	 */
 	public function getCachePrefix(string $referenceId): string {
