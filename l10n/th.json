@@ -1,0 +1,7 @@
+{ "translations": {
+    "Delete" : "ลบ",
+    "Save" : "บันทึก",
+    "Create" : "สร้าง",
+    "Cancel" : "ยกเลิก"
+},"pluralForm" :"nplurals=1; plural=0;"
+}

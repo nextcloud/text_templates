@@ -1,0 +1,8 @@
+{ "translations": {
+    "Delete" : "Poista",
+    "Save" : "Tallenna",
+    "Template name" : "Mallin nimi",
+    "Create" : "Luo",
+    "Cancel" : "Peruuta"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

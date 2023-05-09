@@ -1,0 +1,7 @@
+{ "translations": {
+    "Delete" : "Pozmak",
+    "Save" : "Saklamak",
+    "Create" : "Dörediň",
+    "Cancel" : "ýatyrmak"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

@@ -1,0 +1,8 @@
+{ "translations": {
+    "Delete" : "Törlés",
+    "Save" : "Mentés",
+    "Template name" : "Sablonnév",
+    "Create" : "Létrehozás",
+    "Cancel" : "Mégse"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

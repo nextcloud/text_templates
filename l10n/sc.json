@@ -1,0 +1,8 @@
+{ "translations": {
+    "Delete" : "Cantzella",
+    "Save" : "Sarva",
+    "Template name" : "Nùmene modellu",
+    "Create" : "Crea",
+    "Cancel" : "Annulla"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

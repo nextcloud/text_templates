@@ -1,0 +1,8 @@
+{ "translations": {
+    "Delete" : "削除",
+    "Save" : "保存",
+    "Template name" : "テンプレート名",
+    "Create" : "作成",
+    "Cancel" : "キャンセル"
+},"pluralForm" :"nplurals=1; plural=0;"
+}

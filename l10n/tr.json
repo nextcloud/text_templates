@@ -1,0 +1,8 @@
+{ "translations": {
+    "Delete" : "Sil",
+    "Save" : "Kaydet",
+    "Template name" : "Kalıp adı",
+    "Create" : "Ekle",
+    "Cancel" : "İptal"
+},"pluralForm" :"nplurals=2; plural=(n > 1);"
+}
