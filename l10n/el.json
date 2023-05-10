@@ -1,0 +1,8 @@
+{ "translations": {
+    "Delete" : "Διαγραφή",
+    "Save" : "Αποθήκευση",
+    "Template name" : "Όνομα προτύπου",
+    "Create" : "Δημιουργία",
+    "Cancel" : "Ακύρωση"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

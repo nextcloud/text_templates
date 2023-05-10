@@ -1,7 +1,27 @@
 { "translations": {
+    "Text templates" : "文字範本",
+    "Quickly get text templates in Nextcloud" : "在 Nextcloud 中快速取得文字範本",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "此應用程式會新增智慧型挑選程式，以便在文字、Collectives、Talk、郵件或任何整合了智慧型挑選程式的地方快速存取文字範本。",
     "Delete" : "刪除",
     "Save" : "儲存",
+    "Undo changes" : "還原變更",
+    "Template name" : "範本名稱",
+    "Template content" : "範本內容",
+    "Add a template" : "新增範本",
     "Create" : "建立",
-    "Cancel" : "取消"
+    "Cancel" : "取消",
+    "Admin-defined templates" : "管理員定義的範本",
+    "No admin text templates" : "無管理員定義的範本",
+    "Add admin templates" : "新增管理員範本",
+    "Template {name} created" : "已建立 {name} 範本",
+    "Failed to create template {name}" : "建立範本 {name} 失敗",
+    "Template {name} saved" : "範本 {name} 已儲存",
+    "Failed to save template {name}" : "儲存範本 {name} 失敗",
+    "Template {name} deleted" : "範本 {name} 已刪除",
+    "Failed to delete template {name}" : "刪除範本 {name} 失敗",
+    "No template found" : "找不到範本",
+    "Add templates" : "新增範本",
+    "Search templates" : "搜尋範本",
+    "Failed to get templates" : "取得範本失敗"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

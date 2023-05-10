@@ -1,0 +1,7 @@
+{ "translations": {
+    "Delete" : "Radera",
+    "Save" : "Spara",
+    "Create" : "Skapa",
+    "Cancel" : "Avbryt"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

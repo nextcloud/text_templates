@@ -1,0 +1,6 @@
+{ "translations": {
+    "Delete" : "հեռացնել",
+    "Save" : "Պահպանել",
+    "Cancel" : "չեղարկել"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

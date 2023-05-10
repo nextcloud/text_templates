@@ -1,0 +1,8 @@
+{ "translations": {
+    "Delete" : "Suprimir",
+    "Save" : "Desa",
+    "Template name" : "Nom de la plantilla",
+    "Create" : "Crea",
+    "Cancel" : "Cancelar"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

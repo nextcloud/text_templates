@@ -1,0 +1,7 @@
+{ "translations": {
+    "Delete" : "حذف",
+    "Save" : "ذخیره",
+    "Create" : "ایجاد",
+    "Cancel" : "منصرف شدن"
+},"pluralForm" :"nplurals=2; plural=(n > 1);"
+}
