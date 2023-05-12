@@ -162,9 +162,9 @@ export default {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	//padding: 16px;
 	overflow-y: auto;
 	max-height: 800px;
+	padding: 12px 16px 0 16px;
 
 	h2 {
 		display: flex;
@@ -207,6 +207,7 @@ export default {
 		scrollbar-color: var(--color-primary);
 		margin-top: 12px;
 		padding-right: 16px;
+		padding-bottom: 16px;
 
 		.add-result {
 			display: flex;

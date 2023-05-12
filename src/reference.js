@@ -19,8 +19,6 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-// TODO remove that after nc/vue issue is solved https://github.com/nextcloud/nextcloud-vue/issues/3864
-import {} from '@nextcloud/vue-richtext'
 import { registerCustomPickerElement, NcCustomPickerRenderResult } from '@nextcloud/vue/dist/Components/NcRichText.js'
 
 __webpack_nonce__ = btoa(OC.requestToken) // eslint-disable-line
