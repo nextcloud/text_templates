@@ -1,6 +1,7 @@
 { "translations": {
     "Text templates" : "Textvorlagen",
     "Quickly get text templates in Nextcloud" : "Schnelles Abrufen von Textvorlagen in Nextcloud",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Diese App fügt einen Smart-Picker-Anbieter hinzu, um schnell auf Textvorlagen zuzugreifen, wenn Sie Text, Collectives, Talk, Mail verwenden\noder an jedem Ort, an dem der Smart Picker integriert ist.",
     "Delete" : "Löschen",
     "Save" : "Speichern",
     "Undo changes" : "Änderungen rückgängig machen",
@@ -9,12 +10,18 @@
     "Add a template" : "Eine Vorlage hinzufügen",
     "Create" : "Erstellen",
     "Cancel" : "Abbrechen",
-    "Admin-defined templates" : "Administratordefinierte Vorlagen",
+    "Admin-defined templates" : "Administrations-definierte Vorlagen",
+    "No admin text templates" : "Keine Administrations-Textvorlagen",
+    "Add admin templates" : "Administrations-Textvorlagen hinzufügen",
     "Template {name} created" : "Vorlage {name} erstellt",
+    "Failed to create template {name}" : "Fehler beim Erstellen der Vorlage {name}",
     "Template {name} saved" : "Vorlage {name} gespeichert",
+    "Failed to save template {name}" : "Fehler beim Speichern der Vorlage {name}",
     "Template {name} deleted" : "Vorlage {name} gelöscht",
+    "Failed to delete template {name}" : "Fehler beim Löschen der Vorlage {name}",
     "No template found" : "Keine Vorlage gefunden",
     "Add templates" : "Vorlagen hinzufügen",
-    "Search templates" : "Vorlagen suchen"
+    "Search templates" : "Vorlagen suchen",
+    "Failed to get templates" : "Fehler beim Abrufen der Vorlagen"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
