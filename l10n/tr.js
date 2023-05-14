@@ -1,10 +1,29 @@
 OC.L10N.register(
     "text_templates",
     {
+    "Text templates" : "Metin kalıpları",
+    "Quickly get text templates in Nextcloud" : "Nextcloud üzerinde kolayca metin kalıpları kullanın",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Bu uygulama, Metin, Derlemeler, Talk ve Posta uygulamalarına ya da akıllı seçicinin kullanılabildiği herhangi\nbir yere metin kalıplarına hızlı bir şekilde erişilebilecek bir akıllı seçici ekler.",
     "Delete" : "Sil",
     "Save" : "Kaydet",
+    "Undo changes" : "Değişiklikleri geri al",
     "Template name" : "Kalıp adı",
+    "Template content" : "Kalıp içeriği",
+    "Add a template" : "Kalıp ekle",
     "Create" : "Ekle",
-    "Cancel" : "İptal"
+    "Cancel" : "İptal",
+    "Admin-defined templates" : "Yöneticinin ayarladığı kalıplar",
+    "No admin text templates" : "Yönetici tarafından ayarlanmış herhangi bir metin kalıbı yok",
+    "Add admin templates" : "Yönetici kalıplarını ekle",
+    "Template {name} created" : "{name} kalıbı eklendi",
+    "Failed to create template {name}" : "{name} kalıbı eklenemedi",
+    "Template {name} saved" : "{name} kalıbı kaydedildi",
+    "Failed to save template {name}" : "{name} kalıbı kaydedilemedi",
+    "Template {name} deleted" : "{name} kalıbı silindi",
+    "Failed to delete template {name}" : "{name} kalıbı silindi",
+    "No template found" : "Herhangi bir kalıp bulunamadı",
+    "Add templates" : "Kalıp ekle",
+    "Search templates" : "Kalıp arama",
+    "Failed to get templates" : "Kalıplar alınamadı"
 },
 "nplurals=2; plural=(n > 1);");
