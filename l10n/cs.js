@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Text templates" : "Šablony textu",
     "Quickly get text templates in Nextcloud" : "Rychle získejte textové šablony v Nextcloud",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Tato aplikace přidává poskytovatele pro inteligentní výběr pro rychlý přístup k šablonám textu při používání\nTextu, Kolektivů, Talku, E-mailu nebo pro jakékoli místo, do kterého je inteligentní výběr začleněn",
     "Delete" : "Smazat",
     "Save" : "Uložit",
     "Undo changes" : "Vrátit změny",
