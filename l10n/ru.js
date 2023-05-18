@@ -2,6 +2,7 @@ OC.L10N.register(
     "text_templates",
     {
     "Delete" : "Удалить",
+    "Save" : "Сохранить",
     "Template name" : "Имя шаблона",
     "Create" : "Создать",
     "Cancel" : "Отмена"
