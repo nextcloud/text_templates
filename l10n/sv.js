@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Text templates" : "Textmallar",
     "Quickly get text templates in Nextcloud" : "Få snabbt textmallar i Nextcloud",
-    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Den här appen lägger till en smart väljare för att snabbt komma åt textmallar när du använder Text, Collectives, Talk, Mail\neller någon plats där den smarta väljaren är integrerad.",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Den här appen lägger till en smart picker för att snabbt komma åt textmallar när du använder Text, Collectives, Talk, Mail\neller någon plats där smart picker är integrerad.",
     "Delete" : "Radera",
     "Save" : "Spara",
     "Undo changes" : "Ångra ändringar",
