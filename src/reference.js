@@ -20,9 +20,11 @@
  */
 
 import { registerCustomPickerElement, NcCustomPickerRenderResult } from '@nextcloud/vue/dist/Components/NcRichText.js'
+import { linkTo } from '@nextcloud/router'
+import { getRequestToken } from '@nextcloud/auth'
 
-__webpack_nonce__ = btoa(OC.requestToken) // eslint-disable-line
-__webpack_public_path__ = OC.linkTo('text_templates', 'js/') // eslint-disable-line
+__webpack_nonce__ = btoa(getRequestToken()) // eslint-disable-line
+__webpack_public_path__ = linkTo('text_templates', 'js/') // eslint-disable-line
 
 registerCustomPickerElement('text_templates-templates', async (el, { providerId, accessible }) => {
 	const { default: Vue } = await import(/* webpackChunkName: "reference-picker-lazy" */'vue')
