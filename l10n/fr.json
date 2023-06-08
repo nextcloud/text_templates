@@ -1,4 +1,6 @@
 { "translations": {
+    "Text templates" : "Modèles de texte",
+    "Quickly get text templates in Nextcloud" : "Obtenir rapidement des modèles de texte dans Nextcloud",
     "Delete" : "Supprimer",
     "Save" : "Enregistrer",
     "Undo changes" : "Abandonner les modifications",
@@ -7,11 +9,18 @@
     "Add a template" : "Ajouter un nouveau modèle",
     "Create" : "Créer",
     "Cancel" : "Annuler",
+    "Admin-defined templates" : "Modèles définis par l'administrateur",
+    "No admin text templates" : "Pas de modèles de texte définis par l'administrateur",
+    "Add admin templates" : "Ajouter des modèles d'administrateur",
     "Template {name} created" : "Modèle {name} créé",
+    "Failed to create template {name}" : "Échec de la création du modèle {name}",
     "Template {name} saved" : "Modèle {name} enregistré",
+    "Failed to save template {name}" : "Échec de l'enregistrement du modèle {name}",
     "Template {name} deleted" : "Modèle {name} supprimé",
+    "Failed to delete template {name}" : "Échec de la suppression du modèle {name}",
     "No template found" : "Aucun modèle",
     "Add templates" : "Ajouter des modèles",
-    "Search templates" : "Rechercher des modèles"
+    "Search templates" : "Rechercher des modèles",
+    "Failed to get templates" : "Échec de l'obtention des modèles"
 },"pluralForm" :"nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;"
 }
