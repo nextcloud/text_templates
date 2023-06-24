@@ -1,8 +1,8 @@
 { "translations": {
     "Text templates" : "قوالب نصية",
     "Quickly get text templates in Nextcloud" : "أحصل سريعاً على قوالب نصية في نكست كلاود",
-    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "هذا التطبيق يضيف مُوفّر لاقط ذكي للوصول السريع للقوالب النصية عند استخدام تطبيقات نكست كلاود: النص، و المجموعات، و المحادثة، و البريد الالكتروني\nأو في أي مكان آخر إذا ما كان اللاقط الذكي مدمجاً.",
-    "Delete" : "إزالة",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "هذا التطبيق يضيف مُوفّر لاقط ذكي smart picker provider للوصول السريع للقوالب النّصّية عند استخدام تطبيقات نكست كلاود: النص، و المجموعات، و المحادثة، و البريد الالكتروني\nأو في أي مكان آخر إذا ما كان اللاقط الذكي مدمجاً.",
+    "Delete" : "حذف",
     "Save" : "حفظ",
     "Undo changes" : "تراجع عن التعديلات",
     "Template name" : "اسم القالب",
@@ -10,8 +10,18 @@
     "Add a template" : "أضف قالباً",
     "Create" : "إنشاء",
     "Cancel" : "إلغاء",
-    "Admin-defined templates" : "قوالب معرفة من قبل المستخدم",
-    "No admin text templates" : "لا توجد قوالب نصية معرفة من المستخدم",
-    "Add admin templates" : "أضف قالباً معرفاً من المستخدم"
+    "Admin-defined templates" : "قوالب مُعرّفة من قبل المستخدم",
+    "No admin text templates" : "لا توجد قوالب نصّيّة مُعرّفة من المستخدم",
+    "Add admin templates" : "أضف قالباً معرفاً من المستخدم",
+    "Template {name} created" : "القالب {name} تمّ إنشاؤه",
+    "Failed to create template {name}" : "إخفاق في إنشاء القالب {name} ",
+    "Template {name} saved" : "القالب {name} تمّ حفظه",
+    "Failed to save template {name}" : "إخفاق في حفظ القالب {name} ",
+    "Template {name} deleted" : "القالب {name} تمّ حذفه",
+    "Failed to delete template {name}" : "إخفاق في حذف القالب {name} ",
+    "No template found" : "تعذّر العثور على أي قالبٍ",
+    "Add templates" : "أضف قوالباً",
+    "Search templates" : "إبحث عن قوالب",
+    "Failed to get templates" : "إخفاق في الحصول على قوالب"
 },"pluralForm" :"nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;"
 }
