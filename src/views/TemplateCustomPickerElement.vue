@@ -40,7 +40,7 @@
 				:tabindex="0"
 				@click="onSubmit(t)"
 				@click.native="onSubmit(t)" />
-			<a v-if="searchQuery === ''"
+			<a v-if="searchQuery === '' && filteredTemplates.length > 0"
 				class="add-result"
 				:href="settingsUrl"
 				target="_blank">
