@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## 1.0.2 – 2023-06-28
+
+### Changed
+
+- Add padding to picker component
+- Replace frontend OC functions with ones from packages
+
+### Fixed
+
+- Avoid showing 'add' button twice in picker
+
 ## 1.0.1 – 2023-03-10
 ### Changed
 - use link picker stuff from @nextcloud/vue
