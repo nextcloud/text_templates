@@ -12,5 +12,5 @@ There is a "Text template" sub section in the "Basic settings" admin settings se
 
 ### Personal settings
 
-Users can define their own text templates in the "Appearance and accessibility" personal settings
+Users can define their own text templates in the "Additional settings" personal settings
 section.
