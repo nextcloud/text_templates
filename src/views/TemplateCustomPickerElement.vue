@@ -99,7 +99,7 @@ export default {
 
 	data() {
 		return {
-			settingsUrl: generateUrl('/settings/user/theming#text-templates_prefs'),
+			settingsUrl: generateUrl('/settings/user/additional#text-templates_prefs'),
 			searchQuery: '',
 			searching: false,
 			inputPlaceholder: t('text_templates', 'Search templates'),

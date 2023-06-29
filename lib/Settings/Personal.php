@@ -32,7 +32,7 @@ class Personal implements ISettings {
 	}
 
 	public function getSection(): string {
-		return 'theming';
+		return 'additional';
 	}
 
 	public function getPriority(): int {
