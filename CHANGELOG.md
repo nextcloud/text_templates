@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## 1.0.4 – 2023-06-29
+
+### Changed
+
+- Move personal settings to 'additional settings' section @nickvergessen [#6](https://github.com/nextcloud/text_templates/pull/6)
+
 ## 1.0.3 – 2023-06-28
 
 ### Changed
