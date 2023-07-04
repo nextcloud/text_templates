@@ -5,6 +5,7 @@ OC.L10N.register(
     "Save" : "Gardar",
     "Template name" : "Nome do modelo",
     "Create" : "Crear",
-    "Cancel" : "Cancelar"
+    "Cancel" : "Cancelar",
+    "Search templates" : "Buscar modelos"
 },
 "nplurals=2; plural=(n != 1);");
