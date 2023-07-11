@@ -1,9 +1,27 @@
 { "translations": {
+    "Text templates" : "Modelos de texto",
+    "Quickly get text templates in Nextcloud" : "Obteña rapidamente modelos de texto en Nextcloud",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Esta aplicación engade un selector intelixente para acceder rapidamente aos modelos de texto ao usar Texto, Colectivos, Talk, Correo\nou calquera lugar onde estea integrado o selector intelixente.",
     "Delete" : "Eliminar",
     "Save" : "Gardar",
+    "Undo changes" : "Desfacer os cambios",
     "Template name" : "Nome do modelo",
+    "Template content" : "Contido do modelo",
+    "Add a template" : "Engadir un modelo",
     "Create" : "Crear",
     "Cancel" : "Cancelar",
-    "Search templates" : "Buscar modelos"
+    "Admin-defined templates" : "Modelos definidos pola administración da instancia",
+    "No admin text templates" : "Non hai modelos de texto da administración da instancia",
+    "Add admin templates" : "Engadir modelos da administración da instancia",
+    "Template {name} created" : "Creouse o modelo {name}.",
+    "Failed to create template {name}" : "Produciuse un fallo ao crear o modelo {name}",
+    "Template {name} saved" : "Gardouse o modelo {name}.",
+    "Failed to save template {name}" : "Produciuse un fallo ao gardar o modelo {name}",
+    "Template {name} deleted" : "Eliminouse o modelo {name}.",
+    "Failed to delete template {name}" : "Produciuse un fallo ao eliminar o modelo {name}",
+    "No template found" : "Non se atopou ningún modelo",
+    "Add templates" : "Engadir modelos",
+    "Search templates" : "Buscar modelos",
+    "Failed to get templates" : "Produciuse un fallo ao obter modelos"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
