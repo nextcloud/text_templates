@@ -1,8 +1,29 @@
 OC.L10N.register(
     "text_templates",
     {
+    "Text templates" : "Plantillas de texto",
+    "Quickly get text templates in Nextcloud" : "Accede rápidamente a plantillas de texto en Nextcloud",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Esta aplicación agrega un proveedor inteligente para acceder rápidamente a plantillas de texto cuando se utiliza Text, Collectives, Talk, Mail\n      o cualquier lugar donde esté integrado el proveedor inteligente.",
     "Delete" : "Borrar",
     "Save" : "Guardar",
-    "Template name" : "Nombre de la plantilla"
+    "Undo changes" : "Deshacer cambios",
+    "Template name" : "Nombre de la plantilla",
+    "Template content" : "Contenido de la plantilla",
+    "Add a template" : "Añadir una plantilla",
+    "Create" : "Crear",
+    "Cancel" : "Cancelar",
+    "Admin-defined templates" : "Plantillas definidas por el administrador",
+    "No admin text templates" : "No hay plantillas de texto del administrador",
+    "Add admin templates" : "Añadir plantillas de administrador",
+    "Template {name} created" : "Plantilla {name} creada",
+    "Failed to create template {name}" : "Error al crear la plantilla {name}",
+    "Template {name} saved" : "Plantilla {name} guardada",
+    "Failed to save template {name}" : "Error al guardar la plantilla {name}",
+    "Template {name} deleted" : "Plantilla {name} eliminada",
+    "Failed to delete template {name}" : "Error al eliminar la plantilla {name}",
+    "No template found" : "No se encontró ninguna plantilla",
+    "Add templates" : "Añadir plantillas",
+    "Search templates" : "Buscar plantillas",
+    "Failed to get templates" : "Error al obtener las plantillas"
 },
 "nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
