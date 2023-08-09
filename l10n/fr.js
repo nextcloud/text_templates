@@ -3,12 +3,13 @@ OC.L10N.register(
     {
     "Text templates" : "Modèles de texte",
     "Quickly get text templates in Nextcloud" : "Obtenir rapidement des modèles de texte dans Nextcloud",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Cette application ajoute un fournisseur au sélecteur intelligent pour accéder rapidement aux modèles de texte lors de l'utilisation de Text, Collectives, Talk, Mail\nou à tout autre endroit où le sélecteur intelligent est intégré.",
     "Delete" : "Supprimer",
     "Save" : "Enregistrer",
     "Undo changes" : "Abandonner les modifications",
     "Template name" : "Nom du modèle",
     "Template content" : "Contenu du modèle",
-    "Add a template" : "Ajouter un nouveau modèle",
+    "Add a template" : "Ajouter un modèle",
     "Create" : "Créer",
     "Cancel" : "Annuler",
     "Admin-defined templates" : "Modèles définis par l'administrateur",
@@ -20,7 +21,7 @@ OC.L10N.register(
     "Failed to save template {name}" : "Échec de l'enregistrement du modèle {name}",
     "Template {name} deleted" : "Modèle {name} supprimé",
     "Failed to delete template {name}" : "Échec de la suppression du modèle {name}",
-    "No template found" : "Aucun modèle",
+    "No template found" : "Aucun modèle trouvé",
     "Add templates" : "Ajouter des modèles",
     "Search templates" : "Rechercher des modèles",
     "Failed to get templates" : "Échec de l'obtention des modèles"
