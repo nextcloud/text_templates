@@ -1,10 +1,25 @@
 OC.L10N.register(
     "text_templates",
     {
+    "Text templates" : "Szöveg sablonok",
     "Delete" : "Törlés",
     "Save" : "Mentés",
+    "Undo changes" : "Változtatások visszavonása",
     "Template name" : "Sablonnév",
+    "Template content" : "Sablon tartalma",
+    "Add a template" : "Sablon hozzáadása",
     "Create" : "Létrehozás",
-    "Cancel" : "Mégse"
+    "Cancel" : "Mégse",
+    "Admin-defined templates" : "Rendszergazda által meghatározott sablonok",
+    "No admin text templates" : "Nincs rendszergazdai szöveg sablon",
+    "Add admin templates" : "Rendszergazdai sablon hozzáadása",
+    "Template {name} created" : "{name} sablon létrehozva",
+    "Template {name} saved" : "{name} sablon elmentve",
+    "Template {name} deleted" : "{name} sablon törölve",
+    "Failed to delete template {name}" : "Nem sikerült a(z) {name} sablon törlése",
+    "No template found" : "Nem található sablon",
+    "Add templates" : "Sablonok hozzáadása",
+    "Search templates" : "Sablonok keresése",
+    "Failed to get templates" : "A sablonok lekérdezése nem sikerült"
 },
 "nplurals=2; plural=(n != 1);");
