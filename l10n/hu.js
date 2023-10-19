@@ -2,6 +2,7 @@ OC.L10N.register(
     "text_templates",
     {
     "Text templates" : "Szöveg sablonok",
+    "Quickly get text templates in Nextcloud" : "Szerezzen be gyorsan szövegsablonokat a Nextcloudban",
     "Delete" : "Törlés",
     "Save" : "Mentés",
     "Undo changes" : "Változtatások visszavonása",
@@ -14,7 +15,9 @@ OC.L10N.register(
     "No admin text templates" : "Nincs rendszergazdai szöveg sablon",
     "Add admin templates" : "Rendszergazdai sablon hozzáadása",
     "Template {name} created" : "{name} sablon létrehozva",
+    "Failed to create template {name}" : "Nem sikerült a(z) {name} sablon létrehozása",
     "Template {name} saved" : "{name} sablon elmentve",
+    "Failed to save template {name}" : "Nem sikerült a(z) {name} sablon mentése",
     "Template {name} deleted" : "{name} sablon törölve",
     "Failed to delete template {name}" : "Nem sikerült a(z) {name} sablon törlése",
     "No template found" : "Nem található sablon",
