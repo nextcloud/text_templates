@@ -12,7 +12,6 @@ namespace OCA\TextTemplates\AppInfo;
 use OCA\TextTemplates\Listener\TextTemplatesReferenceListener;
 use OCA\TextTemplates\Reference\TextTemplatesReferenceProvider;
 use OCP\Collaboration\Reference\RenderReferenceEvent;
-use OCP\IConfig;
 
 use OCP\AppFramework\App;
 use OCP\AppFramework\Bootstrap\IRegistrationContext;
@@ -25,10 +24,6 @@ class Application extends App implements IBootstrap {
 
 	public function __construct(array $urlParams = []) {
 		parent::__construct(self::APP_ID, $urlParams);
-
-		$container = $this->getContainer();
-		$this->container = $container;
-		$this->config = $container->query(IConfig::class);
 	}
 
 	public function register(IRegistrationContext $context): void {
