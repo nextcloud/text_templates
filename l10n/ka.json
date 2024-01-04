@@ -1,0 +1,8 @@
+{ "translations": {
+    "Delete" : "Delete",
+    "Save" : "Save",
+    "Template name" : "Template name",
+    "Create" : "Create",
+    "Cancel" : "Cancel"
+},"pluralForm" :"nplurals=2; plural=(n!=1);"
+}
