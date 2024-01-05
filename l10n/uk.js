@@ -11,7 +11,7 @@ OC.L10N.register(
     "Template content" : "Зміст шаблону",
     "Add a template" : "Додати шаблон",
     "Create" : "Створити",
-    "Cancel" : "Відміна",
+    "Cancel" : "Скасувати",
     "Admin-defined templates" : "Шаблони, створені адміністратором",
     "No admin text templates" : "Відсутні шаблони, створені адміністратором",
     "Add admin templates" : "Додати шаблон адміністратора",
