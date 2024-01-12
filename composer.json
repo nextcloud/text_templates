@@ -4,9 +4,23 @@
         {
             "name": "Julien Veyssier",
             "email": "julien-nc@posteo.net"
+        },
+        {
+            "name": "Sami Finnilä",
+            "email": "sami.finnila@nextcloud.com"
         }
     ],
+    "scripts": {
+		"lint": "find . -name \\*.php -not -path './vendor/*' -print0 | xargs -0 -n1 php -l",
+		"cs:check": "php-cs-fixer fix --dry-run --diff",
+		"cs:fix": "php-cs-fixer fix",
+		"psalm": "psalm.phar --no-cache",
+		"test:unit": "phpunit --config tests/phpunit.xml"
+	},
     "require": {
-        "php": "^7.4 || ^8.0"
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0.0"
     }
 }
