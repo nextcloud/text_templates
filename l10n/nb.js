@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Delete" : "Slett",
     "Save" : "Lagre",
+    "Template name" : "Malnavn",
     "Create" : "Opprett",
     "Cancel" : "Avbryt"
 },

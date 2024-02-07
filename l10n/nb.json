@@ -1,6 +1,7 @@
 { "translations": {
     "Delete" : "Slett",
     "Save" : "Lagre",
+    "Template name" : "Malnavn",
     "Create" : "Opprett",
     "Cancel" : "Avbryt"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
