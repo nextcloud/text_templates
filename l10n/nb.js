@@ -1,10 +1,29 @@
 OC.L10N.register(
     "text_templates",
     {
+    "Text templates" : "Tekstmaler",
+    "Quickly get text templates in Nextcloud" : "Få raskt tekstmaler i Nextcloud",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Denne appen legger til en smart velger-leverandør for raskt å få tilgang til tekstmaler når du bruker Text, Collectives, Talk, Mail\neller hvor som helst der smartvelgeren er integrert.",
     "Delete" : "Slett",
     "Save" : "Lagre",
+    "Undo changes" : "Angre endringer",
     "Template name" : "Malnavn",
+    "Template content" : "Malinnhold",
+    "Add a template" : "Legg til en mal",
     "Create" : "Opprett",
-    "Cancel" : "Avbryt"
+    "Cancel" : "Avbryt",
+    "Admin-defined templates" : "Admin-definerte maler",
+    "No admin text templates" : "Ingen admin tekstmaler",
+    "Add admin templates" : "Legg til admin tekstmaler",
+    "Template {name} created" : "Mal {name} opprettet",
+    "Failed to create template {name}" : "Oppretting av mal {name} feilet",
+    "Template {name} saved" : "Mal {name} lagret",
+    "Failed to save template {name}" : "Lagring av mal {name} feilet",
+    "Template {name} deleted" : "Mal {name} slettet",
+    "Failed to delete template {name}" : "Sletting av mal {name} feilet",
+    "No template found" : "Ingen mal funnet",
+    "Add templates" : "Legg til maler",
+    "Search templates" : "Søk maler",
+    "Failed to get templates" : "Henting av maler feilet"
 },
 "nplurals=2; plural=(n != 1);");
