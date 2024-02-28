@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Delete" : "Desaniciar",
     "Save" : "Guardar",
+    "Create" : "Crear",
     "Cancel" : "Encaboxar"
 },
 "nplurals=2; plural=(n != 1);");
