@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Delete" : "Desaniciar",
     "Save" : "Guardar",
+    "Template name" : "Nome de la plantía",
     "Create" : "Crear",
     "Cancel" : "Encaboxar"
 },
