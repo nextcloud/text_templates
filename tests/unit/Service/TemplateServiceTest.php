@@ -3,7 +3,6 @@
 namespace OCA\TextTemplates\Tests;
 
 use OCA\TextTemplates\AppInfo\Application;
-use OCA\TextTemplates\Service\TemplateService;
 
 class TemplateServiceTest extends \PHPUnit\Framework\TestCase {
 

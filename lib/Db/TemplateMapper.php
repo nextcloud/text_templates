@@ -25,6 +25,7 @@ declare(strict_types=1);
 
 namespace OCA\TextTemplates\Db;
 
+use OCP\AppFramework\Db\DoesNotExistException;
 use OCP\AppFramework\Db\Entity;
 use OCP\AppFramework\Db\MultipleObjectsReturnedException;
 use OCP\AppFramework\Db\QBMapper;
@@ -32,8 +33,9 @@ use OCP\DB\Exception;
 use OCP\DB\QueryBuilder\IQueryBuilder;
 use OCP\IDBConnection;
 
-use OCP\AppFramework\Db\DoesNotExistException;
-
+/**
+ * @template-extends QBMapper<Template>
+ */
 class TemplateMapper extends QBMapper {
 	public function __construct(IDBConnection $db) {
 		parent::__construct($db, 'text_templates_t', Template::class);
@@ -73,15 +75,15 @@ class TemplateMapper extends QBMapper {
 			->where(
 				$qb->expr()->eq('id', $qb->createNamedParameter($id, IQueryBuilder::PARAM_INT))
 			);
-			if ($userId === null) {
-				$qb->andWhere(
-					$qb->expr()->isNull('user_id')
-				);
-			} else {
-				$qb->andWhere(
-					$qb->expr()->eq('user_id', $qb->createNamedParameter($userId, IQueryBuilder::PARAM_STR))
-				);
-			}
+		if ($userId === null) {
+			$qb->andWhere(
+				$qb->expr()->isNull('user_id')
+			);
+		} else {
+			$qb->andWhere(
+				$qb->expr()->eq('user_id', $qb->createNamedParameter($userId, IQueryBuilder::PARAM_STR))
+			);
+		}
 
 		return $this->findEntity($qb);
 	}

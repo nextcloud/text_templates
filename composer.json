@@ -11,16 +11,47 @@
         }
     ],
     "scripts": {
-		"lint": "find . -name \\*.php -not -path './vendor/*' -print0 | xargs -0 -n1 php -l",
+		"lint": "find . -name \\*.php -not -path './vendor*' -print0 | xargs -0 -n1 php -l",
 		"cs:check": "php-cs-fixer fix --dry-run --diff",
 		"cs:fix": "php-cs-fixer fix",
-		"psalm": "psalm.phar --no-cache",
-		"test:unit": "phpunit --config tests/phpunit.xml"
+		"psalm": "psalm --no-cache",
+		"test:unit": "phpunit --config tests/phpunit.xml",
+        "post-install-cmd": [
+			"@composer bin all install --ansi",
+			"composer dump-autoload"
+		],
+		"post-update-cmd": [
+			"@composer bin all update --ansi",
+			"composer dump-autoload"
+		]
 	},
     "require": {
-        "php": "^8.0"
+		"php": "^8.0 || ^8.1 || ^8.2 || ^8.3",
+		"bamarni/composer-bin-plugin": "^1.8"
+	},
+	"require-dev": {
+		"nextcloud/ocp": "dev-master"
+	},
+    "autoload": {
+        "psr-4": {
+            "OCA\\TextTemplates\\": "lib/"
+        }
     },
-    "require-dev": {
-        "phpunit/phpunit": "^9.0.0"
+    "autoload-dev": {
+        "psr-4": {
+            "OCP\\": "vendor/nextcloud/ocp/OCP"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+		"platform": {
+			"php": "8.0"
+		},
+		"allow-plugins": {
+			"bamarni/composer-bin-plugin": true,
+			"composer/package-versions-deprecated": true
+		},
+		"autoloader-suffix": "TextTemplates",
+		"sort-packages": true
     }
 }

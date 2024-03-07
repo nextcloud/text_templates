@@ -21,10 +21,12 @@ use Throwable;
 
 class TemplateController extends OCSController {
 
-	public function __construct(string          $appName,
-								IRequest        $request,
-								private TemplateMapper $templateMapper,
-								private ?string         $userId) {
+	public function __construct(
+		string $appName,
+		IRequest $request,
+		private TemplateMapper $templateMapper,
+		private ?string $userId,
+	) {
 		parent::__construct($appName, $request);
 	}
 

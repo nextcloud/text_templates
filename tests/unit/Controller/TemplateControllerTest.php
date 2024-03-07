@@ -11,13 +11,9 @@
 
 namespace OCA\TextTemplates\Controller;
 
-use OCA\TextTemplates\Controller\TemplateController;
 use OCA\TextTemplates\Db\Template;
 use OCA\TextTemplates\Db\TemplateMapper;
 use OCP\AppFramework\Http\DataResponse;
-use OCP\AppFramework\Http\JSONResponse;
-use OCP\AppFramework\Http\Response;
-use OCP\AppFramework\Http\TemplateResponse;
 use OCP\IRequest;
 use PHPUnit\Framework\TestCase;
 
@@ -153,7 +149,7 @@ class TemplateControllerTest extends TestCase {
 	}
 
 	public function testGetAdminTemplates(): void {
-		$template1 = $this->initTemplate(3, 'template3', 'content3', null);		
+		$template1 = $this->initTemplate(3, 'template3', 'content3', null);
 		$template2 = $this->initTemplate(4, 'template4', 'content4', null);
 
 		$adminTemplates = [
@@ -239,7 +235,7 @@ class TemplateControllerTest extends TestCase {
 		
 		$this->templateMapper->expects($this->once())
 			->method('deleteTemplate')
-			->with($this->equalTo($id),$this->equalTo(null))
+			->with($this->equalTo($id), $this->equalTo(null))
 			->willReturn($template);
 
 		$controller = new TemplateController(

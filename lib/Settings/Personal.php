@@ -1,19 +1,22 @@
 <?php
+
 namespace OCA\TextTemplates\Settings;
 
+use OCA\TextTemplates\AppInfo\Application;
 use OCA\TextTemplates\Db\TemplateMapper;
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\AppFramework\Services\IInitialState;
 use OCP\DB\Exception;
-use OCP\Settings\ISettings;
 
-use OCA\TextTemplates\AppInfo\Application;
+use OCP\Settings\ISettings;
 
 class Personal implements ISettings {
 
-	public function __construct(private TemplateMapper $templateMapper,
-								private IInitialState $initialStateService,
-								private ?string       $userId) {
+	public function __construct(
+		private TemplateMapper $templateMapper,
+		private IInitialState $initialStateService,
+		private ?string       $userId,
+	) {
 	}
 
 	/**

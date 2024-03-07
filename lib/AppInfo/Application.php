@@ -11,12 +11,11 @@ namespace OCA\TextTemplates\AppInfo;
 
 use OCA\TextTemplates\Listener\TextTemplatesReferenceListener;
 use OCA\TextTemplates\Reference\TextTemplatesReferenceProvider;
-use OCP\Collaboration\Reference\RenderReferenceEvent;
-
 use OCP\AppFramework\App;
-use OCP\AppFramework\Bootstrap\IRegistrationContext;
 use OCP\AppFramework\Bootstrap\IBootContext;
 use OCP\AppFramework\Bootstrap\IBootstrap;
+use OCP\AppFramework\Bootstrap\IRegistrationContext;
+use OCP\Collaboration\Reference\RenderReferenceEvent;
 
 class Application extends App implements IBootstrap {
 
@@ -34,4 +33,3 @@ class Application extends App implements IBootstrap {
 	public function boot(IBootContext $context): void {
 	}
 }
-
