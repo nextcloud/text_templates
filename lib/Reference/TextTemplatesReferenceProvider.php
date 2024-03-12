@@ -22,26 +22,27 @@
 
 namespace OCA\TextTemplates\Reference;
 
-use OCP\Collaboration\Reference\ADiscoverableReferenceProvider;
-use OC\Collaboration\Reference\ReferenceManager;
 use OCA\TextTemplates\AppInfo\Application;
+use OCP\Collaboration\Reference\ADiscoverableReferenceProvider;
 use OCP\Collaboration\Reference\IReference;
+use OCP\Collaboration\Reference\IReferenceManager;
 use OCP\IL10N;
-
 use OCP\IURLGenerator;
 
 class TextTemplatesReferenceProvider extends ADiscoverableReferenceProvider {
 
-	public function __construct(private IL10N $l10n,
-								private IURLGenerator $urlGenerator,
-								private ReferenceManager $referenceManager,
-								private ?string $userId) {
+	public function __construct(
+		private IL10N $l10n,
+		private IURLGenerator $urlGenerator,
+		private IReferenceManager $referenceManager,
+		private ?string $userId,
+	) {
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	public function getId(): string	{
+	public function getId(): string {
 		return 'text_templates-templates';
 	}
 
@@ -55,7 +56,7 @@ class TextTemplatesReferenceProvider extends ADiscoverableReferenceProvider {
 	/**
 	 * @inheritDoc
 	 */
-	public function getOrder(): int	{
+	public function getOrder(): int {
 		return 10;
 	}
 
