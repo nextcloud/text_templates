@@ -6,6 +6,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## 1.0.5 – 2024-03-14
+
+### Changed
+* Update node deps (mainly nc/vue8) @kyteinsky
+
+### Fixed
+* Cleanup use of $config property in OCA\TextTemplates\AppInfo\Application @tcitworld
+* Composer fixes @kyteinsky
+
+### Added
+* Create pr-feedback.yml @marcelklehr
+* Add and use phpunit as composer dependency @julien-nc
+* Add controller unit tests @MB-Finski
+* Compatibility for NC 29 @kyteinsky
+
 ## 1.0.4 – 2023-06-29
 
 ### Changed
