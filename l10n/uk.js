@@ -19,7 +19,7 @@ OC.L10N.register(
     "Failed to create template {name}" : "Не вдалося створити шаблон {name}",
     "Template {name} saved" : "Шаблон {name} створено",
     "Failed to save template {name}" : "Не вдалося зберегти шаблон {name}",
-    "Template {name} deleted" : "Шаблон {name} видалено",
+    "Template {name} deleted" : "Шаблон {name} було вилучено",
     "Failed to delete template {name}" : "Не вдалося вилучити шаблон {name}",
     "No template found" : "Не знайдено шаблонів",
     "Add templates" : "Додати шаблони",
