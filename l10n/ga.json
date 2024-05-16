@@ -1,0 +1,27 @@
+{ "translations": {
+    "Text templates" : "Teimpléid téacs",
+    "Quickly get text templates in Nextcloud" : "Faigh teimpléid téacs go tapa i Nextcloud",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Cuireann an aip seo soláthraí roghnóir cliste chun rochtain a fháil go tapa ar theimpléid téacs agus Téacs, Comhchoiteanna, Caint, Ríomhphost á úsáid\nnó aon áit ina bhfuil an roghnóir cliste comhtháite.",
+    "Delete" : "Scrios",
+    "Save" : "Sábháil",
+    "Undo changes" : "Cealaigh athruithe",
+    "Template name" : "Ainm teimpléad",
+    "Template content" : "Ábhar teimpléad",
+    "Add a template" : "Cuir teimpléad leis",
+    "Create" : "Cruthaigh",
+    "Cancel" : "Cealaigh",
+    "Admin-defined templates" : "Teimpléid sainithe ag riarthóir",
+    "No admin text templates" : "Gan teimpléid téacs riaracháin",
+    "Add admin templates" : "Cuir teimpléid admin leis",
+    "Template {name} created" : "Cruthaíodh teimpléad {name}",
+    "Failed to create template {name}" : "Theip ar an teimpléad {name} a chruthú",
+    "Template {name} saved" : "Teimpléad {name} sábháilte",
+    "Failed to save template {name}" : "Theip ar an teimpléad {name} a shábháil",
+    "Template {name} deleted" : "Scriosadh an teimpléad {name}",
+    "Failed to delete template {name}" : "Theip ar an teimpléad {name} a scriosadh",
+    "No template found" : "Níor aimsíodh teimpléad",
+    "Add templates" : "Cuir teimpléid leis",
+    "Search templates" : "Cuardaigh teimpléid",
+    "Failed to get templates" : "Theip ar teimpléid a fháil"
+},"pluralForm" :"nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : 4);"
+}
