@@ -1,7 +1,7 @@
 { "translations": {
     "Text templates" : "Metin kalıpları",
     "Quickly get text templates in Nextcloud" : "Nextcloud üzerinde kolayca metin kalıpları kullanın",
-    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Bu uygulama, Metin, Derlemeler, Talk ve Posta uygulamalarına ya da akıllı seçicinin kullanılabildiği herhangi\nbir yere metin kalıplarına hızlı bir şekilde erişilebilecek bir akıllı seçici ekler.",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Bu uygulama, Metin, Derlemeler, Konuş ve E-posta uygulamalarına ya da akıllı seçicinin kullanılabildiği herhangi\nbir yere metin kalıplarına hızlı bir şekilde erişilebilecek bir akıllı seçici ekler.",
     "Delete" : "Sil",
     "Save" : "Kaydet",
     "Undo changes" : "Değişiklikleri geri al",
