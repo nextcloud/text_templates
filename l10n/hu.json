@@ -1,6 +1,7 @@
 { "translations": {
     "Text templates" : "Szöveg sablonok",
     "Quickly get text templates in Nextcloud" : "Szerezzen be gyorsan szövegsablonokat a Nextcloudban",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Ez az alkalmazás egy okos választószolgáltatót biztosít a szövegsablonok gyors eléréséhez a Szöveg, a Kollektívák, a Beszélgetés, az E-mail használatakor, vagy bármely olyan helyen, ahol az okos választó integrálva van.",
     "Delete" : "Törlés",
     "Save" : "Mentés",
     "Undo changes" : "Változtatások visszavonása",
