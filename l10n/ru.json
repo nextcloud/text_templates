@@ -1,4 +1,5 @@
 { "translations": {
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Это приложение добавляет поставщика интеллектуального выбора для быстрого доступа к текстовым шаблонам при использовании Text, Collectives, Talk, Mail\nили любого места, где интегрирован интеллектуальный выбор.",
     "Delete" : "Удалить",
     "Save" : "Сохранить",
     "Template name" : "Имя шаблона",
