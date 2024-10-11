@@ -16,14 +16,14 @@ OC.L10N.register(
     "No admin text templates" : "لا توجد قوالب نصّيّة مُعرّفة من المستخدم",
     "Add admin templates" : "أضف قالباً معرفاً من المستخدم",
     "Template {name} created" : "القالب {name} تمّ إنشاؤه",
-    "Failed to create template {name}" : "إخفاق في إنشاء القالب {name} ",
+    "Failed to create template {name}" : "فشل في إنشاء القالب {name} ",
     "Template {name} saved" : "القالب {name} تمّ حفظه",
-    "Failed to save template {name}" : "إخفاق في حفظ القالب {name} ",
+    "Failed to save template {name}" : "فشل في حفظ القالب {name} ",
     "Template {name} deleted" : "القالب {name} تمّ حذفه",
-    "Failed to delete template {name}" : "إخفاق في حذف القالب {name} ",
+    "Failed to delete template {name}" : "فشل في حذف القالب {name} ",
     "No template found" : "تعذّر العثور على أي قالبٍ",
     "Add templates" : "أضف قوالباً",
     "Search templates" : "إبحث عن قوالب",
-    "Failed to get templates" : "إخفاق في الحصول على قوالب"
+    "Failed to get templates" : "فشل في الحصول على قوالب"
 },
 "nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;");
