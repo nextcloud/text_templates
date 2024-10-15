@@ -13,7 +13,7 @@ OC.L10N.register(
     "Create" : "إنشاء",
     "Cancel" : "إلغاء",
     "Admin-defined templates" : "قوالب مُعرّفة من قبل المستخدم",
-    "No admin text templates" : "لا توجد قوالب نصّيّة مُعرّفة من المستخدم",
+    "No admin text templates" : "لا توجد قوالب نصية معرفة من المستخدم",
     "Add admin templates" : "أضف قالباً معرفاً من المستخدم",
     "Template {name} created" : "القالب {name} تمّ إنشاؤه",
     "Failed to create template {name}" : "فشل في إنشاء القالب {name} ",
