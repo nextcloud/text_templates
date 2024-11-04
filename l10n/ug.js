@@ -1,7 +1,29 @@
 OC.L10N.register(
     "text_templates",
     {
+    "Text templates" : "تېكىست قېلىپلىرى",
+    "Quickly get text templates in Nextcloud" : "Nextcloud دا تېزلىكتە تېكىست قېلىپىنى ئېلىڭ",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "بۇ ئەپ تېكىست ، كوللىكتىپ ، پاراڭ ، خەتنى ئىشلەتكەندە تېكىست قېلىپىنى تېز زىيارەت قىلىش ئۈچۈن ئەقلىي ئىقتىدارلىق تاللىغۇچ بىلەن تەمىنلەيدۇ\nياكى ئەقلىي ئىقتىدارلىق تاللىغۇچ بىرلەشتۈرۈلگەن جاي.",
     "Delete" : "ئۆچۈر",
-    "Save" : "ساقلا"
+    "Save" : "ساقلا",
+    "Undo changes" : "ئۆزگەرتىشلەرنى ئەمەلدىن قالدۇرۇڭ",
+    "Template name" : "قېلىپ ئىسمى",
+    "Template content" : "قېلىپ مەزمۇنى",
+    "Add a template" : "قېلىپ قوشۇڭ",
+    "Create" : "قۇر",
+    "Cancel" : "بىكار قىلىش",
+    "Admin-defined templates" : "باشقۇرغۇچى بەلگىلىگەن قېلىپلار",
+    "No admin text templates" : "باشقۇرغۇچى تېكىست قېلىپى يوق",
+    "Add admin templates" : "باشقۇرۇش قېلىپىنى قوشۇڭ",
+    "Template {name} created" : "قېلىپ {name} قۇرۇلدى",
+    "Failed to create template {name}" : "قېلىپ {name} قۇرالمىدى",
+    "Template {name} saved" : "قېلىپ {name} ساقلاندى",
+    "Failed to save template {name}" : "قېلىپ {name} نى ساقلىيالمىدى",
+    "Template {name} deleted" : "قېلىپ {name} ئۆچۈرۈلدى",
+    "Failed to delete template {name}" : "قېلىپ {name} نى ئۆچۈرەلمىدى",
+    "No template found" : "قېلىپ تېپىلمىدى",
+    "Add templates" : "قېلىپلارنى قوشۇڭ",
+    "Search templates" : "قېلىپلارنى ئىزدەش",
+    "Failed to get templates" : "قېلىپقا ئېرىشەلمىدى"
 },
 "nplurals=2; plural=(n != 1);");
