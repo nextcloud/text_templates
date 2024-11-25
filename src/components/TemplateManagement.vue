@@ -163,7 +163,7 @@ export default {
 			}).catch((error) => {
 				showError(
 					t('text_templates', 'Failed to create template {name}', { name: template.name })
-					+ ': ' + (error.response?.data?.error ?? '')
+					+ ': ' + (error.response?.data?.error ?? ''),
 				)
 				console.error(error)
 			}).then(() => {
@@ -189,7 +189,7 @@ export default {
 			}).catch((error) => {
 				showError(
 					t('text_templates', 'Failed to save template {name}', { name: template.name })
-					+ ': ' + (error.response?.data?.error ?? '')
+					+ ': ' + (error.response?.data?.error ?? ''),
 				)
 				console.error(error)
 			}).then(() => {
@@ -210,7 +210,7 @@ export default {
 			}).catch((error) => {
 				showError(
 					t('text_templates', 'Failed to delete template {name}', { name: template.name })
-					+ ': ' + (error.response?.data?.error ?? '')
+					+ ': ' + (error.response?.data?.error ?? ''),
 				)
 				console.error(error)
 			}).then(() => {

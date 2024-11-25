@@ -135,7 +135,7 @@ export default {
 			}).catch((error) => {
 				showError(
 					t('text_templates', 'Failed to get templates')
-					+ ': ' + (error.response?.data?.error ?? '')
+					+ ': ' + (error.response?.data?.error ?? ''),
 				)
 				console.error(error)
 			})
