@@ -22,8 +22,7 @@
 				<TextTemplatesIcon />
 			</template>
 			<template #action>
-				<a :href="settingsUrl"
-					target="_blank">
+				<a @click="addTemplate">
 					<NcButton>
 						{{ t('text_templates', 'Add templates') }}
 						<template #icon>
@@ -42,8 +41,7 @@
 				@click.native="onSubmit(t)" />
 			<a v-if="searchQuery === '' && filteredTemplates.length > 0"
 				class="add-result"
-				:href="settingsUrl"
-				target="_blank">
+				@click="addTemplate">
 				<NcButton>
 					{{ t('text_templates', 'Add templates') }}
 					<template #icon>
@@ -52,6 +50,10 @@
 				</NcButton>
 			</a>
 		</div>
+		<AddTemplateModal
+			ref="new-template"
+			:show.sync="showAddingModal"
+			@callback="getTemplates" />
 	</div>
 </template>
 
@@ -71,6 +73,7 @@ import NcButton from '@nextcloud/vue/dist/Components/NcButton.js'
 import axios from '@nextcloud/axios'
 import { generateOcsUrl, generateUrl } from '@nextcloud/router'
 import { showError } from '@nextcloud/dialogs'
+import AddTemplateModal from '../components/AddTemplateModal.vue'
 
 export default {
 	name: 'TemplateCustomPickerElement',
@@ -84,6 +87,7 @@ export default {
 		CloseIcon,
 		PlusIcon,
 		TextTemplatesIcon,
+		AddTemplateModal,
 	},
 
 	props: {
@@ -104,6 +108,7 @@ export default {
 			searching: false,
 			inputPlaceholder: t('text_templates', 'Search templates'),
 			templates: [],
+			showAddingModal: false,
 		}
 	},
 
@@ -150,6 +155,9 @@ export default {
 		},
 		onClear() {
 			this.searchQuery = ''
+		},
+		addTemplate() {
+			this.showAddingModal = true
 		},
 	},
 }
