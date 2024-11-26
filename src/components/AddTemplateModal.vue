@@ -1,6 +1,6 @@
 <template>
 	<div class="add-template-modal">
-		<NcModal v-bind:key="newTemplate"
+		<NcModal :key="newTemplate"
 			:show="show"
 			:container="null"
 			@close="closeModal">
@@ -94,11 +94,15 @@ export default {
 }
 </script>
 <style scoped>
-.add-template-modal-body {
-	align-items: center;
-}
-
 .add-template-modal-body h3 {
 	text-align: center;
+}
+
+.add-template-modal-body {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	place-items: center;
+	margin-bottom: 10%;
 }
 </style>
