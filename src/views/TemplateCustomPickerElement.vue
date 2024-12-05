@@ -53,7 +53,7 @@
 		<AddTemplateModal
 			ref="new-template"
 			:show.sync="showAddingModal"
-			@callback="getTemplates" />
+			@template-added="getTemplates" />
 	</div>
 </template>
 

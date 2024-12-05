@@ -1,27 +1,26 @@
 <template>
-	<div class="add-template-modal">
-		<NcModal :key="newTemplate"
-			:show="show"
-			:container="null"
-			@close="closeModal">
-			<div class="add-template-modal-body">
-				<h3>{{ t('text_templates', 'Add a new text template') }}</h3>
-				<EditableTextTemplate
-					ref="new-template"
-					:template="newTemplate"
-					:submit-button-label="t('text_templates', 'Create')"
-					:cancel-button-label="t('text_templates', 'Cancel')"
-					:loading="creating"
-					class="template"
-					@cancel="closeModal"
-					@submit="onValidateNewTemplate">
-					<template #submit-icon>
-						<StickerPlusOutlineIcon />
-					</template>
-				</EditableTextTemplate>
-			</div>
-		</NcModal>
-	</div>
+	<NcModal
+		class="add-template-modal"
+		:show="show"
+		:container="null"
+		@close="closeModal">
+		<div class="add-template-modal-body">
+			<h3>{{ t('text_templates', 'Add a new text template') }}</h3>
+			<EditableTextTemplate
+				ref="new-template"
+				:template="newTemplate"
+				:submit-button-label="t('text_templates', 'Create')"
+				:cancel-button-label="t('text_templates', 'Cancel')"
+				:loading="creating"
+				class="template"
+				@cancel="closeModal"
+				@submit="onValidateNewTemplate">
+				<template #submit-icon>
+					<StickerPlusOutlineIcon />
+				</template>
+			</EditableTextTemplate>
+		</div>
+	</NcModal>
 </template>
 
 <script>
@@ -43,7 +42,6 @@ export default {
 		show: {
 			type: Boolean,
 			required: true,
-			default: false,
 		},
 	},
 	data() {
@@ -61,7 +59,6 @@ export default {
 	methods: {
 		closeModal() {
 			this.$emit('update:show', false)
-			console.warn(this.newTemplate)
 		},
 		onValidateNewTemplate(template) {
 			this.creating = true
@@ -77,7 +74,7 @@ export default {
 					name: '',
 					content: '',
 				}
-				this.$emit('callback')
+				this.$emit('template-added')
 				this.closeModal()
 				this.$forceUpdate()
 			}).catch((error) => {
