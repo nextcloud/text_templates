@@ -81,10 +81,7 @@ export default {
 				this.closeModal()
 				this.$forceUpdate()
 			}).catch((error) => {
-				showError(
-					t('text_templates', 'Failed to create template {name}', { name: template.name })
-					+ ': ' + (error.response?.data?.error ?? ''),
-				)
+				showError(t('text_templates', 'Failed to create template {name}', { name: template.name }))
 				console.error(error)
 			}).then(() => {
 				this.creating = false
