@@ -90,16 +90,15 @@ export default {
 	},
 }
 </script>
-<style scoped>
-.add-template-modal-body h3 {
-	text-align: center;
-}
-
+<style scoped lang="scss">
 .add-template-modal-body {
 	display: flex;
 	width: 100%;
 	flex-direction: column;
 	place-items: center;
 	margin-bottom: 10%;
+	h3 {
+		text-align: center;
+	}
 }
 </style>
