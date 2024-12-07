@@ -1,9 +1,9 @@
 OC.L10N.register(
     "text_templates",
     {
-    "Delete" : "Pozmak",
-    "Save" : "Saklamak",
     "Create" : "Dörediň",
-    "Cancel" : "ýatyrmak"
+    "Cancel" : "ýatyrmak",
+    "Delete" : "Pozmak",
+    "Save" : "Saklamak"
 },
 "nplurals=2; plural=(n != 1);");

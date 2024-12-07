@@ -1,9 +1,9 @@
 OC.L10N.register(
     "text_templates",
     {
-    "Delete" : "ລຶບ",
-    "Save" : "ບັນທຶກ",
     "Create" : "ສ້າງ",
-    "Cancel" : "ຍົກເລີກ"
+    "Cancel" : "ຍົກເລີກ",
+    "Delete" : "ລຶບ",
+    "Save" : "ບັນທຶກ"
 },
 "nplurals=1; plural=0;");

@@ -1,7 +1,7 @@
 { "translations": {
-    "Delete" : "Fshi",
-    "Save" : "Ruaje",
     "Create" : "Krijo",
-    "Cancel" : "Anuloje"
+    "Cancel" : "Anuloje",
+    "Delete" : "Fshi",
+    "Save" : "Ruaje"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

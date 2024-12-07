@@ -1,9 +1,9 @@
 OC.L10N.register(
     "text_templates",
     {
-    "Delete" : "Hapus",
-    "Save" : "Simpan",
     "Create" : "Buat",
-    "Cancel" : "Batal"
+    "Cancel" : "Batal",
+    "Delete" : "Hapus",
+    "Save" : "Simpan"
 },
 "nplurals=1; plural=0;");

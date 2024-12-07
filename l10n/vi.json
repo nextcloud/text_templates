@@ -1,7 +1,7 @@
 { "translations": {
-    "Delete" : "Xóa",
-    "Save" : "Lưu",
     "Create" : "‎Tạo‎",
-    "Cancel" : "Hủy"
+    "Cancel" : "Hủy",
+    "Delete" : "Xóa",
+    "Save" : "Lưu"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

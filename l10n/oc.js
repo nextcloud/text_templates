@@ -1,9 +1,9 @@
 OC.L10N.register(
     "text_templates",
     {
-    "Delete" : "Suprimir",
-    "Save" : "Enregistrar",
     "Create" : "Crear",
-    "Cancel" : "Anullar"
+    "Cancel" : "Anullar",
+    "Delete" : "Suprimir",
+    "Save" : "Enregistrar"
 },
 "nplurals=2; plural=(n > 1);");

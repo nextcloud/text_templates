@@ -1,6 +1,6 @@
 { "translations": {
+    "Cancel" : "ரத்து செய்",
     "Delete" : "நீக்குக",
-    "Save" : "சேமிக்க ",
-    "Cancel" : "ரத்து செய்"
+    "Save" : "சேமிக்க "
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

@@ -1,7 +1,7 @@
 { "translations": {
-    "Delete" : "Hapus",
-    "Save" : "Simpan",
     "Create" : "Buat",
-    "Cancel" : "Batal"
+    "Cancel" : "Batal",
+    "Delete" : "Hapus",
+    "Save" : "Simpan"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

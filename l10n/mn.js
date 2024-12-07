@@ -1,9 +1,9 @@
 OC.L10N.register(
     "text_templates",
     {
-    "Delete" : "Устгах",
-    "Save" : "Хадгалах",
     "Create" : "үүсгэх",
-    "Cancel" : "Болиулах"
+    "Cancel" : "Болиулах",
+    "Delete" : "Устгах",
+    "Save" : "Хадгалах"
 },
 "nplurals=2; plural=(n != 1);");

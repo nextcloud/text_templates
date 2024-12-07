@@ -1,12 +1,12 @@
 OC.L10N.register(
     "text_templates",
     {
+    "Create" : "Vytvoriť",
+    "Cancel" : "Zrušiť",
     "Delete" : "Vymazať",
     "Save" : "Uložiť",
     "Template name" : "Názov šablóny",
     "Add a template" : "Pridať šablónu",
-    "Create" : "Vytvoriť",
-    "Cancel" : "Zrušiť",
     "Add templates" : "Pridať šablóny",
     "Search templates" : "Vyhľadať šablóny"
 },

@@ -1,7 +1,7 @@
 OC.L10N.register(
     "text_templates",
     {
-    "Delete" : "Delete",
-    "Cancel" : "Cancel"
+    "Cancel" : "Cancel",
+    "Delete" : "Delete"
 },
 "nplurals=1; plural=0;");

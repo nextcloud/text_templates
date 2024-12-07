@@ -1,9 +1,9 @@
 OC.L10N.register(
     "text_templates",
     {
-    "Delete" : "Fshi",
-    "Save" : "Ruaje",
     "Create" : "Krijo",
-    "Cancel" : "Anuloje"
+    "Cancel" : "Anuloje",
+    "Delete" : "Fshi",
+    "Save" : "Ruaje"
 },
 "nplurals=2; plural=(n != 1);");

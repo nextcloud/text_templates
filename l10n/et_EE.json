@@ -1,7 +1,7 @@
 { "translations": {
-    "Delete" : "Kustuta",
-    "Save" : "Salvesta",
     "Create" : "Lisa",
-    "Cancel" : "Tühista"
+    "Cancel" : "Tühista",
+    "Delete" : "Kustuta",
+    "Save" : "Salvesta"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
