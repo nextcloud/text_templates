@@ -2,6 +2,7 @@
     "Text templates" : "Teimpléid téacs",
     "Quickly get text templates in Nextcloud" : "Faigh teimpléid téacs go tapa i Nextcloud",
     "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Cuireann an aip seo soláthraí roghnóir cliste chun rochtain a fháil go tapa ar theimpléid téacs agus Téacs, Comhchoiteanna, Caint, Ríomhphost á úsáid\nnó aon áit ina bhfuil an roghnóir cliste comhtháite.",
+    "Add a new text template" : "Cuir teimpléad téacs nua leis",
     "Create" : "Cruthaigh",
     "Cancel" : "Cealaigh",
     "Template {name} created" : "Cruthaíodh teimpléad {name}",

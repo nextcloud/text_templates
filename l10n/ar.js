@@ -4,6 +4,7 @@ OC.L10N.register(
     "Text templates" : "قوالب نصية",
     "Quickly get text templates in Nextcloud" : "أحصل سريعاً على قوالب نصية في نكست كلاود",
     "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "هذا التطبيق يضيف مُوفّر لاقط ذكي smart picker provider للوصول السريع للقوالب النّصّية عند استخدام تطبيقات نكست كلاود: النص، و المجموعات، و المحادثة، و البريد الالكتروني\nأو في أي مكان آخر إذا ما كان اللاقط الذكي مدمجاً.",
+    "Add a new text template" : "إضافة قالب نصي جديد",
     "Create" : "إنشاء",
     "Cancel" : "إلغاء",
     "Template {name} created" : "القالب {name} تمّ إنشاؤه",

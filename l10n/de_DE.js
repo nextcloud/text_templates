@@ -4,6 +4,7 @@ OC.L10N.register(
     "Text templates" : "Textvorlagen",
     "Quickly get text templates in Nextcloud" : "Schnelles Abrufen von Textvorlagen in Nextcloud",
     "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Diese App fügt einen Smart Picker-Anbieter hinzu, um schnell auf Textvorlagen zuzugreifen, wenn Sie Text, Collectives, Talk, Mail verwenden\noder an jedem Ort, an dem der Smart Picker integriert ist.",
+    "Add a new text template" : "Eine neue Textvorlage hinzufügen",
     "Create" : "Erstellen",
     "Cancel" : "Abbrechen",
     "Template {name} created" : "Vorlage {name} erstellt",

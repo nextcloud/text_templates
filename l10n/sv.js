@@ -4,6 +4,7 @@ OC.L10N.register(
     "Text templates" : "Textmallar",
     "Quickly get text templates in Nextcloud" : "Få snabbt textmallar i Nextcloud",
     "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Den här appen lägger till en smart picker för att snabbt komma åt textmallar när du använder Text, Collectives, Talk, Mail\neller någon plats där smart picker är integrerad.",
+    "Add a new text template" : "Lägg till en ny textmall",
     "Create" : "Skapa",
     "Cancel" : "Avbryt",
     "Template {name} created" : "Mall {name} skapad",

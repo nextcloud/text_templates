@@ -4,6 +4,7 @@ OC.L10N.register(
     "Text templates" : "文字模板",
     "Quickly get text templates in Nextcloud" : "在 Nextcloud 中快速獲取文本模板",
     "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "此應用程式會新增智慧型挑選程式，以便在文字、Collectives、Talk、郵件或任何整合了智慧型挑選程式的地方快速存取文字範本。",
+    "Add a new text template" : "添加新文字模板",
     "Create" : "創建",
     "Cancel" : "取消",
     "Template {name} created" : "已創建模板 \"{name}\"",
