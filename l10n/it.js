@@ -1,10 +1,30 @@
 OC.L10N.register(
     "text_templates",
     {
+    "Text templates" : "Modelli di testo",
+    "Quickly get text templates in Nextcloud" : "Ottieni rapidamente modelli di testo in Nextcloud",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Questa app aggiunge un provider di selezione intelligente per accedere rapidamente ai modelli di testo quando si utilizzano Testo, Collettivi, Talk, Mail\no qualsiasi altro luogo in cui è integrato il selettore intelligente.",
+    "Add a new text template" : "Aggiungi un nuovo modello di testo",
     "Create" : "Crea",
     "Cancel" : "Annulla",
+    "Template {name} created" : "Modello {name} creato",
+    "Failed to create template {name}" : "Impossibile creare il modello {name}",
     "Delete" : "Elimina",
     "Save" : "Salva",
-    "Template name" : "Nome modello"
+    "Undo changes" : "Annulla modifiche",
+    "Template name" : "Nome modello",
+    "Template content" : "Contenuto del modello",
+    "Add a template" : "Aggiungi un modello",
+    "Admin-defined templates" : "Modelli definiti dall'amministratore",
+    "No admin text templates" : "Nessun modello di testo di amministrazione",
+    "Add admin templates" : "Aggiungi modelli di amministrazione",
+    "Template {name} saved" : "Modello {name} salvato",
+    "Failed to save template {name}" : "Impossibile salvare il modello {name}",
+    "Template {name} deleted" : "Modello {name} eliminato",
+    "Failed to delete template {name}" : "Impossibile eliminare il modello {name}",
+    "No template found" : "Nessun modello trovato",
+    "Add templates" : "Aggiungi modelli",
+    "Search templates" : "Cerca modelli",
+    "Failed to get templates" : "Impossibile ottenere i modelli"
 },
 "nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
