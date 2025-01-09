@@ -5,7 +5,7 @@
 	<summary>Quickly get text templates in Nextcloud</summary>
 	<description><![CDATA[This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail
 or any place where the smart picker is integrated.]]></description>
-	<version>1.1.0</version>
+	<version>1.2.0</version>
 	<licence>agpl</licence>
 	<author>Julien Veyssier</author>
 	<namespace>TextTemplates</namespace>
@@ -20,7 +20,7 @@ or any place where the smart picker is integrated.]]></description>
 	<screenshot>https://github.com/julien-nc/text_templates/raw/main/img/screenshot3.jpg</screenshot>
 	<screenshot>https://github.com/julien-nc/text_templates/raw/main/img/screenshot4.jpg</screenshot>
 	<dependencies>
-		<nextcloud min-version="26" max-version="30"/>
+		<nextcloud min-version="26" max-version="31"/>
 	</dependencies>
 	<settings>
 		<admin>OCA\TextTemplates\Settings\Admin</admin>

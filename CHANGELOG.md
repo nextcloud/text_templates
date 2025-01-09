@@ -4,7 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## 1.2.0 - 2025-01-09
+
+### Added
+* add new templates directly in smart picker @janepie [#21](https://github.com/nextcloud/text_templates/pull/21)
+
+### Changed
+* update npm deps @janepie
+* bump max NC version to 31 @janepie
 
 ## 1.1.0 – 2024-07-26
 
