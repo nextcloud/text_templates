@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Text templates" : "Modelos de texto",
     "Quickly get text templates in Nextcloud" : "Obteña rapidamente modelos de texto en Nextcloud",
-    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Esta aplicación engade un selector intelixente para acceder rapidamente aos modelos de texto ao usar Texto,\nColectivos, Talk, Correo ou calquera lugar onde estea integrado o selector intelixente.",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Esta aplicación engade un selector intelixente para acceder rapidamente aos modelos de texto ao usar Texto,\nColectivos, Parlar, Correo ou calquera lugar onde estea integrado o selector intelixente.",
     "Add a new text template" : "Engadir un novo modelo de texto",
     "Create" : "Crear",
     "Cancel" : "Cancelar",
