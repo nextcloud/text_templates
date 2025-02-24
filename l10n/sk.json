@@ -1,11 +1,28 @@
 { "translations": {
+    "Text templates" : "Šablóny textu",
+    "Quickly get text templates in Nextcloud" : "Rýchly spôsob získania šablón v Nextcloud",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Táto aplikácia pridáva poskytovateľa inteligentného výberu pre prístup k textovým šablónam pri používaní Text, Collectives, Talk, Mail\nalebo na akomkoľvek inom mieste, kde je integrovaný inteligentný výber.",
+    "Add a new text template" : "Pridať novú šablónu textu",
     "Create" : "Vytvoriť",
     "Cancel" : "Zrušiť",
+    "Template {name} created" : "Šablóna {name} bola vytvorená",
+    "Failed to create template {name}" : "Nepodarilo sa vytvoriť šablónu {name}",
     "Delete" : "Vymazať",
     "Save" : "Uložiť",
+    "Undo changes" : "Vrátiť zmeny",
     "Template name" : "Názov šablóny",
+    "Template content" : "Obsah šablóny",
     "Add a template" : "Pridať šablónu",
+    "Admin-defined templates" : "Šablóny preddefinované administrátorom",
+    "No admin text templates" : "Žiadne textové šablóny administrátora",
+    "Add admin templates" : "Pridať šablónu administrátora",
+    "Template {name} saved" : "Šablóna {name} bola uložená",
+    "Failed to save template {name}" : "Nepodarilo sa uložiť šablónu {name}",
+    "Template {name} deleted" : "Šablóna {name} bola zmazaná",
+    "Failed to delete template {name}" : "Nepodarilo sa zmazať šablónu {name}",
+    "No template found" : "Nebola nájdená žiadna šablóna",
     "Add templates" : "Pridať šablóny",
-    "Search templates" : "Vyhľadať šablóny"
+    "Search templates" : "Vyhľadať šablóny",
+    "Failed to get templates" : "Nepodarilo sa získať šablóny"
 },"pluralForm" :"nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);"
 }
