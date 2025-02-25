@@ -2,7 +2,7 @@ OC.L10N.register(
     "text_templates",
     {
     "Create" : "Opret",
-    "Cancel" : "Annullér",
+    "Cancel" : "Annuller",
     "Delete" : "Slet",
     "Save" : "Gem"
 },
