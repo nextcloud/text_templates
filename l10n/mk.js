@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Create" : "Креирај",
     "Cancel" : "Откажи",
-    "Delete" : "Избриши",
-    "Save" : "Сними"
+    "Save" : "Сними",
+    "Delete" : "Избриши"
 },
 "nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;");

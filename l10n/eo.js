@@ -1,7 +1,7 @@
 OC.L10N.register(
     "text_templates",
     {
-    "Delete" : "Forigi",
-    "Save" : "Konservi"
+    "Save" : "Konservi",
+    "Delete" : "Forigi"
 },
 "nplurals=2; plural=(n != 1);");

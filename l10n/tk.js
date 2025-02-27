@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Create" : "Dörediň",
     "Cancel" : "ýatyrmak",
-    "Delete" : "Pozmak",
-    "Save" : "Saklamak"
+    "Save" : "Saklamak",
+    "Delete" : "Pozmak"
 },
 "nplurals=2; plural=(n != 1);");

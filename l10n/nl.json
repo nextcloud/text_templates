@@ -1,8 +1,8 @@
 { "translations": {
     "Create" : "Creëer",
     "Cancel" : "Annuleren",
-    "Delete" : "Verwijder",
     "Save" : "Opslaan",
-    "Template name" : "Naam sjabloon"
+    "Template name" : "Naam sjabloon",
+    "Delete" : "Verwijder"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

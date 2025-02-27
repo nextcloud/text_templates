@@ -1,7 +1,7 @@
 OC.L10N.register(
     "text_templates",
     {
-    "Delete" : "حذف کریں",
-    "Save" : "حفظ"
+    "Save" : "حفظ",
+    "Delete" : "حذف کریں"
 },
 "nplurals=2; plural=(n != 1);");

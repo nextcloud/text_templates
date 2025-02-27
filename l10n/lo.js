@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Create" : "ສ້າງ",
     "Cancel" : "ຍົກເລີກ",
-    "Delete" : "ລຶບ",
-    "Save" : "ບັນທຶກ"
+    "Save" : "ບັນທຶກ",
+    "Delete" : "ລຶບ"
 },
 "nplurals=1; plural=0;");

@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Create" : "Buat",
     "Cancel" : "Batal",
-    "Delete" : "Hapus",
-    "Save" : "Simpan"
+    "Save" : "Simpan",
+    "Delete" : "Hapus"
 },
 "nplurals=1; plural=0;");

@@ -1,7 +1,7 @@
 { "translations": {
     "Create" : "үүсгэх",
     "Cancel" : "Болиулах",
-    "Delete" : "Устгах",
-    "Save" : "Хадгалах"
+    "Save" : "Хадгалах",
+    "Delete" : "Устгах"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Create" : "Lisa",
     "Cancel" : "Tühista",
-    "Delete" : "Kustuta",
-    "Save" : "Salvesta"
+    "Save" : "Salvesta",
+    "Delete" : "Kustuta"
 },
 "nplurals=2; plural=(n != 1);");

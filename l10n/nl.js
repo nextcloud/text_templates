@@ -3,8 +3,8 @@ OC.L10N.register(
     {
     "Create" : "Creëer",
     "Cancel" : "Annuleren",
-    "Delete" : "Verwijder",
     "Save" : "Opslaan",
-    "Template name" : "Naam sjabloon"
+    "Template name" : "Naam sjabloon",
+    "Delete" : "Verwijder"
 },
 "nplurals=2; plural=(n != 1);");

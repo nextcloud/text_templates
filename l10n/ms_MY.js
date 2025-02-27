@@ -1,7 +1,7 @@
 OC.L10N.register(
     "text_templates",
     {
-    "Delete" : "Padam",
-    "Save" : "Simpan"
+    "Save" : "Simpan",
+    "Delete" : "Padam"
 },
 "nplurals=1; plural=0;");

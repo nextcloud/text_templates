@@ -3,8 +3,8 @@ OC.L10N.register(
     {
     "Create" : "Crea",
     "Cancel" : "Annulla",
-    "Delete" : "Cantzella",
     "Save" : "Sarva",
-    "Template name" : "Nùmene modellu"
+    "Template name" : "Nùmene modellu",
+    "Delete" : "Cantzella"
 },
 "nplurals=2; plural=(n != 1);");

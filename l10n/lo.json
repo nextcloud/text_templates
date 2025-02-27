@@ -1,7 +1,7 @@
 { "translations": {
     "Create" : "ສ້າງ",
     "Cancel" : "ຍົກເລີກ",
-    "Delete" : "ລຶບ",
-    "Save" : "ບັນທຶກ"
+    "Save" : "ບັນທຶກ",
+    "Delete" : "ລຶບ"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

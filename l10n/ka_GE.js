@@ -2,7 +2,7 @@ OC.L10N.register(
     "text_templates",
     {
     "Cancel" : "გაუქმება",
-    "Delete" : "წაშლა",
-    "Save" : "შენახვა"
+    "Save" : "შენახვა",
+    "Delete" : "წაშლა"
 },
 "nplurals=2; plural=(n!=1);");

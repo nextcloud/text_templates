@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Create" : "Opret",
     "Cancel" : "Annuller",
-    "Delete" : "Slet",
-    "Save" : "Gem"
+    "Save" : "Gem",
+    "Delete" : "Slet"
 },
 "nplurals=2; plural=(n != 1);");

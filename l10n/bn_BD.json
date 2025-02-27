@@ -1,6 +1,6 @@
 { "translations": {
     "Cancel" : "বাতিল করুন",
-    "Delete" : "মুছে",
-    "Save" : "সংরক্ষণ"
+    "Save" : "সংরক্ষণ",
+    "Delete" : "মুছে"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

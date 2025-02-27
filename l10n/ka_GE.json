@@ -1,6 +1,6 @@
 { "translations": {
     "Cancel" : "გაუქმება",
-    "Delete" : "წაშლა",
-    "Save" : "შენახვა"
+    "Save" : "შენახვა",
+    "Delete" : "წაშლა"
 },"pluralForm" :"nplurals=2; plural=(n!=1);"
 }

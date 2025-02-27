@@ -1,8 +1,8 @@
 { "translations": {
     "Create" : "Създаване",
     "Cancel" : "Отказ",
-    "Delete" : "Изтриване",
     "Save" : "Запиши",
-    "Template name" : "Име на шаблон"
+    "Template name" : "Име на шаблон",
+    "Delete" : "Изтриване"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

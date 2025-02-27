@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Create" : "สร้าง",
     "Cancel" : "ยกเลิก",
-    "Delete" : "ลบ",
-    "Save" : "บันทึก"
+    "Save" : "บันทึก",
+    "Delete" : "ลบ"
 },
 "nplurals=1; plural=0;");

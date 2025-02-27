@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Create" : "Krijo",
     "Cancel" : "Anuloje",
-    "Delete" : "Fshi",
-    "Save" : "Ruaje"
+    "Save" : "Ruaje",
+    "Delete" : "Fshi"
 },
 "nplurals=2; plural=(n != 1);");

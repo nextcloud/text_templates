@@ -3,8 +3,8 @@ OC.L10N.register(
     {
     "Create" : "Búa til",
     "Cancel" : "Hætta við",
-    "Delete" : "Eyða",
     "Save" : "Vista",
-    "Template name" : "Heiti sniðmáts"
+    "Template name" : "Heiti sniðmáts",
+    "Delete" : "Eyða"
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");

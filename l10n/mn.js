@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Create" : "үүсгэх",
     "Cancel" : "Болиулах",
-    "Delete" : "Устгах",
-    "Save" : "Хадгалах"
+    "Save" : "Хадгалах",
+    "Delete" : "Устгах"
 },
 "nplurals=2; plural=(n != 1);");

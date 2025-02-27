@@ -3,8 +3,8 @@ OC.L10N.register(
     {
     "Create" : "Създаване",
     "Cancel" : "Отказ",
-    "Delete" : "Изтриване",
     "Save" : "Запиши",
-    "Template name" : "Име на шаблон"
+    "Template name" : "Име на шаблон",
+    "Delete" : "Изтриване"
 },
 "nplurals=2; plural=(n != 1);");

@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Create" : "Crear",
     "Cancel" : "Anullar",
-    "Delete" : "Suprimir",
-    "Save" : "Enregistrar"
+    "Save" : "Enregistrar",
+    "Delete" : "Suprimir"
 },
 "nplurals=2; plural=(n > 1);");

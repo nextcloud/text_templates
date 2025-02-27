@@ -2,7 +2,7 @@ OC.L10N.register(
     "text_templates",
     {
     "Create" : "Snulfu-d",
-    "Delete" : "Kkes",
-    "Save" : "Sekles"
+    "Save" : "Sekles",
+    "Delete" : "Kkes"
 },
 "nplurals=2; plural=(n != 1);");

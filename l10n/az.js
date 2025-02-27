@@ -1,7 +1,7 @@
 OC.L10N.register(
     "text_templates",
     {
-    "Delete" : "Sil",
-    "Save" : "Saxla"
+    "Save" : "Saxla",
+    "Delete" : "Sil"
 },
 "nplurals=2; plural=(n != 1);");

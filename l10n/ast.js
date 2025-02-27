@@ -5,15 +5,15 @@ OC.L10N.register(
     "Quickly get text templates in Nextcloud" : "Accedi aína a plantíes de testu en Nextcloud",
     "Create" : "Crear",
     "Cancel" : "Encaboxar",
-    "Delete" : "Desaniciar",
     "Save" : "Guardar",
     "Undo changes" : "Desfacer los cambeos",
     "Template name" : "Nome de la plantía",
     "Template content" : "Conteníu de la plantía",
-    "Add a template" : "Amestar una plantía",
-    "Admin-defined templates" : "Plantíes definíes pola alministración",
+    "Delete" : "Desaniciar",
     "Template {name} saved" : "Guardóse la plantía «{name}»",
     "Template {name} deleted" : "Desanicióse la plantía «{name}»",
+    "Add a template" : "Amestar una plantía",
+    "Admin-defined templates" : "Plantíes definíes pola alministración",
     "No template found" : "Nun s'atopó nenguna plantía"
 },
 "nplurals=2; plural=(n != 1);");

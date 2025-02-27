@@ -1,7 +1,7 @@
 OC.L10N.register(
     "text_templates",
     {
-    "Delete" : "Läschen",
-    "Save" : "Späicheren"
+    "Save" : "Späicheren",
+    "Delete" : "Läschen"
 },
 "nplurals=2; plural=(n != 1);");

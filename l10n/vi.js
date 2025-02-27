@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Create" : "‎Tạo‎",
     "Cancel" : "Hủy",
-    "Delete" : "Xóa",
-    "Save" : "Lưu"
+    "Save" : "Lưu",
+    "Delete" : "Xóa"
 },
 "nplurals=1; plural=0;");

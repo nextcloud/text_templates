@@ -1,5 +1,5 @@
 { "translations": {
-    "Delete" : "Läschen",
-    "Save" : "Späicheren"
+    "Save" : "Späicheren",
+    "Delete" : "Läschen"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

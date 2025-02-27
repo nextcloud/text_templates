@@ -1,7 +1,7 @@
 OC.L10N.register(
     "text_templates",
     {
-    "Delete" : "Skrap",
-    "Save" : "Stoor"
+    "Save" : "Stoor",
+    "Delete" : "Skrap"
 },
 "nplurals=2; plural=(n != 1);");
