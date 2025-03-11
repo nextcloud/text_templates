@@ -1,8 +1,28 @@
 { "translations": {
+    "Text templates" : "Πρότυπα κειμένου",
+    "Quickly get text templates in Nextcloud" : "Αποκτήστε γρήγορα πρότυπα κειμένου στο Nextcloud",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Αυτή η εφαρμογή προσθέτει έναν πάροχο έξυπνης επιλογής για γρήγορη πρόσβαση σε πρότυπα κειμένου όταν χρησιμοποιείτε το Text, Collectives, Talk, Mail\nή οποιοδήποτε άλλο μέρος όπου είναι ενσωματωμένος ο έξυπνος επιλογέας.",
+    "Template {name} created" : "Το πρότυπο {name} δημιουργήθηκε",
+    "Failed to create template {name}" : "Αποτυχία δημιουργίας του προτύπου {name}",
+    "Add a new text template" : "Προσθήκη νέου προτύπου κειμένου",
     "Create" : "Δημιουργία",
     "Cancel" : "Ακύρωση",
     "Save" : "Αποθήκευση",
+    "Undo changes" : "Αναίρεση αλλαγών",
     "Template name" : "Όνομα προτύπου",
-    "Delete" : "Διαγραφή"
+    "Template content" : "Περιεχόμενο προτύπου",
+    "Delete" : "Διαγραφή",
+    "Template {name} saved" : "Το πρότυπο {name} αποθηκεύτηκε",
+    "Failed to save template {name}" : "Αποτυχία αποθήκευσης του προτύπου {name}",
+    "Template {name} deleted" : "Το πρότυπο {name} διαγράφηκε",
+    "Failed to delete template {name}" : "Αποτυχία διαγραφής του προτύπου {name}",
+    "Add a template" : "Προσθήκη προτύπου",
+    "Admin-defined templates" : "Πρότυπα που ορίζονται από τον διαχειριστή",
+    "No admin text templates" : "Δεν υπάρχουν πρότυπα κειμένου από τον διαχειριστή",
+    "Add admin templates" : "Προσθήκη προτύπων από τον διαχειριστή",
+    "Search templates" : "Αναζήτηση προτύπων",
+    "Failed to get templates" : "Αποτυχία λήψης προτύπων",
+    "No template found" : "Δεν βρέθηκε πρότυπο",
+    "Add templates" : "Προσθήκη προτύπων"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
