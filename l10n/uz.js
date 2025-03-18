@@ -1,6 +1,7 @@
 OC.L10N.register(
     "text_templates",
     {
+    "Create" : "Yaratish",
     "Cancel" : "Cancel",
     "Save" : "Saqlash",
     "Delete" : "Delete"
