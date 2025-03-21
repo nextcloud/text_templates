@@ -6,6 +6,7 @@ OC.L10N.register(
     "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Este aplicativo adiciona um provedor de seletor inteligente para acessar rapidamente modelos de texto ao usar Texto, Coletivos, Talk, Mail\nou qualquer local onde o smart picker esteja integrado.",
     "Template {name} created" : "Modelo {name} criado",
     "Failed to create template {name}" : "Falha ao criar modelo {name}",
+    "Add a new text template" : "Adicionar um novo modelo de texto",
     "Create" : "Criar",
     "Cancel" : "Cancelar",
     "Save" : "Salvar",
