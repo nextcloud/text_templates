@@ -2,6 +2,7 @@
     "Create" : "Lisa",
     "Cancel" : "Tühista",
     "Save" : "Salvesta",
-    "Delete" : "Kustuta"
+    "Delete" : "Kustuta",
+    "Add a template" : "Lisa mall"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

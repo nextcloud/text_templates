@@ -4,6 +4,7 @@ OC.L10N.register(
     "Create" : "Lisa",
     "Cancel" : "Tühista",
     "Save" : "Salvesta",
-    "Delete" : "Kustuta"
+    "Delete" : "Kustuta",
+    "Add a template" : "Lisa mall"
 },
 "nplurals=2; plural=(n != 1);");
