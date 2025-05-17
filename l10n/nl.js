@@ -5,6 +5,7 @@ OC.L10N.register(
     "Cancel" : "Annuleren",
     "Save" : "Opslaan",
     "Template name" : "Naam sjabloon",
-    "Delete" : "Verwijder"
+    "Delete" : "Verwijder",
+    "Add a template" : "Voeg een sjabloon toe"
 },
 "nplurals=2; plural=(n != 1);");
