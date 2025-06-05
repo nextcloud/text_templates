@@ -1,5 +1,6 @@
 { "translations": {
     "Create" : "Snulfu-d",
+    "Cancel" : "Cancel",
     "Save" : "Sekles",
     "Delete" : "Kkes"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"

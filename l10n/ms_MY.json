@@ -1,4 +1,5 @@
 { "translations": {
+    "Cancel" : "Cancel",
     "Save" : "Simpan",
     "Delete" : "Padam"
 },"pluralForm" :"nplurals=1; plural=0;"

@@ -1,6 +1,5 @@
 { "translations": {
     "Cancel" : "Cancel",
-    "Save" : "حفظ",
-    "Delete" : "حذف کریں"
+    "Delete" : "Strika"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
