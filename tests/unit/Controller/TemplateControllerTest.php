@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Nextcloud - TextTemplates
  *
@@ -77,7 +78,7 @@ class TemplateControllerTest extends TestCase {
 		$name = 'newtemplate';
 		$content = 'newcontent';
 		$template = $this->initTemplate(1, $name, $content, $this->userId);
-		
+
 		$this->templateMapper->expects($this->once())
 			->method('createTemplate')
 			->with(
@@ -104,7 +105,7 @@ class TemplateControllerTest extends TestCase {
 		$name = 'newname';
 		$content = 'newcontent';
 		$template = $this->initTemplate($id, $name, $content, $this->userId);
-		
+
 		$this->templateMapper->expects($this->once())
 			->method('updateTemplate')
 			->with(
@@ -206,7 +207,7 @@ class TemplateControllerTest extends TestCase {
 		$content = 'newcontent';
 
 		$template = $this->initTemplate($id, 'template1', 'content1', null);
-		
+
 		$this->templateMapper->expects($this->once())
 			->method('updateTemplate')
 			->with(
@@ -232,7 +233,7 @@ class TemplateControllerTest extends TestCase {
 	public function testDeleteAdminTemplate(): void {
 		$id = 1;
 		$template = $this->initTemplate($id, 'template1', 'content1', null);
-		
+
 		$this->templateMapper->expects($this->once())
 			->method('deleteTemplate')
 			->with($this->equalTo($id), $this->equalTo(null))
