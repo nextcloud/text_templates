@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Nextcloud - TextTemplates
  *
@@ -43,7 +44,7 @@ class TemplateController extends OCSController {
 				? $this->templateMapper->getTemplatesOfUser(null)
 				: [];
 			return new DataResponse(array_merge($userTemplates, $adminTemplates));
-		} catch (Exception | Throwable $e) {
+		} catch (Exception|Throwable $e) {
 			return new DataResponse('', Http::STATUS_BAD_REQUEST);
 		}
 	}
@@ -59,7 +60,7 @@ class TemplateController extends OCSController {
 		try {
 			$template = $this->templateMapper->createTemplate($this->userId, $name, $content);
 			return new DataResponse($template);
-		} catch (Exception | Throwable $e) {
+		} catch (Exception|Throwable $e) {
 			return new DataResponse('', Http::STATUS_BAD_REQUEST);
 		}
 	}
@@ -76,7 +77,7 @@ class TemplateController extends OCSController {
 		try {
 			$template = $this->templateMapper->updateTemplate($id, $this->userId, $name, $content);
 			return new DataResponse($template);
-		} catch (Exception | Throwable $e) {
+		} catch (Exception|Throwable $e) {
 			return new DataResponse('', Http::STATUS_BAD_REQUEST);
 		}
 	}
@@ -91,7 +92,7 @@ class TemplateController extends OCSController {
 		try {
 			$template = $this->templateMapper->deleteTemplate($id, $this->userId);
 			return new DataResponse($template);
-		} catch (Exception | Throwable $e) {
+		} catch (Exception|Throwable $e) {
 			return new DataResponse('', Http::STATUS_BAD_REQUEST);
 		}
 	}
@@ -103,7 +104,7 @@ class TemplateController extends OCSController {
 		try {
 			$templates = $this->templateMapper->getTemplatesOfUser(null);
 			return new DataResponse($templates);
-		} catch (Exception | Throwable $e) {
+		} catch (Exception|Throwable $e) {
 			return new DataResponse('', Http::STATUS_BAD_REQUEST);
 		}
 	}
@@ -117,7 +118,7 @@ class TemplateController extends OCSController {
 		try {
 			$template = $this->templateMapper->createTemplate(null, $name, $content);
 			return new DataResponse($template);
-		} catch (Exception | Throwable $e) {
+		} catch (Exception|Throwable $e) {
 			return new DataResponse('', Http::STATUS_BAD_REQUEST);
 		}
 	}
@@ -132,7 +133,7 @@ class TemplateController extends OCSController {
 		try {
 			$template = $this->templateMapper->updateTemplate($id, null, $name, $content);
 			return new DataResponse($template);
-		} catch (Exception | Throwable $e) {
+		} catch (Exception|Throwable $e) {
 			return new DataResponse('', Http::STATUS_BAD_REQUEST);
 		}
 	}
@@ -145,7 +146,7 @@ class TemplateController extends OCSController {
 		try {
 			$template = $this->templateMapper->deleteTemplate($id, null);
 			return new DataResponse($template);
-		} catch (Exception | Throwable $e) {
+		} catch (Exception|Throwable $e) {
 			return new DataResponse('', Http::STATUS_BAD_REQUEST);
 		}
 	}

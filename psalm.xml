@@ -1,7 +1,10 @@
 <?xml version="1.0"?>
 <psalm
+		phpVersion="8.0"
 		errorLevel="4"
 		resolveFromConfigFile="true"
+		ensureOverrideAttribute="false"
+		findUnusedCode="false"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xmlns="https://getpsalm.org/schema/config"
 		xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
@@ -23,11 +26,4 @@
 			<directory name="vendor-bin/psalm" />
 		</ignoreFiles>
 	</extraFiles>
-	<issueHandlers>
-		<UndefinedDocblockClass>
-			<errorLevel type="suppress">
-				<referencedClass name="Doctrine\DBAL\Schema\Table" />
-			</errorLevel>
-		</UndefinedDocblockClass>
-	</issueHandlers>
 </psalm>

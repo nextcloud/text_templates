@@ -15,7 +15,7 @@ class Personal implements ISettings {
 	public function __construct(
 		private TemplateMapper $templateMapper,
 		private IInitialState $initialStateService,
-		private ?string       $userId,
+		private ?string $userId,
 	) {
 	}
 

@@ -142,7 +142,7 @@ class TemplateMapper extends QBMapper {
 		}
 		try {
 			$template = $this->getTemplateOfUser($id, $userId);
-		} catch (DoesNotExistException | MultipleObjectsReturnedException $e) {
+		} catch (DoesNotExistException|MultipleObjectsReturnedException $e) {
 			return null;
 		}
 		if ($name !== null) {
@@ -163,7 +163,7 @@ class TemplateMapper extends QBMapper {
 	public function deleteTemplate(int $id, ?string $userId): ?Template {
 		try {
 			$template = $this->getTemplateOfUser($id, $userId);
-		} catch (DoesNotExistException | MultipleObjectsReturnedException $e) {
+		} catch (DoesNotExistException|MultipleObjectsReturnedException $e) {
 			return null;
 		}
 
