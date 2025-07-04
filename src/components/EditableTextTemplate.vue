@@ -20,7 +20,7 @@
 				@click="$emit('delete')">
 				<template #icon>
 					<NcLoadingIcon v-if="loading" />
-					<DeleteIcon v-else />
+					<DeleteOutlineIcon v-else />
 				</template>
 			</NcButton>
 			<div class="spacer" />
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import DeleteIcon from 'vue-material-design-icons/Delete.vue'
+import DeleteOutlineIcon from 'vue-material-design-icons/Delete.vue'
 import UndoIcon from 'vue-material-design-icons/Undo.vue'
 import ArrowRightIcon from 'vue-material-design-icons/ArrowRight.vue'
 
@@ -64,7 +64,7 @@ export default {
 		NcButton,
 		NcTextField,
 		NcLoadingIcon,
-		DeleteIcon,
+		DeleteOutlineIcon,
 		UndoIcon,
 		ArrowRightIcon,
 	},
