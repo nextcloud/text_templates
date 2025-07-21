@@ -1,6 +1,7 @@
 OC.L10N.register(
     "text_templates",
     {
+    "Create" : "Стварыць",
     "Cancel" : "Скасаваць",
     "Save" : "Захаваць",
     "Delete" : "Выдаліць"
