@@ -2,8 +2,8 @@ OC.L10N.register(
     "text_templates",
     {
     "Create" : "Yaratish",
-    "Cancel" : "Cancel",
+    "Cancel" : "Bekor qilish",
     "Save" : "Saqlash",
-    "Delete" : "Delete"
+    "Delete" : "O'chirish"
 },
 "nplurals=1; plural=0;");
