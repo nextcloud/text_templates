@@ -4,6 +4,7 @@
     "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Цей застосунок додає провайдер асистенту, який допомогає швидко отримувати текстові шаблони при використанні застосунків Text, Collectives, Talk, Пошта.",
     "Template {name} created" : "Шаблон {name} створено",
     "Failed to create template {name}" : "Не вдалося створити шаблон {name}",
+    "Add a new text template" : "Додати новий текстовий шаблон",
     "Create" : "Створити",
     "Cancel" : "Скасувати",
     "Save" : "Зберегти",
