@@ -1,9 +1,30 @@
 OC.L10N.register(
     "text_templates",
     {
+    "Text templates" : "Violezo vya maandishi",
+    "Quickly get text templates in Nextcloud" : "Pata violezo vya maandishi kwa haraka kwenye Nextcloud",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Programu hii huongeza kiteuaji mahiri ili kufikia violezo vya maandishi kwa haraka unapotumia Maandishi, Mikusanyiko, Majadiliano, Barua.\nau mahali popote ambapo kichagua mahiri kimeunganishwa.",
+    "Template {name} created" : "Kiolezo {name} kimetengenezwa",
+    "Failed to create template {name}" : "Imeshindwa kuunda kiolezo {name}",
+    "Add a new text template" : "Ongeza kiolezo kipya cha maandishi",
     "Create" : "Tengeneza",
-    "Cancel" : "Cancel",
+    "Cancel" : "Ghairi",
     "Save" : "Hifadhi",
-    "Delete" : "Futa"
+    "Undo changes" : "Tendua mabadiliko",
+    "Template name" : "Jina la kiolezo",
+    "Template content" : "Maudhui ya kiolezo",
+    "Delete" : "Futa",
+    "Template {name} saved" : "Kiolezo {name} kimehifadhiwa",
+    "Failed to save template {name}" : "Imeshindwa kuhifadhi kiolezo {name}",
+    "Template {name} deleted" : "Kiolezo {name} kimefutwa",
+    "Failed to delete template {name}" : "Imeshindwa kufuta kiolezo {name}",
+    "Add a template" : "Ongeza kiolezo",
+    "Admin-defined templates" : "Violezo vilivyoainishwa na msimamizi",
+    "No admin text templates" : "Hakuna violezo vya maandishi ya msimamizi",
+    "Add admin templates" : "Ongeza violezo vya msimsmizi",
+    "Search templates" : "Tafuta violezo",
+    "Failed to get templates" : "Imeshindwa kupata violezo",
+    "No template found" : "Hakuna kiolezo kilichopatikana",
+    "Add templates" : "Ongeza violezo"
 },
 "nplurals=2; plural=(n != 1);");
