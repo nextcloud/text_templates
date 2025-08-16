@@ -4,6 +4,7 @@
     "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Esta app añade un selector inteligente para acceder rápidamente a plantillas de texto cuando se utilizan las apps Text, Collectives, Talk, Mail\no, en cualquier lugar en que el selector inteligente sea integrado.",
     "Template {name} created" : "Se creó la plantilla {name}",
     "Failed to create template {name}" : "Fallo al crear la plantilla {name}",
+    "Add a new text template" : "Añadir una nueva plantilla de texto",
     "Create" : "Crear",
     "Cancel" : "Cancelar",
     "Save" : "Guardar",
