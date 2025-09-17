@@ -34,7 +34,7 @@
 			<h2>
 				{{ t('text_templates', 'Admin-defined templates') }}
 			</h2>
-			<p> {{ t('text_templates', 'As an admin, you can create and manage text templates for all users.') }}</p>
+			<p> {{ t('text_templates', 'Admins can create and manage text templates for everyone.') }}</p>
 			<div class="template-list">
 				<DisplayTextTemplate v-for="t in adminTemplates"
 					:key="t.id"
