@@ -30,9 +30,9 @@
 				@submit="onEditTemplate" />
 		</div>
 		<div v-if="!admin">
-			<h3>
+			<h2>
 				{{ t('text_templates', 'Admin-defined templates') }}
-			</h3>
+			</h2>
 			<div class="template-list">
 				<DisplayTextTemplate v-for="t in adminTemplates"
 					:key="t.id"
@@ -42,10 +42,10 @@
 			<a v-if="isAdminUser"
 				:href="adminSettingsUrl"
 				target="_blank">
-				<NcButton>
-					{{ t('text_templates', 'Add admin templates') }}
+				<NcButton alignment="start-reverse">
+					{{ t('text_templates', 'Edit admin templates') }}
 					<template #icon>
-						<PlusIcon />
+						<ArrowTopRightIcon />
 					</template>
 				</NcButton>
 			</a>
@@ -56,6 +56,7 @@
 <script>
 import StickerPlusOutlineIcon from 'vue-material-design-icons/StickerPlusOutline.vue'
 import PlusIcon from 'vue-material-design-icons/Plus.vue'
+import ArrowTopRightIcon from 'vue-material-design-icons/ArrowTopRight.vue'
 
 import EditableTextTemplate from './EditableTextTemplate.vue'
 import DisplayTextTemplate from './DisplayTextTemplate.vue'
@@ -77,6 +78,7 @@ export default {
 		NcButton,
 		StickerPlusOutlineIcon,
 		PlusIcon,
+		ArrowTopRightIcon,
 	},
 
 	props: {
