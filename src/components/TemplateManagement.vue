@@ -224,14 +224,14 @@ export default {
 	.template-list {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 12px;
-		margin: 12px 0;
+		gap: calc(var(--default-grid-baseline) * 3);
+		margin: calc(var(--default-grid-baseline) * 3) 0;
 	}
 }
 
 .link-to-admin-settings {
-		margin-top: 24px;
+		margin-top: calc(var(--default-grid-baseline) * 6);
 		border-top: 1px solid var(--color-border);
-		padding-top: 12px;
+		padding-top: calc(var(--default-grid-baseline) * 3);
 	}
 </style>

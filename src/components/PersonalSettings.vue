@@ -45,7 +45,7 @@ export default {
 <style scoped lang="scss">
 #text-templates_prefs {
 	h2 .icon {
-		margin-right: 8px;
+		margin-right: calc(var(--default-grid-baseline) * 2);
 	}
 }
 </style>
