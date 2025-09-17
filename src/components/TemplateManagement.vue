@@ -1,5 +1,6 @@
 <template>
 	<div id="text-templates-content">
+		<p> {{ featureInfo }}</p>
 		<NcButton type="primary"
 			@click="onAddTemplate">
 			<template #icon>
@@ -33,6 +34,7 @@
 			<h2>
 				{{ t('text_templates', 'Admin-defined templates') }}
 			</h2>
+			<p> {{ t('text_templates', 'As an admin, you can create and manage text templates for all users.') }}</p>
 			<div class="template-list">
 				<DisplayTextTemplate v-for="t in adminTemplates"
 					:key="t.id"
@@ -112,6 +114,12 @@ export default {
 			return this.admin
 				? []
 				: this.state.templates.filter(t => t.user_id === null)
+		},
+
+		featureInfo() {
+			return this.admin
+				? this.t('text_templates', 'Text templates are snippets of text that users can quickly insert when they\'re using Text, Collectives, Talk, Mail or any place where the smart picker is available. Here you can create templates that will be available to all users on this instance.')
+				: this.t('text_templates', 'Text templates are snippets of text that you can quickly insert when you\'re using Text, Collectives, Talk, Mail or any place where the smart picker is available.')
 		},
 	},
 
