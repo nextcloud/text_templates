@@ -39,24 +39,16 @@
 					:template="t"
 					class="template" />
 			</div>
-			<NcEmptyContent v-if="adminTemplates.length === 0"
-				:title="t('text_templates', 'No admin text templates')">
-				<template #icon>
-					<TextTemplatesIcon />
-				</template>
-				<template #action>
-					<a v-if="isAdminUser"
-						:href="adminSettingsUrl"
-						target="_blank">
-						<NcButton>
-							{{ t('text_templates', 'Add admin templates') }}
-							<template #icon>
-								<PlusIcon />
-							</template>
-						</NcButton>
-					</a>
-				</template>
-			</NcEmptyContent>
+			<a v-if="isAdminUser"
+				:href="adminSettingsUrl"
+				target="_blank">
+				<NcButton>
+					{{ t('text_templates', 'Add admin templates') }}
+					<template #icon>
+						<PlusIcon />
+					</template>
+				</NcButton>
+			</a>
 		</div>
 	</div>
 </template>
@@ -67,10 +59,8 @@ import PlusIcon from 'vue-material-design-icons/Plus.vue'
 
 import EditableTextTemplate from './EditableTextTemplate.vue'
 import DisplayTextTemplate from './DisplayTextTemplate.vue'
-import TextTemplatesIcon from './icons/TextTemplatesIcon.vue'
 
 import NcButton from '@nextcloud/vue/dist/Components/NcButton.js'
-import NcEmptyContent from '@nextcloud/vue/dist/Components/NcEmptyContent.js'
 
 import { loadState } from '@nextcloud/initial-state'
 import { generateOcsUrl, generateUrl } from '@nextcloud/router'
@@ -85,10 +75,8 @@ export default {
 		EditableTextTemplate,
 		DisplayTextTemplate,
 		NcButton,
-		NcEmptyContent,
 		StickerPlusOutlineIcon,
 		PlusIcon,
-		TextTemplatesIcon,
 	},
 
 	props: {
@@ -223,17 +211,11 @@ export default {
 
 <style scoped lang="scss">
 #text-templates-content {
-	margin-left: 40px;
-	display: flex;
-	flex-direction: column;
-
 	.template-list {
 		display: flex;
 		flex-wrap: wrap;
-	}
-
-	.template {
-		margin: 12px;
+		gap: 12px;
+		margin: 12px 0;
 	}
 }
 </style>
