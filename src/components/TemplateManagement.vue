@@ -30,7 +30,7 @@
 				@delete="onDeleteTemplate(t)"
 				@submit="onEditTemplate" />
 		</div>
-		<div v-if="!admin">
+		<div v-if="!admin" class="link-to-admin-settings">
 			<h2>
 				{{ t('text_templates', 'Admin-defined templates') }}
 			</h2>
@@ -228,4 +228,10 @@ export default {
 		margin: 12px 0;
 	}
 }
+
+.link-to-admin-settings {
+		margin-top: 24px;
+		border-top: 1px solid var(--color-border);
+		padding-top: 12px;
+	}
 </style>
