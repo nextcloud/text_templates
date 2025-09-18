@@ -1,5 +1,6 @@
 <template>
 	<div id="text-templates-content">
+		<p> {{ featureInfo }}</p>
 		<NcButton type="primary"
 			@click="onAddTemplate">
 			<template #icon>
@@ -29,34 +30,27 @@
 				@delete="onDeleteTemplate(t)"
 				@submit="onEditTemplate" />
 		</div>
-		<div v-if="!admin">
-			<h3>
+		<div v-if="!admin" class="link-to-admin-settings">
+			<h2>
 				{{ t('text_templates', 'Admin-defined templates') }}
-			</h3>
+			</h2>
+			<p> {{ t('text_templates', 'Admins can create and manage text templates for everyone.') }}</p>
 			<div class="template-list">
 				<DisplayTextTemplate v-for="t in adminTemplates"
 					:key="t.id"
 					:template="t"
 					class="template" />
 			</div>
-			<NcEmptyContent v-if="adminTemplates.length === 0"
-				:title="t('text_templates', 'No admin text templates')">
-				<template #icon>
-					<TextTemplatesIcon />
-				</template>
-				<template #action>
-					<a v-if="isAdminUser"
-						:href="adminSettingsUrl"
-						target="_blank">
-						<NcButton>
-							{{ t('text_templates', 'Add admin templates') }}
-							<template #icon>
-								<PlusIcon />
-							</template>
-						</NcButton>
-					</a>
-				</template>
-			</NcEmptyContent>
+			<a v-if="isAdminUser"
+				:href="adminSettingsUrl"
+				target="_blank">
+				<NcButton alignment="start-reverse">
+					{{ t('text_templates', 'Edit admin templates') }}
+					<template #icon>
+						<ArrowTopRightIcon />
+					</template>
+				</NcButton>
+			</a>
 		</div>
 	</div>
 </template>
@@ -64,13 +58,12 @@
 <script>
 import StickerPlusOutlineIcon from 'vue-material-design-icons/StickerPlusOutline.vue'
 import PlusIcon from 'vue-material-design-icons/Plus.vue'
+import ArrowTopRightIcon from 'vue-material-design-icons/ArrowTopRight.vue'
 
 import EditableTextTemplate from './EditableTextTemplate.vue'
 import DisplayTextTemplate from './DisplayTextTemplate.vue'
-import TextTemplatesIcon from './icons/TextTemplatesIcon.vue'
 
 import NcButton from '@nextcloud/vue/dist/Components/NcButton.js'
-import NcEmptyContent from '@nextcloud/vue/dist/Components/NcEmptyContent.js'
 
 import { loadState } from '@nextcloud/initial-state'
 import { generateOcsUrl, generateUrl } from '@nextcloud/router'
@@ -85,10 +78,9 @@ export default {
 		EditableTextTemplate,
 		DisplayTextTemplate,
 		NcButton,
-		NcEmptyContent,
 		StickerPlusOutlineIcon,
 		PlusIcon,
-		TextTemplatesIcon,
+		ArrowTopRightIcon,
 	},
 
 	props: {
@@ -122,6 +114,12 @@ export default {
 			return this.admin
 				? []
 				: this.state.templates.filter(t => t.user_id === null)
+		},
+
+		featureInfo() {
+			return this.admin
+				? this.t('text_templates', 'Text templates are snippets of text that users can quickly insert when they\'re using Text, Collectives, Talk, Mail or any place where the smart picker is available. Here you can create templates that will be available to all users on this instance.')
+				: this.t('text_templates', 'Text templates are snippets of text that you can quickly insert when you\'re using Text, Collectives, Talk, Mail or any place where the smart picker is available.')
 		},
 	},
 
@@ -223,17 +221,17 @@ export default {
 
 <style scoped lang="scss">
 #text-templates-content {
-	margin-left: 40px;
-	display: flex;
-	flex-direction: column;
-
 	.template-list {
 		display: flex;
 		flex-wrap: wrap;
-	}
-
-	.template {
-		margin: 12px;
+		gap: calc(var(--default-grid-baseline) * 3);
+		margin: calc(var(--default-grid-baseline) * 3) 0;
 	}
 }
+
+.link-to-admin-settings {
+		margin-top: calc(var(--default-grid-baseline) * 6);
+		border-top: 1px solid var(--color-border);
+		padding-top: calc(var(--default-grid-baseline) * 3);
+	}
 </style>

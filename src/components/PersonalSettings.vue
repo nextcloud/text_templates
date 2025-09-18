@@ -44,14 +44,8 @@ export default {
 
 <style scoped lang="scss">
 #text-templates_prefs {
-	h2 {
-		display: flex;
-		align-items: center;
-		margin-top: 12px;
-	}
-
 	h2 .icon {
-		margin-right: 8px;
+		margin-right: calc(var(--default-grid-baseline) * 2);
 	}
 }
 </style>
