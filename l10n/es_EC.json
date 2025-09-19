@@ -17,8 +17,6 @@
     "Failed to delete template {name}" : "Error al eliminar la plantilla {name}",
     "Add a template" : "Añadir una plantilla",
     "Admin-defined templates" : "Plantillas definidas por el administrador",
-    "No admin text templates" : "No hay plantillas de texto del administrador",
-    "Add admin templates" : "Añadir plantillas de administrador",
     "Search templates" : "Buscar plantillas",
     "Failed to get templates" : "Error al obtener las plantillas",
     "No template found" : "No se encontró ninguna plantilla",

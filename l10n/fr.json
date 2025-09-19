@@ -18,8 +18,6 @@
     "Failed to delete template {name}" : "Échec de la suppression du modèle {name}",
     "Add a template" : "Ajouter un modèle",
     "Admin-defined templates" : "Modèles définis par l'administrateur",
-    "No admin text templates" : "Pas de modèles de texte définis par l'administrateur",
-    "Add admin templates" : "Ajouter des modèles d'administrateur",
     "Search templates" : "Rechercher des modèles",
     "Failed to get templates" : "Échec de l'obtention des modèles",
     "No template found" : "Aucun modèle trouvé",

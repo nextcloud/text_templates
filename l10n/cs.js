@@ -20,8 +20,6 @@ OC.L10N.register(
     "Failed to delete template {name}" : "Nepodařilo se smazat šablonu {name}",
     "Add a template" : "Přidat šablonu",
     "Admin-defined templates" : "Správcem určené šablony",
-    "No admin text templates" : "Žádné správcem určené šablony textu",
-    "Add admin templates" : "Přidat správcovské šablony",
     "Search templates" : "Prohledat šablony",
     "Failed to get templates" : "Nepodařilo se získat šablony",
     "No template found" : "Nenalezeny žádné šablony",

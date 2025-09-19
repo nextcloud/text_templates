@@ -20,8 +20,6 @@ OC.L10N.register(
     "Failed to delete template {name}" : "Није успело брисање шаблона {name}",
     "Add a template" : "Додај шаблон",
     "Admin-defined templates" : "Шаблони које је дефинисао админ",
-    "No admin text templates" : "Нема администраторских текст шаблона",
-    "Add admin templates" : "Додај администраторске текст шаблоне",
     "Search templates" : "Претражи шаблоне",
     "Failed to get templates" : "Није успело добављање шаблона",
     "No template found" : "Није пронађен ниједан шаблон",

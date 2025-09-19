@@ -18,8 +18,6 @@
     "Failed to delete template {name}" : "未能刪除模板 “{name}”",
     "Add a template" : "添加模板",
     "Admin-defined templates" : "管理員定義的模板",
-    "No admin text templates" : "沒有管理文字模板",
-    "Add admin templates" : "添加管理模板",
     "Search templates" : "搜尋模板",
     "Failed to get templates" : "擷取模板失敗",
     "No template found" : "沒有找到模板",

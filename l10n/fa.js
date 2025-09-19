@@ -19,8 +19,6 @@ OC.L10N.register(
     "Failed to delete template {name}" : "Failed to delete template {name}",
     "Add a template" : "Add a template",
     "Admin-defined templates" : "Admin-defined templates",
-    "No admin text templates" : "No admin text templates",
-    "Add admin templates" : "Add admin templates",
     "Search templates" : "Search templates",
     "Failed to get templates" : "Failed to get templates",
     "No template found" : "No template found",

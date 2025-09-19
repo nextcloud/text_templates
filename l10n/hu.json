@@ -17,8 +17,6 @@
     "Failed to delete template {name}" : "Nem sikerült a(z) {name} sablon törlése",
     "Add a template" : "Sablon hozzáadása",
     "Admin-defined templates" : "Rendszergazda által meghatározott sablonok",
-    "No admin text templates" : "Nincs rendszergazdai szöveg sablon",
-    "Add admin templates" : "Rendszergazdai sablon hozzáadása",
     "Search templates" : "Sablonok keresése",
     "Failed to get templates" : "A sablonok lekérdezése nem sikerült",
     "No template found" : "Nem található sablon",

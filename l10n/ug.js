@@ -19,8 +19,6 @@ OC.L10N.register(
     "Failed to delete template {name}" : "قېلىپ {name} نى ئۆچۈرەلمىدى",
     "Add a template" : "قېلىپ قوشۇڭ",
     "Admin-defined templates" : "باشقۇرغۇچى بەلگىلىگەن قېلىپلار",
-    "No admin text templates" : "باشقۇرغۇچى تېكىست قېلىپى يوق",
-    "Add admin templates" : "باشقۇرۇش قېلىپىنى قوشۇڭ",
     "Search templates" : "قېلىپلارنى ئىزدەش",
     "Failed to get templates" : "قېلىپقا ئېرىشەلمىدى",
     "No template found" : "قېلىپ تېپىلمىدى",

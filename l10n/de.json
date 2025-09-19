@@ -18,8 +18,6 @@
     "Failed to delete template {name}" : "Vorlage {name} konnte nicht gelöscht werden",
     "Add a template" : "Eine Vorlage hinzufügen",
     "Admin-defined templates" : "Von der Administration definierte Vorlagen",
-    "No admin text templates" : "Keine-Textvorlagen der Administration",
-    "Add admin templates" : "Textvorlagen von der Administration hinzufügen",
     "Search templates" : "Vorlagen suchen",
     "Failed to get templates" : "Vorlagen konnten nicht abgerufen werden",
     "No template found" : "Keine Vorlage gefunden",

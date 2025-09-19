@@ -18,8 +18,6 @@ OC.L10N.register(
     "Failed to delete template {name}" : "Mallipohjan {name} poistaminen epäonnistui",
     "Add a template" : "Lisää mallipohja",
     "Admin-defined templates" : "Ylläpidon määrittämät mallipohjat",
-    "No admin text templates" : "Ei ylläpidon luomia tekstimallipohjia",
-    "Add admin templates" : "Lisää ylläpidon mallipohjia",
     "Search templates" : "Etsi mallipohjia",
     "Failed to get templates" : "Mallipohjien noutaminen epäonnistui",
     "No template found" : "Mallipohjaa ei löydy",

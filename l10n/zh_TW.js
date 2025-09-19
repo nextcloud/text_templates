@@ -20,8 +20,6 @@ OC.L10N.register(
     "Failed to delete template {name}" : "刪除範本 {name} 失敗",
     "Add a template" : "新增範本",
     "Admin-defined templates" : "管理員定義的範本",
-    "No admin text templates" : "無管理員定義的範本",
-    "Add admin templates" : "新增管理員範本",
     "Search templates" : "搜尋範本",
     "Failed to get templates" : "取得範本失敗",
     "No template found" : "找不到範本",

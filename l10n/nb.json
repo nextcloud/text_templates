@@ -17,8 +17,6 @@
     "Failed to delete template {name}" : "Sletting av mal {name} feilet",
     "Add a template" : "Legg til en mal",
     "Admin-defined templates" : "Admin-definerte maler",
-    "No admin text templates" : "Ingen admin tekstmaler",
-    "Add admin templates" : "Legg til admin tekstmaler",
     "Search templates" : "Søk maler",
     "Failed to get templates" : "Henting av maler feilet",
     "No template found" : "Ingen mal funnet",

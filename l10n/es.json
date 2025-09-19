@@ -18,8 +18,6 @@
     "Failed to delete template {name}" : "Fallo al borrar la plantilla {name}",
     "Add a template" : "Agregar una plantilla",
     "Admin-defined templates" : "Plantillas definidas por el administrador",
-    "No admin text templates" : "No hay plantillas de texto del administrador",
-    "Add admin templates" : "Añadir plantillas del administrador",
     "Search templates" : "Buscar plantillas",
     "Failed to get templates" : "Fallo al obtener las plantillas",
     "No template found" : "No se encontró ninguna plantilla",

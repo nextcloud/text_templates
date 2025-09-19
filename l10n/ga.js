@@ -20,8 +20,6 @@ OC.L10N.register(
     "Failed to delete template {name}" : "Theip ar an teimpléad {name} a scriosadh",
     "Add a template" : "Cuir teimpléad leis",
     "Admin-defined templates" : "Teimpléid sainithe ag riarthóir",
-    "No admin text templates" : "Gan teimpléid téacs riaracháin",
-    "Add admin templates" : "Cuir teimpléid admin leis",
     "Search templates" : "Cuardaigh teimpléid",
     "Failed to get templates" : "Theip ar teimpléid a fháil",
     "No template found" : "Níor aimsíodh teimpléad",

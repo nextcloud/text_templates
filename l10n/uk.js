@@ -20,8 +20,6 @@ OC.L10N.register(
     "Failed to delete template {name}" : "Не вдалося вилучити шаблон {name}",
     "Add a template" : "Додати шаблон",
     "Admin-defined templates" : "Шаблони, створені адміністратором",
-    "No admin text templates" : "Відсутні шаблони, створені адміністратором",
-    "Add admin templates" : "Додати шаблон адміністратора",
     "Search templates" : "Пошук шаблонів",
     "Failed to get templates" : "Не вдалося отримати шаблони",
     "No template found" : "Не знайдено шаблонів",

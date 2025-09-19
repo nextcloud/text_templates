@@ -14,8 +14,6 @@ OC.L10N.register(
     "Template content" : "Contingut de la plantilla",
     "Delete" : "Suprimir",
     "Add a template" : "Afegeix una plantilla",
-    "Admin-defined templates" : "Plantilles definides per l'administrador",
-    "No admin text templates" : "Sense plantilles d'administrador",
-    "Add admin templates" : "Afegeix plantilles d'administrador"
+    "Admin-defined templates" : "Plantilles definides per l'administrador"
 },
 "nplurals=2; plural=(n != 1);");

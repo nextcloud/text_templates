@@ -20,8 +20,6 @@ OC.L10N.register(
     "Failed to delete template {name}" : "Det gick inte att ta bort mallen {name}",
     "Add a template" : "Lägg till en mall",
     "Admin-defined templates" : "Administratörsdefinierade mallar",
-    "No admin text templates" : "Inga administratör-textmallar",
-    "Add admin templates" : "Lägg till administratörsmallar",
     "Search templates" : "Sök mallar",
     "Failed to get templates" : "Det gick inte att hämta mallar",
     "No template found" : "Ingen mall kunde hittas",

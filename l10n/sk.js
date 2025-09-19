@@ -20,8 +20,6 @@ OC.L10N.register(
     "Failed to delete template {name}" : "Nepodarilo sa zmazať šablónu {name}",
     "Add a template" : "Pridať šablónu",
     "Admin-defined templates" : "Šablóny preddefinované administrátorom",
-    "No admin text templates" : "Žiadne textové šablóny administrátora",
-    "Add admin templates" : "Pridať šablónu administrátora",
     "Search templates" : "Vyhľadať šablóny",
     "Failed to get templates" : "Nepodarilo sa získať šablóny",
     "No template found" : "Nebola nájdená žiadna šablóna",

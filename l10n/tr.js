@@ -20,8 +20,6 @@ OC.L10N.register(
     "Failed to delete template {name}" : "{name} kalıbı silindi",
     "Add a template" : "Kalıp ekle",
     "Admin-defined templates" : "Yöneticinin ayarladığı kalıplar",
-    "No admin text templates" : "Yönetici tarafından ayarlanmış herhangi bir yazı kalıbı yok",
-    "Add admin templates" : "Yönetici kalıplarını ekle",
     "Search templates" : "Kalıp arama",
     "Failed to get templates" : "Kalıplar alınamadı",
     "No template found" : "Herhangi bir kalıp bulunamadı",

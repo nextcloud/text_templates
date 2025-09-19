@@ -18,8 +18,6 @@
     "Failed to delete template {name}" : "Imeshindwa kufuta kiolezo {name}",
     "Add a template" : "Ongeza kiolezo",
     "Admin-defined templates" : "Violezo vilivyoainishwa na msimamizi",
-    "No admin text templates" : "Hakuna violezo vya maandishi ya msimamizi",
-    "Add admin templates" : "Ongeza violezo vya msimsmizi",
     "Search templates" : "Tafuta violezo",
     "Failed to get templates" : "Imeshindwa kupata violezo",
     "No template found" : "Hakuna kiolezo kilichopatikana",

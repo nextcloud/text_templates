@@ -18,8 +18,6 @@
     "Failed to delete template {name}" : "فشل في حذف القالب {name} ",
     "Add a template" : "أضف قالباً",
     "Admin-defined templates" : "قوالب مُعرّفة من قبل المدير",
-    "No admin text templates" : "لا توجد قوالب نصية معرفة من المدير",
-    "Add admin templates" : "أضف قالب معرف بواسطة المدير",
     "Search templates" : "إبحث عن قوالب",
     "Failed to get templates" : "فشل في الحصول على قوالب",
     "No template found" : "تعذّر العثور على أي قالبٍ",

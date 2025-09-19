@@ -18,8 +18,6 @@
     "Failed to delete template {name}" : "Αποτυχία διαγραφής του προτύπου {name}",
     "Add a template" : "Προσθήκη προτύπου",
     "Admin-defined templates" : "Πρότυπα που ορίζονται από τον διαχειριστή",
-    "No admin text templates" : "Δεν υπάρχουν πρότυπα κειμένου από τον διαχειριστή",
-    "Add admin templates" : "Προσθήκη προτύπων από τον διαχειριστή",
     "Search templates" : "Αναζήτηση προτύπων",
     "Failed to get templates" : "Αποτυχία λήψης προτύπων",
     "No template found" : "Δεν βρέθηκε πρότυπο",

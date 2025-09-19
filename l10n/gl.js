@@ -20,8 +20,6 @@ OC.L10N.register(
     "Failed to delete template {name}" : "Produciuse un fallo ao eliminar o modelo {name}",
     "Add a template" : "Engadir un modelo",
     "Admin-defined templates" : "Modelos definidos pola administración da instancia",
-    "No admin text templates" : "Non hai modelos de texto da administración da instancia",
-    "Add admin templates" : "Engadir modelos da administración da instancia",
     "Search templates" : "Buscar modelos",
     "Failed to get templates" : "Produciuse un fallo ao obter modelos",
     "No template found" : "Non se atopou ningún modelo",
