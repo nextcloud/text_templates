@@ -1,10 +1,32 @@
 OC.L10N.register(
     "text_templates",
     {
+    "Text templates" : "Tekstimallid",
+    "Quickly get text templates in Nextcloud" : "Mallide mugav kasutamine Nextcloudis",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "See rakendus lisab nutivalija mugavaks ligipääsuks teksimallidele teksti-, kõne, e-posti, kogukondade ja muudes rakendustes, kus nutivalija on kasutusel.",
+    "Template {name} created" : "„{name}“ mall on loodud",
+    "Failed to create template {name}" : "„{name}“ malli loomine ei õnnestunud",
+    "Add a new text template" : "Lisa uus tekstimall",
     "Create" : "Lisa",
     "Cancel" : "Tühista",
     "Save" : "Salvesta",
+    "Undo changes" : "Võta muudatused tagasi",
+    "Template name" : "Malli nimi",
+    "Template content" : "Malli sisu",
     "Delete" : "Kustuta",
-    "Add a template" : "Lisa mall"
+    "Text templates are snippets of text that users can quickly insert when they're using Text, Collectives, Talk, Mail or any place where the smart picker is available. Here you can create templates that will be available to all users on this instance." : "Teksimallid on ettevalmistatud tekstilõigud, mida saad mugavalt lisada teksti-, kõne, e-posti, kogukondade ja muudes rakendustes, kus nutivalija on kasutusel. Siin saad luua malle, mida kõik selle serveri kasutajad võivad pruukida.",
+    "Text templates are snippets of text that you can quickly insert when you're using Text, Collectives, Talk, Mail or any place where the smart picker is available." : "Teksimallid on ettevalmistatud tekstilõigud, mida saad mugavalt lisada teksti-, kõne, e-posti, kogukondade ja muudes rakendustes, kus nutivalija on kasutusel.",
+    "Template {name} saved" : "„{name}“ mall on salvestatud",
+    "Failed to save template {name}" : "„{name}“ malli salvestamine ei õnnestunud",
+    "Template {name} deleted" : "„{name}“ mall on kustutatud",
+    "Failed to delete template {name}" : "„{name}“ malli kustutamine ei õnnestunud",
+    "Add a template" : "Lisa mall",
+    "Admin-defined templates" : "Peakasutaja määratud mallid",
+    "Admins can create and manage text templates for everyone." : "Peakasutajad saavad malle luua ja hallata nii, et nad on kasutatavad kõigi poolt.",
+    "Edit admin templates" : "Muuda peakasutaja malle",
+    "Search templates" : "Otsi malle",
+    "Failed to get templates" : "Mallide andmete laadimine ei õnnestunud",
+    "No template found" : "Malli ei leidu",
+    "Add templates" : "Lisa malle"
 },
 "nplurals=2; plural=(n != 1);");
