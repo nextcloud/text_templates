@@ -12,6 +12,7 @@
     "Template name" : "Název šablony",
     "Template content" : "Obsah šablony",
     "Delete" : "Smazat",
+    "Text templates are snippets of text that users can quickly insert when they're using Text, Collectives, Talk, Mail or any place where the smart picker is available. Here you can create templates that will be available to all users on this instance." : "Textové šablony jsou kousky textu, které uživatelé mohou rychle rychle vkládat při používání aplikací Text, Kolektivy, Talk, E-mail nebo kdekoli, kde je k dispozici inteligentní výběr. Zde je možné vytvářet šablony, které budou k dispozici všem uživatelům této instance.",
     "Text templates are snippets of text that you can quickly insert when you're using Text, Collectives, Talk, Mail or any place where the smart picker is available." : "Textové šablony jsou kousky textu, které je možné rychle vkládat v aplikacích Text, Kolektivy, Talk, E-mail nebo kdekoli, kde je k dispozici inteligentní výběr.",
     "Template {name} saved" : "Šablona {name} uložena",
     "Failed to save template {name}" : "Nepodařilo se uložit šablonu {name}",
