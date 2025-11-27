@@ -1,6 +1,7 @@
 OC.L10N.register(
     "text_templates",
     {
+    "Create" : "יצירה",
     "Cancel" : "ביטול",
     "Save" : "שמירה",
     "Template name" : "שם התבנית",
