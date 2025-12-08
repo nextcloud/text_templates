@@ -35,7 +35,7 @@ jobs:
       matrix:
         php-versions: ['8.0', '8.1', '8.2', '8.3', '8.4']
         databases: ['sqlite']
-        server-versions: ['stable26', 'stable27', 'stable28', 'stable29', 'stable30', 'stable31', 'master']
+        server-versions: ['stable26', 'stable27', 'stable28', 'stable29', 'stable30', 'stable31', 'stable32', 'master']
         exclude:
           - php-versions: '8.4'
             server-versions: 'stable30'
@@ -51,8 +51,12 @@ jobs:
             server-versions: 'stable27'
           - php-versions: '8.3'
             server-versions: 'stable26'
+          - php-versions: '8.1'
+            server-versions: 'master'
           - php-versions: '8.0'
             server-versions: 'master'
+          - php-versions: '8.0'
+            server-versions: 'stable32'
           - php-versions: '8.0'
             server-versions: 'stable31'
           - php-versions: '8.0'
