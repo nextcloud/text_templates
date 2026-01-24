@@ -1,9 +1,32 @@
 OC.L10N.register(
     "text_templates",
     {
+    "Text templates" : "Template teks",
+    "Quickly get text templates in Nextcloud" : "Dapatkan template teks dengan cepat di Nextcloud",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Aplikasi ini menambahkan penyedia smart picker untuk mengakses template teks dengan cepat saat menggunakan Text, Collectives, Talk, Mail\natau di mana pun smart picker terintegrasi.",
+    "Template {name} created" : "Template {name} dibuat",
+    "Failed to create template {name}" : "Gagal membuat template {name}",
+    "Add a new text template" : "Tambahkan template teks baru",
     "Create" : "Buat",
     "Cancel" : "Batal",
     "Save" : "Simpan",
-    "Delete" : "Hapus"
+    "Undo changes" : "Urungkan perubahan",
+    "Template name" : "Nama template",
+    "Template content" : "Konten template",
+    "Delete" : "Hapus",
+    "Text templates are snippets of text that users can quickly insert when they're using Text, Collectives, Talk, Mail or any place where the smart picker is available. Here you can create templates that will be available to all users on this instance." : "Template teks adalah cuplikan teks yang dapat disisipkan pengguna dengan cepat saat menggunakan Text, Collectives, Talk, Mail, atau di mana pun smart picker tersedia. Di sini Anda dapat membuat template yang akan tersedia untuk semua pengguna pada instance ini.",
+    "Text templates are snippets of text that you can quickly insert when you're using Text, Collectives, Talk, Mail or any place where the smart picker is available." : "Template teks adalah cuplikan teks yang dapat Anda sisipkan dengan cepat saat menggunakan Text, Collectives, Talk, Mail, atau di mana pun smart picker tersedia.",
+    "Template {name} saved" : "Template {name} disimpan",
+    "Failed to save template {name}" : "Gagal menyimpan template {name}",
+    "Template {name} deleted" : "Template {name} dihapus",
+    "Failed to delete template {name}" : "Gagal menghapus template {name}",
+    "Add a template" : "Tambahkan template",
+    "Admin-defined templates" : "Template yang ditentukan admin",
+    "Admins can create and manage text templates for everyone." : "Admin dapat membuat dan mengelola template teks untuk semua orang.",
+    "Edit admin templates" : "Edit template admin",
+    "Search templates" : "Cari template",
+    "Failed to get templates" : "Gagal mengambil template",
+    "No template found" : "Tidak ada template ditemukan",
+    "Add templates" : "Tambahkan template"
 },
 "nplurals=1; plural=0;");
