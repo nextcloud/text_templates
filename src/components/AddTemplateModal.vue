@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import NcModal from '@nextcloud/vue/dist/Components/NcModal.js'
+import NcModal from '@nextcloud/vue/components/NcModal'
 import EditableTextTemplate from './EditableTextTemplate.vue'
 import StickerPlusOutlineIcon from 'vue-material-design-icons/StickerPlusOutline.vue'
 import { generateOcsUrl } from '@nextcloud/router'
