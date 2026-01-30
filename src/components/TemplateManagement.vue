@@ -1,7 +1,7 @@
 <template>
 	<div id="text-templates-content">
 		<p> {{ featureInfo }}</p>
-		<NcButton type="primary"
+		<NcButton variant="primary"
 			@click="onAddTemplate">
 			<template #icon>
 				<PlusIcon />
@@ -63,7 +63,7 @@ import ArrowTopRightIcon from 'vue-material-design-icons/ArrowTopRight.vue'
 import EditableTextTemplate from './EditableTextTemplate.vue'
 import DisplayTextTemplate from './DisplayTextTemplate.vue'
 
-import NcButton from '@nextcloud/vue/dist/Components/NcButton.js'
+import NcButton from '@nextcloud/vue/components/NcButton'
 
 import { loadState } from '@nextcloud/initial-state'
 import { generateOcsUrl, generateUrl } from '@nextcloud/router'
