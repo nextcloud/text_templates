@@ -1,8 +1,30 @@
 { "translations": {
+    "Text templates" : "Predlošci teksta",
+    "Quickly get text templates in Nextcloud" : "Brzo dođite do predložaka teksta u Nextcloudu",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Ova aplikacija dodaje pružatelja pametnog odabira za brzi pristup predlošcima teksta prilikom korištenja Text, Collectives, Talk, Mail ili bilo kojeg mjesta gdje je integriran pametni odabir.",
+    "Template {name} created" : "Predložak {name} je kreiran",
+    "Failed to create template {name}" : "Neuspjelo stvaranje predloška {name}",
+    "Add a new text template" : "Dodaj novi predložak teksta",
     "Create" : "Stvori",
     "Cancel" : "Odustani",
     "Save" : "Spremi",
+    "Undo changes" : "Poništi promjene",
     "Template name" : "Naziv predloška",
-    "Delete" : "Izbriši"
+    "Template content" : "Sadržaj predloška",
+    "Delete" : "Izbriši",
+    "Text templates are snippets of text that users can quickly insert when they're using Text, Collectives, Talk, Mail or any place where the smart picker is available. Here you can create templates that will be available to all users on this instance." : "Predlošci teksta su isječci teksta koje korisnici mogu brzo umetnuti prilikom korištenja Text, Collectives, Talk, Mail ili bilo kojeg mjesta gdje je dostupan pametni odabir. Ovdje možete kreirati predloške koji će biti dostupni svim korisnicima ove instance.",
+    "Text templates are snippets of text that you can quickly insert when you're using Text, Collectives, Talk, Mail or any place where the smart picker is available." : "Predlošci teksta su isječci teksta koje možete brzo umetnuti prilikom korištenja Text, Collectives, Talk, Mail ili bilo kojeg mjesta gdje je dostupan pametni odabir.",
+    "Template {name} saved" : "Predložak {name} je spremljen",
+    "Failed to save template {name}" : "Neuspjelo spremanje predloška {name}",
+    "Template {name} deleted" : "Predložak {name} je obrisan",
+    "Failed to delete template {name}" : "Neuspjelo brisanje predloška {name}",
+    "Add a template" : "Dodaj predložak",
+    "Admin-defined templates" : "Predlošci definirani od strane administratora",
+    "Admins can create and manage text templates for everyone." : "Administratori mogu kreirati i upravljati predlošcima teksta za sve korisnike.",
+    "Edit admin templates" : "Uredi administratorske predloške",
+    "Search templates" : "Pretraži predloške",
+    "Failed to get templates" : "Neuspjelo dohvaćanje predložaka",
+    "No template found" : "Nije pronađen nijedan predložak",
+    "Add templates" : "Dodaj predloške"
 },"pluralForm" :"nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;"
 }
