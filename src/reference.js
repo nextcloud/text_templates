@@ -19,7 +19,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { registerCustomPickerElement, NcCustomPickerRenderResult } from '@nextcloud/vue/dist/Components/NcRichText.js'
+import { registerCustomPickerElement, NcCustomPickerRenderResult } from '@nextcloud/vue/components/NcRichText'
 import { linkTo } from '@nextcloud/router'
 import { getCSPNonce } from '@nextcloud/auth'
 
@@ -27,17 +27,19 @@ __webpack_nonce__ = getCSPNonce() // eslint-disable-line
 __webpack_public_path__ = linkTo('text_templates', 'js/') // eslint-disable-line
 
 registerCustomPickerElement('text_templates-templates', async (el, { providerId, accessible }) => {
-	const { default: Vue } = await import(/* webpackChunkName: "reference-picker-lazy" */'vue')
-	Vue.mixin({ methods: { t, n } })
+	const { createApp } = await import('vue')
 	const { default: TemplateCustomPickerElement } = await import(/* webpackChunkName: "reference-picker-lazy" */'./views/TemplateCustomPickerElement.vue')
-	const Element = Vue.extend(TemplateCustomPickerElement)
-	const vueElement = new Element({
-		propsData: {
+	const app = createApp(
+		TemplateCustomPickerElement,
+		{
 			providerId,
 			accessible,
 		},
-	}).$mount(el)
-	return new NcCustomPickerRenderResult(vueElement.$el, vueElement)
+	)
+	app.mixin({ methods: { t, n } })
+	app.mount(el)
+
+	return new NcCustomPickerRenderResult(el, app)
 }, (el, renderResult) => {
-	renderResult.object.$destroy()
+	renderResult.object.unmount()
 })

@@ -6,7 +6,7 @@
 		<div class="input-wrapper">
 			<NcTextField
 				ref="template-search-input"
-				:value.sync="searchQuery"
+				v-model="searchQuery"
 				:show-trailing-button="searchQuery !== ''"
 				:label="inputPlaceholder"
 				@trailing-button-click="onClear">
@@ -51,8 +51,8 @@
 			</a>
 		</div>
 		<AddTemplateModal
+			v-show="showAddingModal"
 			ref="new-template"
-			:show.sync="showAddingModal"
 			@template-added="getTemplates" />
 	</div>
 </template>
@@ -66,9 +66,9 @@ import TextTemplatesIcon from '../components/icons/TextTemplatesIcon.vue'
 
 import TemplatePickerEntry from '../components/TemplatePickerEntry.vue'
 
-import NcEmptyContent from '@nextcloud/vue/dist/Components/NcEmptyContent.js'
-import NcTextField from '@nextcloud/vue/dist/Components/NcTextField.js'
-import NcButton from '@nextcloud/vue/dist/Components/NcButton.js'
+import NcEmptyContent from '@nextcloud/vue/components/NcEmptyContent'
+import NcTextField from '@nextcloud/vue/components/NcTextField'
+import NcButton from '@nextcloud/vue/components/NcButton'
 
 import axios from '@nextcloud/axios'
 import { generateOcsUrl, generateUrl } from '@nextcloud/router'
@@ -129,7 +129,7 @@ export default {
 		this.getTemplates()
 	},
 
-	beforeDestroy() {
+	beforeUnmount() {
 	},
 
 	methods: {
@@ -152,6 +152,12 @@ export default {
 		},
 		onSubmit(template) {
 			this.$emit('submit', template.content.trim())
+			this.$el.dispatchEvent(
+				new CustomEvent('submit', {
+					detail: template.content.trim(),
+					bubbles: true
+				})
+			)
 		},
 		onClear() {
 			this.searchQuery = ''

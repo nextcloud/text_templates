@@ -1,8 +1,8 @@
 <template>
 	<div class="template" :class="{ disabled }">
 		<NcTextField ref="name"
+			v-model="name"
 			input-class="name-input"
-			:value.sync="name"
 			:disabled="disabled"
 			:label="namePlaceholder"
 			:show-trailing-button="!!name && !disabled"
@@ -15,7 +15,7 @@
 			:placeholder="contentPlaceholder" />
 		<div class="footer">
 			<NcButton v-if="!disabled && template.id !== -1"
-				type="tertiary"
+				variant="tertiary"
 				:title="t('text_templates', 'Delete')"
 				@click="$emit('delete')">
 				<template #icon>
@@ -25,7 +25,7 @@
 			</NcButton>
 			<div class="spacer" />
 			<NcButton v-if="showCancelButton"
-				type="tertiary"
+				variant="tertiary"
 				:title="cancelButtonLabel"
 				@click="onCancel">
 				<template #icon>
@@ -33,7 +33,7 @@
 				</template>
 			</NcButton>
 			<NcButton v-if="showSaveButton"
-				type="primary"
+				variant="primary"
 				:title="submitButtonLabel"
 				:disabled="!(name && content)"
 				@click="onSubmit">
@@ -50,13 +50,13 @@
 </template>
 
 <script>
-import DeleteOutlineIcon from 'vue-material-design-icons/Delete.vue'
+import DeleteOutlineIcon from 'vue-material-design-icons/DeleteOutline.vue'
 import UndoIcon from 'vue-material-design-icons/Undo.vue'
 import ArrowRightIcon from 'vue-material-design-icons/ArrowRight.vue'
 
-import NcButton from '@nextcloud/vue/dist/Components/NcButton.js'
-import NcTextField from '@nextcloud/vue/dist/Components/NcTextField.js'
-import NcLoadingIcon from '@nextcloud/vue/dist/Components/NcLoadingIcon.js'
+import NcButton from '@nextcloud/vue/components/NcButton'
+import NcTextField from '@nextcloud/vue/components/NcTextField'
+import NcLoadingIcon from '@nextcloud/vue/components/NcLoadingIcon'
 
 export default {
 	name: 'EditableTextTemplate',
@@ -143,12 +143,12 @@ export default {
 
 	&.disabled {
 		.content,
-		::v-deep .name-input {
+		:deep(.name-input) {
 			border: 0;
 		}
 	}
 
-	::v-deep .name-input {
+	:deep(.name-input) {
 		font-weight: bold !important;
 	}
 
