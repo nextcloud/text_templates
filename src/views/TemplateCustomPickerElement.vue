@@ -51,8 +51,8 @@
 			</a>
 		</div>
 		<AddTemplateModal
-			v-model:show="showAddingModal"
 			ref="new-template"
+			v-model:show="showAddingModal"
 			@template-added="getTemplates" />
 	</div>
 </template>
@@ -155,8 +155,8 @@ export default {
 			this.$el.dispatchEvent(
 				new CustomEvent('submit', {
 					detail: template.content.trim(),
-					bubbles: true
-				})
+					bubbles: true,
+				}),
 			)
 		},
 		onClear() {

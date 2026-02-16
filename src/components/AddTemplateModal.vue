@@ -3,6 +3,7 @@
 		class="add-template-modal"
 		:show="show"
 		:container="null"
+		:name="t('text_templates', 'Add a new text template')"
 		@close="closeModal">
 		<div class="add-template-modal-body">
 			<h3>{{ t('text_templates', 'Add a new text template') }}</h3>
