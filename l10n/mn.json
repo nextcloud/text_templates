@@ -1,8 +1,27 @@
 { "translations": {
+    "Text templates" : "Текст загварууд",
+    "Quickly get text templates in Nextcloud" : "Nextcloud дээр текст загваруудыг хурдан авах",
+    "Template {name} created" : "{name} загвар үүсгэгдлээ",
+    "Failed to create template {name}" : "{name} загварыг үүсгэж чадсангүй",
+    "Add a new text template" : "Шинэ текст загвар нэмэх",
     "Create" : "үүсгэх",
     "Cancel" : "Болиулах",
     "Save" : "Хадгалах",
+    "Undo changes" : "Өөрчлөлтийг буцаах",
+    "Template name" : "Загварын нэр",
+    "Template content" : "Загварын агуулга",
     "Delete" : "Устгах",
-    "Add a template" : "Загвар нэмэх"
+    "Template {name} saved" : "{name} загвар хадгалагдлаа",
+    "Failed to save template {name}" : "{name} загварыг хадгалж чадсангүй",
+    "Template {name} deleted" : "{name} загвар устгагдлаа",
+    "Failed to delete template {name}" : "{name} загварыг устгаж чадсангүй",
+    "Add a template" : "Загвар нэмэх",
+    "Admin-defined templates" : "Админы тодорхойлсон загварууд",
+    "Admins can create and manage text templates for everyone." : "Админууд бүх хэрэглэгчдэд зориулсан текст загвар үүсгэж удирдах боломжтой.",
+    "Edit admin templates" : "Админ загваруудыг засварлах",
+    "Search templates" : "Загвар хайх",
+    "Failed to get templates" : "Загваруудыг авч чадсангүй",
+    "No template found" : "Загвар олдсонгүй",
+    "Add templates" : "Загвар нэмэх"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
