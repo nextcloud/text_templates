@@ -1,6 +1,7 @@
 { "translations": {
     "Text templates" : "Текст загварууд",
     "Quickly get text templates in Nextcloud" : "Nextcloud дээр текст загваруудыг хурдан авах",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Энэ апп нь Text, Collectives, Talk, Mail\nэсвэл smart picker нэгтгэгдсэн аль ч газарт текстийн загваруудад хурдан хандах боломжийг олгодог smart picker нийлүүлэгчийг нэмдэг.",
     "Template {name} created" : "{name} загвар үүсгэгдлээ",
     "Failed to create template {name}" : "{name} загварыг үүсгэж чадсангүй",
     "Add a new text template" : "Шинэ текст загвар нэмэх",
@@ -11,6 +12,8 @@
     "Template name" : "Загварын нэр",
     "Template content" : "Загварын агуулга",
     "Delete" : "Устгах",
+    "Text templates are snippets of text that users can quickly insert when they're using Text, Collectives, Talk, Mail or any place where the smart picker is available. Here you can create templates that will be available to all users on this instance." : "Текстийн загварууд нь хэрэглэгчид Text, Collectives, Talk, Mail эсвэл smart picker боломжтой аль ч газарт хурдан оруулж болох текстийн хэсгүүд юм. Энд та энэ жишээн дээрх бүх хэрэглэгчдэд боломжтой загварууд үүсгэж болно.",
+    "Text templates are snippets of text that you can quickly insert when you're using Text, Collectives, Talk, Mail or any place where the smart picker is available." : "Текстийн загварууд нь та Text, Collectives, Talk, Mail эсвэл smart picker боломжтой аль ч газарт хурдан оруулж болох текстийн хэсгүүд юм.",
     "Template {name} saved" : "{name} загвар хадгалагдлаа",
     "Failed to save template {name}" : "{name} загварыг хадгалж чадсангүй",
     "Template {name} deleted" : "{name} загвар устгагдлаа",
