@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+
+CHECK IF IT'S STILL WORKING FOR ALL SUPPORTED VERSIONS
+RIGHT NOW SMART PICKER IS NOT WORKING WITH TEXT IN VUE2
+
+
 ## 1.3.0 - 2025-12-04
 
 ### Changed
