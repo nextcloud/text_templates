@@ -124,26 +124,27 @@ export default {
 	watch: {
 	},
 
-	mounted() {
+	async mounted() {
 		this.focusOnInput()
-		this.getTemplates()
+		await this.getTemplates()
 	},
 
 	beforeUnmount() {
 	},
 
 	methods: {
-		getTemplates() {
+		async getTemplates() {
 			const url = generateOcsUrl('apps/text_templates/api/v1/templates')
-			axios.get(url).then((response) => {
-				this.templates = response.data.ocs.data
-			}).catch((error) => {
+			try {
+				const { data } = await axios.get(url)
+				this.templates = data.ocs.data
+			} catch (error) {
+				console.error('Failed to get templates', error)
 				showError(
 					t('text_templates', 'Failed to get templates')
 					+ ': ' + (error.response?.data?.error ?? ''),
 				)
-				console.error(error)
-			})
+			}
 		},
 		focusOnInput() {
 			setTimeout(() => {
