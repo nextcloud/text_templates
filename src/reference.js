@@ -19,16 +19,18 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { registerCustomPickerElement, NcCustomPickerRenderResult } from '@nextcloud/vue/components/NcRichText'
-import { linkTo } from '@nextcloud/router'
 import { getCSPNonce } from '@nextcloud/auth'
+import { t, n } from '@nextcloud/l10n'
+import { linkTo } from '@nextcloud/router'
+import { registerCustomPickerElement, NcCustomPickerRenderResult } from '@nextcloud/vue/components/NcRichText'
+import { createApp, defineAsyncComponent } from 'vue'
+
+const TemplateCustomPickerElement = defineAsyncComponent(() => import(/* webpackChunkName: "reference-picker-lazy" */'./views/TemplateCustomPickerElement.vue'))
 
 __webpack_nonce__ = getCSPNonce() // eslint-disable-line
 __webpack_public_path__ = linkTo('text_templates', 'js/') // eslint-disable-line
 
 registerCustomPickerElement('text_templates-templates', async (el, { providerId, accessible }) => {
-	const { createApp } = await import('vue')
-	const { default: TemplateCustomPickerElement } = await import(/* webpackChunkName: "reference-picker-lazy" */'./views/TemplateCustomPickerElement.vue')
 	const app = createApp(
 		TemplateCustomPickerElement,
 		{
