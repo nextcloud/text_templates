@@ -216,7 +216,7 @@ export default {
 		display: grid;
 		grid-auto-rows: 160px;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		grid-gap: 8px;
+		gap: 8px;
 		overflow-y: scroll;
 		scrollbar-width: auto;
 		scrollbar-color: var(--color-primary);

@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 CHECK IF IT'S STILL WORKING FOR ALL SUPPORTED VERSIONS
 RIGHT NOW SMART PICKER IS NOT WORKING WITH TEXT IN VUE2
 
+## 1.4.0 - 2025-12-04
+
+### Added
+* Support for NC34 @janepie
+
+### Changed
+* updated dependencies @janepie
+* migrated to vue3 @janepie
+
+### Fixed
+* loading templates and async component @susnux
 
 ## 1.3.0 - 2025-12-04
 
