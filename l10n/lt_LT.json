@@ -7,6 +7,7 @@
     "Template name" : "Šablono pavadinimas",
     "Delete" : "Ištrinti",
     "Text templates are snippets of text that users can quickly insert when they're using Text, Collectives, Talk, Mail or any place where the smart picker is available. Here you can create templates that will be available to all users on this instance." : "Teksto šablonai yra teksto fragmentai, kuriuos vartotojai gali greitai įterpti naudodami Tekstą, Rinkinius, Pokalbius, Paštą ar bet kurią kitą vietą, kurioje yra išmanusis rinkiklis. Čia galite kurti šablonus, kurie bus prieinami visiems šio egzemplioriaus vartotojams.",
-    "Text templates are snippets of text that you can quickly insert when you're using Text, Collectives, Talk, Mail or any place where the smart picker is available." : "Teksto šablonai yra teksto fragmentai, kuriuos galite greitai įterpti naudodami Tekstą, Rinkinius, Pokalbius, Paštą ar bet kurią kitą vietą, kurioje yra išmanusis rinkiklis."
+    "Text templates are snippets of text that you can quickly insert when you're using Text, Collectives, Talk, Mail or any place where the smart picker is available." : "Teksto šablonai yra teksto fragmentai, kuriuos galite greitai įterpti naudodami Tekstą, Rinkinius, Pokalbius, Paštą ar bet kurią kitą vietą, kurioje yra išmanusis rinkiklis.",
+    "Add a template" : "Pridėti šabloną"
 },"pluralForm" :"nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);"
 }
