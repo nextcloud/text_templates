@@ -1,15 +1,32 @@
 OC.L10N.register(
     "text_templates",
     {
+    "Text templates" : "Teksto šablonai",
+    "Quickly get text templates in Nextcloud" : "Greitai gaukite teksto šablonus „Nextcloud“",
     "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Ši programėlė prideda išmaniojo rinkiklio teikėją, kad būtų galima greitai pasiekti teksto šablonus naudojant Tekstą, Rinkinius, Pokalbius, Paštą \narba bet kurią kitą vietą, kurioje integruotas išmanusis rinkiklis.",
+    "Template {name} created" : "Šablonas {name} sukurtas",
+    "Failed to create template {name}" : "Nepavyko sukurti šablono {name}",
+    "Add a new text template" : "Pridėti naują teksto šabloną",
     "Create" : "Sukurti",
     "Cancel" : "Atsisakyti",
     "Save" : "Įrašyti",
     "Undo changes" : "Atšaukti pakeitimus",
     "Template name" : "Šablono pavadinimas",
+    "Template content" : "Šablono turinys",
     "Delete" : "Ištrinti",
     "Text templates are snippets of text that users can quickly insert when they're using Text, Collectives, Talk, Mail or any place where the smart picker is available. Here you can create templates that will be available to all users on this instance." : "Teksto šablonai yra teksto fragmentai, kuriuos vartotojai gali greitai įterpti naudodami Tekstą, Rinkinius, Pokalbius, Paštą ar bet kurią kitą vietą, kurioje yra išmanusis rinkiklis. Čia galite kurti šablonus, kurie bus prieinami visiems šio egzemplioriaus vartotojams.",
     "Text templates are snippets of text that you can quickly insert when you're using Text, Collectives, Talk, Mail or any place where the smart picker is available." : "Teksto šablonai yra teksto fragmentai, kuriuos galite greitai įterpti naudodami Tekstą, Rinkinius, Pokalbius, Paštą ar bet kurią kitą vietą, kurioje yra išmanusis rinkiklis.",
-    "Add a template" : "Pridėti šabloną"
+    "Template {name} saved" : "Šablonas {name} išsaugotas",
+    "Failed to save template {name}" : "Nepavyko išsaugoti šablono {name}",
+    "Template {name} deleted" : "Šablonas {name} ištrintas",
+    "Failed to delete template {name}" : "Nepavyko ištrinti šablono {name}",
+    "Add a template" : "Pridėti šabloną",
+    "Admin-defined templates" : "Administratoriaus apibrėžti šablonai",
+    "Admins can create and manage text templates for everyone." : "Administratoriai gali visiems kurti ir tvarkyti teksto šablonus.",
+    "Edit admin templates" : "Redaguoti administratoriaus šablonus",
+    "Search templates" : "Paieškos šablonai",
+    "Failed to get templates" : "Nepavyko gauti šablonų",
+    "No template found" : "Nerasta šablono",
+    "Add templates" : "Pridėti šablonus"
 },
 "nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);");
