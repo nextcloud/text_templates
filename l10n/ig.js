@@ -3,6 +3,6 @@ OC.L10N.register(
     {
     "Cancel" : "Cancel",
     "Save" : "Save",
-    "Delete" : "Strika"
+    "Delete" : "Delete"
 },
-"nplurals=2; plural=(n != 1);");
+"nplurals=1; plural=0;");

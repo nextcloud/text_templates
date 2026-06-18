@@ -1,8 +1,7 @@
 OC.L10N.register(
     "text_templates",
     {
-    "Create" : "සාදන්න",
-    "Cancel" : "අවලංගු",
+    "Cancel" : "Cancel",
     "Save" : "Save",
     "Delete" : "Delete"
 },
