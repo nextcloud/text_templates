@@ -22,7 +22,7 @@
 import { getCSPNonce } from '@nextcloud/auth'
 import { t, n } from '@nextcloud/l10n'
 import { linkTo } from '@nextcloud/router'
-import { registerCustomPickerElement, NcCustomPickerRenderResult } from '@nextcloud/vue/components/NcRichText'
+import { registerCustomPickerElement, NcCustomPickerRenderResult } from '@nextcloud/vue/functions/registerReference'
 import { createApp, defineAsyncComponent } from 'vue'
 
 const TemplateCustomPickerElement = defineAsyncComponent(() => import(/* webpackChunkName: "reference-picker-lazy" */'./views/TemplateCustomPickerElement.vue'))
