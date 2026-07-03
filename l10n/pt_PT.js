@@ -10,14 +10,18 @@ OC.L10N.register(
     "Cancel" : "Cancelar",
     "Save" : "Guardar",
     "Template name" : "Nome do modelo",
+    "Template content" : "Conteúdo do modelo",
     "Delete" : "Eliminar",
     "Text templates are snippets of text that users can quickly insert when they're using Text, Collectives, Talk, Mail or any place where the smart picker is available. Here you can create templates that will be available to all users on this instance." : "Os modelos de texto são trechos de texto que os usuários podem inserir rapidamente quando estiverem usando o Texto, Coletivos, Talk, E-mail ou qualquer lugar onde o seletor inteligente estiver disponível. Aqui você pode criar modelos que estarão disponíveis para todos os usuários nesta instância.",
     "Text templates are snippets of text that you can quickly insert when you're using Text, Collectives, Talk, Mail or any place where the smart picker is available." : "Os modelos de texto são trechos de texto que os usuários podem inserir rapidamente quando estiverem usando o Texto, Coletivos, Talk, E-mail ou qualquer lugar onde o seletor inteligente estiver disponível. ",
     "Template {name} saved" : "Modelo {name} salvo",
     "Failed to save template {name}" : "Falha ao salvar modelo {name}",
+    "Template {name} deleted" : "Modelo {name} excluído",
     "Add a template" : "Adicionar um modelo",
     "Admin-defined templates" : "Modelos definidos pelo administrador",
     "Admins can create and manage text templates for everyone." : "A administração pode criar e gerenciar modelos de texto para todos.",
-    "Failed to get templates" : "Falha ao obter modelos"
+    "Edit admin templates" : "Editar modelos de administração",
+    "Failed to get templates" : "Falha ao obter modelos",
+    "No template found" : "Nenhum modelo encontrado"
 },
 "nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
