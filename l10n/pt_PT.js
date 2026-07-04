@@ -9,6 +9,7 @@ OC.L10N.register(
     "Create" : "Criar",
     "Cancel" : "Cancelar",
     "Save" : "Guardar",
+    "Undo changes" : "Desfazer alterações",
     "Template name" : "Nome do modelo",
     "Template content" : "Conteúdo do modelo",
     "Delete" : "Eliminar",
@@ -21,6 +22,7 @@ OC.L10N.register(
     "Admin-defined templates" : "Modelos definidos pelo administrador",
     "Admins can create and manage text templates for everyone." : "A administração pode criar e gerenciar modelos de texto para todos.",
     "Edit admin templates" : "Editar modelos de administração",
+    "Search templates" : "Pesquisar modelos",
     "Failed to get templates" : "Falha ao obter modelos",
     "No template found" : "Nenhum modelo encontrado"
 },
