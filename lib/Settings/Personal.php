@@ -7,7 +7,6 @@ use OCA\TextTemplates\Db\TemplateMapper;
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\AppFramework\Services\IInitialState;
 use OCP\DB\Exception;
-
 use OCP\Settings\ISettings;
 
 class Personal implements ISettings {
