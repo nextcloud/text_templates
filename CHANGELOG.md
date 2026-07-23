@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 CHECK IF IT'S STILL WORKING FOR ALL SUPPORTED VERSIONS
 RIGHT NOW SMART PICKER IS NOT WORKING WITH TEXT IN VUE2
 
+## 1.5.0 - 2026-07-23
+
+### Added
+* Support for NC35 @janepie
+
+### Changed
+* updated dependencies @janepie
+
 ## 1.4.0 - 2025-12-04
 
 ### Added
