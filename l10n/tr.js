@@ -24,7 +24,7 @@ OC.L10N.register(
     "Admin-defined templates" : "Yöneticinin ayarladığı kalıplar",
     "Admins can create and manage text templates for everyone." : "Yöneticiler herkes için yazı kalıpları oluşturabilir ve yönetebilir.",
     "Edit admin templates" : "Yönetici kalıplarını düzenle",
-    "Search templates" : "Kalıp arama",
+    "Search templates" : "Kalıp ara",
     "Failed to get templates" : "Kalıplar alınamadı",
     "No template found" : "Herhangi bir kalıp bulunamadı",
     "Add templates" : "Kalıp ekle"
