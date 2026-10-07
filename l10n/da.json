@@ -1,9 +1,30 @@
 { "translations": {
+    "Text templates" : "Tekstskabeloner",
+    "Quickly get text templates in Nextcloud" : "Hent hurtigt tekstskabeloner i Nextcloud",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Denne app tilføjer en udbyder til Smart Picker, så du hurtigt kan få fat i tekstskabeloner i Tekst, Collectives, Talk, Mail\neller alle andre steder, hvor Smart Picker er indbygget.",
+    "Template {name} created" : "Skabelonen {name} er oprettet",
+    "Failed to create template {name}" : "Skabelonen {name} kunne ikke oprettes",
+    "Add a new text template" : "Tilføj en ny tekstskabelon",
     "Create" : "Opret",
     "Cancel" : "Annuller",
     "Save" : "Gem",
+    "Undo changes" : "Fortryd ændringer",
     "Template name" : "Skabelonnavn",
+    "Template content" : "Skabelonens indhold",
     "Delete" : "Slet",
-    "Add a template" : "Tilføj en skabelon"
+    "Text templates are snippets of text that users can quickly insert when they're using Text, Collectives, Talk, Mail or any place where the smart picker is available. Here you can create templates that will be available to all users on this instance." : "Tekstskabeloner er tekststykker, som brugerne hurtigt kan indsætte i Tekst, Collectives, Talk, Mail eller alle andre steder, hvor Smart Picker er tilgængelig. Her kan du oprette skabeloner, som er tilgængelige for alle brugere på denne instans.",
+    "Text templates are snippets of text that you can quickly insert when you're using Text, Collectives, Talk, Mail or any place where the smart picker is available." : "Tekstskabeloner er tekststykker, som du hurtigt kan indsætte i Tekst, Collectives, Talk, Mail eller alle andre steder, hvor Smart Picker er tilgængelig.",
+    "Template {name} saved" : "Skabelonen {name} er gemt",
+    "Failed to save template {name}" : "Skabelonen {name} kunne ikke gemmes",
+    "Template {name} deleted" : "Skabelonen {name} er slettet",
+    "Failed to delete template {name}" : "Skabelonen {name} kunne ikke slettes",
+    "Add a template" : "Tilføj en skabelon",
+    "Admin-defined templates" : "Skabeloner fra administratoren",
+    "Admins can create and manage text templates for everyone." : "Administratorer kan oprette og administrere tekstskabeloner for alle.",
+    "Edit admin templates" : "Rediger administratorens skabeloner",
+    "Search templates" : "Søg i skabeloner",
+    "Failed to get templates" : "Skabelonerne kunne ikke hentes",
+    "No template found" : "Der blev ikke fundet nogen skabelon",
+    "Add templates" : "Tilføj skabeloner"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
