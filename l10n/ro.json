@@ -1,7 +1,30 @@
 { "translations": {
-    "Create" : "Crează",
-    "Cancel" : "Anulare",
+    "Text templates" : "Șabloane de text",
+    "Quickly get text templates in Nextcloud" : "Acces rapid la șabloane de text în Nextcloud",
+    "This app adds a smart picker provider to quickly access text templates when using Text, Collectives, Talk, Mail\nor any place where the smart picker is integrated." : "Această aplicație adaugă un furnizor Smart Picker pentru acces rapid la șabloanele de text când folosești Text, Colective, Talk, Mail\nsau orice loc în care este integrat Smart Picker.",
+    "Template {name} created" : "Șablonul {name} a fost creat",
+    "Failed to create template {name}" : "Șablonul {name} nu a putut fi creat",
+    "Add a new text template" : "Adaugă un șablon de text nou",
+    "Create" : "Creează",
+    "Cancel" : "Anulează",
     "Save" : "Salvează",
-    "Delete" : "Șterge"
+    "Undo changes" : "Anulează modificările",
+    "Template name" : "Numele șablonului",
+    "Template content" : "Conținutul șablonului",
+    "Delete" : "Șterge",
+    "Text templates are snippets of text that users can quickly insert when they're using Text, Collectives, Talk, Mail or any place where the smart picker is available. Here you can create templates that will be available to all users on this instance." : "Șabloanele de text sunt fragmente de text pe care utilizatorii le pot insera rapid când folosesc Text, Colective, Talk, Mail sau orice loc în care este disponibil Smart Picker. Aici poți crea șabloane care vor fi disponibile tuturor utilizatorilor acestei instanțe.",
+    "Text templates are snippets of text that you can quickly insert when you're using Text, Collectives, Talk, Mail or any place where the smart picker is available." : "Șabloanele de text sunt fragmente de text pe care le poți insera rapid când folosești Text, Colective, Talk, Mail sau orice loc în care este disponibil Smart Picker.",
+    "Template {name} saved" : "Șablonul {name} a fost salvat",
+    "Failed to save template {name}" : "Șablonul {name} nu a putut fi salvat",
+    "Template {name} deleted" : "Șablonul {name} a fost șters",
+    "Failed to delete template {name}" : "Șablonul {name} nu a putut fi șters",
+    "Add a template" : "Adaugă un șablon",
+    "Admin-defined templates" : "Șabloane definite de administrator",
+    "Admins can create and manage text templates for everyone." : "Administratorii pot crea și gestiona șabloane de text pentru toată lumea.",
+    "Edit admin templates" : "Editează șabloanele administratorului",
+    "Search templates" : "Caută șabloane",
+    "Failed to get templates" : "Șabloanele nu au putut fi obținute",
+    "No template found" : "Nu s-a găsit niciun șablon",
+    "Add templates" : "Adaugă șabloane"
 },"pluralForm" :"nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));"
 }
